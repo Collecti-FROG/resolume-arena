@@ -1,3 +1,14 @@
+# Ignore all files by default
 *
+
+# Except the .gitignore file and README.md
 !.gitignore
 !README.md
+
+# Allow parent folders
+!*/
+
+# List specific files and folders to keep
+!Compositions/scenofrog1.avc
+!Presets/Advanced Output/scenofrog1.xml
+!Shortcuts/MIDI/scenofrog1-apc_mini.xml
