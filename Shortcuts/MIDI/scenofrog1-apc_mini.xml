@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MidiShortcutPreset presetId="-971201124" name="apc_mini_suede">
-	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="23" microVersion="0" revision="49330"/>
+<MidiShortcutPreset name="scenofrog1-apc_mini" presetId="-971201124">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
 	<ShortcutManager name="MIDIShortcutManagerShortcuts">
 		<Shortcut name="Shortcut" uniqueId="1759578966871" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/layers/8/video/opacity" translationType="1" allowedTranslationTypes="11"/>
