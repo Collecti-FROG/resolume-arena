@@ -10,8 +10,11 @@
 
 # List specific files and folders to keep
 !Compositions/scenofrog1.avc
-!Compositions/Disconnected.avc
 !Presets/Advanced Output/scenofrog1.xml
-!Presets/Advanced Output/disconnected.xml
 !Shortcuts/MIDI/scenofrog1-apc_mini.xml
 !Media/media_scenofrog/*
+
+# Event Disconnect by TechnoCambrousse (16/01/2026) 
+!Compositions/Disconnect.avc
+!Presets/Advanced Output/Disconnect.xml
+!Shortcuts/MIDI/Disconnect.xml
