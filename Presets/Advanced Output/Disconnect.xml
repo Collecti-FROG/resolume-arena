@@ -161,10 +161,10 @@
 							<v x="0" y="1080"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="1920" y="0"/>
-							<v x="1920" y="1080"/>
-							<v x="0" y="1080"/>
+							<v x="-103" y="-13.7501220703125"/>
+							<v x="1863.0001220703125" y="-13.7501220703125"/>
+							<v x="1863.0001220703125" y="1093.7501220703125"/>
+							<v x="-103" y="1093.7501220703125"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -173,36 +173,36 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="0" y="0"/>
-									<v x="640" y="0"/>
-									<v x="1280" y="0"/>
-									<v x="1920" y="0"/>
-									<v x="0" y="360"/>
-									<v x="640" y="360"/>
-									<v x="1280" y="360"/>
-									<v x="1920" y="360"/>
-									<v x="0" y="720"/>
-									<v x="640" y="720"/>
-									<v x="1280" y="720"/>
-									<v x="1920" y="720"/>
-									<v x="0" y="1080"/>
-									<v x="640" y="1080"/>
-									<v x="1280" y="1080"/>
-									<v x="1920" y="1080"/>
+									<v x="-103" y="-13.75009918212890625"/>
+									<v x="552.3333740234375" y="-13.75009918212890625"/>
+									<v x="1207.666748046875" y="-13.75009918212890625"/>
+									<v x="1863.0001220703125" y="-13.75009918212890625"/>
+									<v x="-103" y="355.416656494140625"/>
+									<v x="552.3333740234375" y="355.416656494140625"/>
+									<v x="1207.666748046875" y="355.416656494140625"/>
+									<v x="1863.0001220703125" y="355.416656494140625"/>
+									<v x="-103" y="724.5833740234375"/>
+									<v x="552.3333740234375" y="724.5833740234375"/>
+									<v x="1207.666748046875" y="724.5833740234375"/>
+									<v x="1863.0001220703125" y="724.5833740234375"/>
+									<v x="-103" y="1093.7501220703125"/>
+									<v x="552.3333740234375" y="1093.7501220703125"/>
+									<v x="1207.666748046875" y="1093.7501220703125"/>
+									<v x="1863.0001220703125" y="1093.7501220703125"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="0" y="0"/>
-									<v x="1920" y="0"/>
-									<v x="1920" y="1080"/>
-									<v x="0" y="1080"/>
+									<v x="-103" y="-13.7501220703125"/>
+									<v x="1863.0001220703125" y="-13.7501220703125"/>
+									<v x="1863.0001220703125" y="1093.7501220703125"/>
+									<v x="-103" y="1093.7501220703125"/>
 								</src>
 								<dst>
-									<v x="0" y="0"/>
-									<v x="1920" y="0"/>
-									<v x="1920" y="1080"/>
-									<v x="0" y="1080"/>
+									<v x="-103" y="-13.7501220703125"/>
+									<v x="1863.0001220703125" y="-13.7501220703125"/>
+									<v x="1863.0001220703125" y="1093.7501220703125"/>
+									<v x="-103" y="1093.7501220703125"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -217,26 +217,26 @@
 									<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_BEZIER" storeChoices="0"/>
 								</Params>
 								<Rect orientation="0">
-									<v x="420.00006103515625" y="0"/>
-									<v x="1500" y="0"/>
-									<v x="1500" y="1080"/>
-									<v x="420.00006103515625" y="1080"/>
+									<v x="362.39202880859375" y="-78.00006103515625"/>
+									<v x="1563.608154296875" y="-78.00006103515625"/>
+									<v x="1563.608154296875" y="1158"/>
+									<v x="362.39202880859375" y="1158"/>
 								</Rect>
 								<Shape>
 									<Contour closed="1">
 										<points>
-											<v x="960" y="0"/>
-											<v x="1258.2333984375" y="0"/>
-											<v x="1500" y="241.7666473388671875"/>
-											<v x="1500" y="540"/>
-											<v x="1500" y="838.2332763671875"/>
-											<v x="1258.2333984375" y="1080"/>
-											<v x="960" y="1080"/>
-											<v x="661.7666015625" y="1080"/>
-											<v x="420.00006103515625" y="838.2332763671875"/>
-											<v x="420.00006103515625" y="540"/>
-											<v x="420.00006103515625" y="241.7666473388671875"/>
-											<v x="661.7666015625" y="0"/>
+											<v x="963.00006103515625" y="-78.00006103515625"/>
+											<v x="1294.706298828125" y="-78.00006103515625"/>
+											<v x="1563.608154296875" y="198.6884765625"/>
+											<v x="1563.608154296875" y="540"/>
+											<v x="1563.608154296875" y="881.31146240234375"/>
+											<v x="1294.706298828125" y="1158"/>
+											<v x="963.00006103515625" y="1158"/>
+											<v x="631.29388427734375" y="1158"/>
+											<v x="362.39202880859375" y="881.31146240234375"/>
+											<v x="362.39202880859375" y="540"/>
+											<v x="362.39202880859375" y="198.6884765625"/>
+											<v x="631.29388427734375" y="-78.00006103515625"/>
 										</points>
 										<segments>CCCC</segments>
 									</Contour>
@@ -246,24 +246,17 @@
 					</Slice>
 				</layers>
 				<OutputDevice>
-					<OutputDeviceVirtual name="Cercle" deviceId="VirtualCercle" idHash="10178253962954244953" width="1920" height="1080">
+					<OutputDeviceDisplay name="Display 2" deviceId="\Registry\Machine\System\CurrentControlSet\Control\Video\{B20DA0EA-CD80-11F0-8A10-FD52CB2F54BC}\0001" idHash="8830044811277738640" fullscreen="1" width="1920" height="1080">
 						<Params name="Params">
-							<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+							<ParamRange name="Delay" T="DOUBLE" default="0" value="0">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="1" max="16384"/>
-								<ValueRange name="minMax" min="1" max="16384"/>
-								<ValueRange name="startStop" min="1" max="16384"/>
-							</ParamRange>
-							<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="1" max="16384"/>
-								<ValueRange name="minMax" min="1" max="16384"/>
-								<ValueRange name="startStop" min="1" max="16384"/>
+								<ValueRange name="defaultRange" min="0" max="0.10000000000000000555"/>
+								<ValueRange name="minMax" min="0" max="0.10000000000000000555"/>
+								<ValueRange name="startStop" min="0" max="0.10000000000000000555"/>
 							</ParamRange>
 						</Params>
-					</OutputDeviceVirtual>
+					</OutputDeviceDisplay>
 				</OutputDevice>
 			</Screen>
 			<Screen name="LatJar" uniqueId="1759683929739">
@@ -421,11 +414,11 @@
 							<v x="675" y="1080"/>
 							<v x="0" y="1080"/>
 						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="6.103515625e-05"/>
-							<v x="1200.0008544921875" y="6.103515625e-05"/>
-							<v x="1200.0008544921875" y="1920"/>
-							<v x="0" y="1920"/>
+						<OutputRect orientation="-1.5707700252532958984">
+							<v x="-0.0316162109375" y="1199.949462890625"/>
+							<v x="0" y="-0.051372528076171875"/>
+							<v x="1920.0001220703125" y="-0.000873565673828125"/>
+							<v x="1919.968505859375" y="1200"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -434,36 +427,36 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="0" y="4.1067600250244140625e-05"/>
-									<v x="400.00030517578125" y="4.1067600250244140625e-05"/>
-									<v x="800.00054931640625" y="4.1067600250244140625e-05"/>
-									<v x="1200.0008544921875" y="4.1067600250244140625e-05"/>
-									<v x="0" y="640.00006103515625"/>
-									<v x="400.00030517578125" y="640.00006103515625"/>
-									<v x="800.0006103515625" y="640.00006103515625"/>
-									<v x="1200.0008544921875" y="640.00006103515625"/>
-									<v x="0" y="1280"/>
-									<v x="400.00030517578125" y="1280"/>
-									<v x="800.0006103515625" y="1280"/>
-									<v x="1200.0008544921875" y="1280"/>
-									<v x="0" y="1920"/>
-									<v x="400.00030517578125" y="1920"/>
-									<v x="800.00054931640625" y="1920"/>
-									<v x="1200.0008544921875" y="1920"/>
+									<v x="-0.0316162109375" y="1199.9493408203125"/>
+									<v x="-0.021077472716569900513" y="799.9490966796875"/>
+									<v x="-0.010538737289607524872" y="399.948883056640625"/>
+									<v x="0" y="-0.051372528076171875"/>
+									<v x="639.96844482421875" y="1199.9661865234375"/>
+									<v x="639.97906494140625" y="799.9659423828125"/>
+									<v x="639.989501953125" y="399.96575927734375"/>
+									<v x="640" y="-0.034526824951171875"/>
+									<v x="1279.968505859375" y="1199.983154296875"/>
+									<v x="1279.97900390625" y="799.98284912109375"/>
+									<v x="1279.989501953125" y="399.98260498046875"/>
+									<v x="1280" y="-0.017681121826171875"/>
+									<v x="1919.968505859375" y="1200"/>
+									<v x="1919.97900390625" y="799.99969482421875"/>
+									<v x="1919.989501953125" y="399.999481201171875"/>
+									<v x="1920" y="-0.000835418701171875"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="0" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="-0.0316162109375" y="1199.949462890625"/>
+									<v x="0" y="-0.051372528076171875"/>
+									<v x="1920.0001220703125" y="-0.000873565673828125"/>
+									<v x="1919.968505859375" y="1200"/>
 								</src>
 								<dst>
-									<v x="0" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="-0.0316162109375" y="1199.949462890625"/>
+									<v x="0" y="-0.051372528076171875"/>
+									<v x="1920.0001220703125" y="-0.000873565673828125"/>
+									<v x="1919.968505859375" y="1200"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -474,8 +467,8 @@
 							<Param name="Enabled" T="BOOL" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="3:1" storeChoices="0"/>
-							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
+							<ParamChoice name="Input Source" default="0:1" value="1:1" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="0"/>
 							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
 						</Params>
@@ -546,11 +539,11 @@
 							<v x="960" y="1080"/>
 							<v x="285" y="1080"/>
 						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="1200" y="0"/>
-							<v x="1200" y="1920"/>
-							<v x="0" y="1920"/>
+						<OutputRect orientation="-1.5707700252532958984">
+							<v x="-0.0316162109375" y="1199.9486083984375"/>
+							<v x="0" y="-0.051372528076171875"/>
+							<v x="1920.0001220703125" y="-0.000873565673828125"/>
+							<v x="1919.968505859375" y="1199.9991455078125"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -559,52 +552,52 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="0" y="0"/>
-									<v x="400" y="0"/>
-									<v x="800" y="0"/>
-									<v x="1200" y="0"/>
-									<v x="0" y="640"/>
-									<v x="400" y="640"/>
-									<v x="800" y="640"/>
-									<v x="1200" y="640"/>
-									<v x="0" y="1280"/>
-									<v x="400" y="1280"/>
-									<v x="800" y="1280"/>
-									<v x="1200" y="1280"/>
-									<v x="0" y="1920"/>
-									<v x="400" y="1920"/>
-									<v x="800" y="1920"/>
-									<v x="1200" y="1920"/>
+									<v x="-0.031551837921142578125" y="1199.9486083984375"/>
+									<v x="-0.021053791046142578125" y="799.9486083984375"/>
+									<v x="-0.010555744171142578125" y="399.948577880859375"/>
+									<v x="-5.7697296142578125e-05" y="-0.051414739340543746948"/>
+									<v x="639.96844482421875" y="1199.9654541015625"/>
+									<v x="639.97894287109375" y="799.9654541015625"/>
+									<v x="639.989501953125" y="399.9654541015625"/>
+									<v x="640" y="-0.034569036215543746948"/>
+									<v x="1279.9683837890625" y="1199.9822998046875"/>
+									<v x="1279.97900390625" y="799.9822998046875"/>
+									<v x="1279.9893798828125" y="399.9822998046875"/>
+									<v x="1280" y="-0.017723333090543746948"/>
+									<v x="1919.9683837890625" y="1199.9991455078125"/>
+									<v x="1919.97900390625" y="799.9991455078125"/>
+									<v x="1919.989501953125" y="399.999114990234375"/>
+									<v x="1920.0001220703125" y="-0.00087762955809012055397"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="0" y="0"/>
-									<v x="1200" y="0"/>
-									<v x="1200" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="-0.0316162109375" y="1199.9486083984375"/>
+									<v x="0" y="-0.051372528076171875"/>
+									<v x="1920.0001220703125" y="-0.000873565673828125"/>
+									<v x="1919.968505859375" y="1199.9991455078125"/>
 								</src>
 								<dst>
-									<v x="0" y="0"/>
-									<v x="1200" y="0"/>
-									<v x="1200" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="-0.0316162109375" y="1199.9486083984375"/>
+									<v x="0" y="-0.051372528076171875"/>
+									<v x="1920.0001220703125" y="-0.000873565673828125"/>
+									<v x="1919.968505859375" y="1199.9991455078125"/>
 								</dst>
 							</Homography>
 						</Warper>
 					</Slice>
 				</layers>
 				<OutputDevice>
-					<OutputDeviceNDI name="LatJar" deviceId="NDILatJar" idHash="851997050737000693" width="1200" height="1920">
+					<OutputDeviceNDI name="LatJar" deviceId="NDILatJar" idHash="851997050737000693" width="1920" height="1200">
 						<Params name="Params">
-							<ParamRange name="Width" T="DOUBLE" default="1920" value="1200">
+							<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 								<BehaviourDouble name="BehaviourDouble"/>
 								<ValueRange name="defaultRange" min="1" max="16384"/>
 								<ValueRange name="minMax" min="1" max="16384"/>
 								<ValueRange name="startStop" min="1" max="16384"/>
 							</ParamRange>
-							<ParamRange name="Height" T="DOUBLE" default="1080" value="1920">
+							<ParamRange name="Height" T="DOUBLE" default="1080" value="1200">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 								<BehaviourDouble name="BehaviourDouble"/>
 								<ValueRange name="defaultRange" min="1" max="16384"/>
@@ -638,28 +631,28 @@
 						<ValueRange name="minMax" min="-1" max="1"/>
 						<ValueRange name="startStop" min="-1" max="1"/>
 					</ParamRange>
-					<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Contrast" T="DOUBLE" default="0" value="1">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 						<BehaviourDouble name="BehaviourDouble"/>
 						<ValueRange name="defaultRange" min="-1" max="1"/>
 						<ValueRange name="minMax" min="-1" max="1"/>
 						<ValueRange name="startStop" min="-1" max="1"/>
 					</ParamRange>
-					<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Red" T="DOUBLE" default="0" value="-0.08196721311475407834">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 						<BehaviourDouble name="BehaviourDouble"/>
 						<ValueRange name="defaultRange" min="-1" max="1"/>
 						<ValueRange name="minMax" min="-1" max="1"/>
 						<ValueRange name="startStop" min="-1" max="1"/>
 					</ParamRange>
-					<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Green" T="DOUBLE" default="0" value="-0.18032786885245899455">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 						<BehaviourDouble name="BehaviourDouble"/>
 						<ValueRange name="defaultRange" min="-1" max="1"/>
 						<ValueRange name="minMax" min="-1" max="1"/>
 						<ValueRange name="startStop" min="-1" max="1"/>
 					</ParamRange>
-					<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Blue" T="DOUBLE" default="0" value="0.2131147540983606703">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 						<BehaviourDouble name="BehaviourDouble"/>
 						<ValueRange name="defaultRange" min="-1" max="1"/>
@@ -772,11 +765,11 @@
 							<v x="1920" y="1080"/>
 							<v x="1245" y="1080"/>
 						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="6.103515625e-05"/>
-							<v x="1200.0008544921875" y="6.103515625e-05"/>
-							<v x="1200.0008544921875" y="1920"/>
-							<v x="0" y="1920"/>
+						<OutputRect orientation="1.5707700252532958984">
+							<v x="1920" y="-0.050457000732421875"/>
+							<v x="1920.031494140625" y="1199.9503173828125"/>
+							<v x="0.03155517578125" y="1200.0008544921875"/>
+							<v x="-6.103515625e-05" y="4.1959807276725769043e-05"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -785,36 +778,36 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="0" y="4.1067600250244140625e-05"/>
-									<v x="400.00030517578125" y="4.1067600250244140625e-05"/>
-									<v x="800.00054931640625" y="4.1067600250244140625e-05"/>
-									<v x="1200.0008544921875" y="4.1067600250244140625e-05"/>
-									<v x="0" y="640.00006103515625"/>
-									<v x="400.00030517578125" y="640.00006103515625"/>
-									<v x="800.0006103515625" y="640.00006103515625"/>
-									<v x="1200.0008544921875" y="640.00006103515625"/>
-									<v x="0" y="1280"/>
-									<v x="400.00030517578125" y="1280"/>
-									<v x="800.0006103515625" y="1280"/>
-									<v x="1200.0008544921875" y="1280"/>
-									<v x="0" y="1920"/>
-									<v x="400.00030517578125" y="1920"/>
-									<v x="800.00054931640625" y="1920"/>
-									<v x="1200.0008544921875" y="1920"/>
+									<v x="1920" y="-0.050506591796875"/>
+									<v x="1920.010498046875" y="399.949798583984375"/>
+									<v x="1920.02099609375" y="799.95001220703125"/>
+									<v x="1920.031494140625" y="1199.9503173828125"/>
+									<v x="1280" y="-0.033671058714389801025"/>
+									<v x="1280.010498046875" y="399.966644287109375"/>
+									<v x="1280.02099609375" y="799.9669189453125"/>
+									<v x="1280.031494140625" y="1199.9671630859375"/>
+									<v x="640" y="-0.016835531219840049744"/>
+									<v x="640.010498046875" y="399.98345947265625"/>
+									<v x="640.02099609375" y="799.9837646484375"/>
+									<v x="640.0316162109375" y="1199.9840087890625"/>
+									<v x="0" y="0"/>
+									<v x="0.010538737289607524872" y="400.00030517578125"/>
+									<v x="0.021077472716569900513" y="800.00054931640625"/>
+									<v x="0.0316162109375" y="1200.0008544921875"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="0" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="1920" y="-0.050457000732421875"/>
+									<v x="1920.031494140625" y="1199.9503173828125"/>
+									<v x="0.03155517578125" y="1200.0008544921875"/>
+									<v x="-6.103515625e-05" y="4.1959807276725769043e-05"/>
 								</src>
 								<dst>
-									<v x="0" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="6.103515625e-05"/>
-									<v x="1200.0008544921875" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="1920" y="-0.050457000732421875"/>
+									<v x="1920.031494140625" y="1199.9503173828125"/>
+									<v x="0.03155517578125" y="1200.0008544921875"/>
+									<v x="-6.103515625e-05" y="4.1959807276725769043e-05"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -825,8 +818,8 @@
 							<Param name="Enabled" T="BOOL" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="3:1" storeChoices="0"/>
-							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
+							<ParamChoice name="Input Source" default="0:1" value="1:1" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="0"/>
 							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
 						</Params>
@@ -897,11 +890,11 @@
 							<v x="1635" y="1080"/>
 							<v x="960" y="1080"/>
 						</InputRect>
-						<OutputRect orientation="0">
-							<v x="0" y="0"/>
-							<v x="1200" y="0"/>
-							<v x="1200" y="1920"/>
-							<v x="0" y="1920"/>
+						<OutputRect orientation="1.5707700252532958984">
+							<v x="1919.999755859375" y="-0.050518035888671875"/>
+							<v x="1920.031494140625" y="1199.949462890625"/>
+							<v x="0.03131103515625" y="1200"/>
+							<v x="-0.00030517578125" y="-1.9073486328125e-05"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -910,62 +903,53 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="0" y="0"/>
-									<v x="400" y="0"/>
-									<v x="800" y="0"/>
-									<v x="1200" y="0"/>
-									<v x="0" y="640"/>
-									<v x="400" y="640"/>
-									<v x="800" y="640"/>
-									<v x="1200" y="640"/>
-									<v x="0" y="1280"/>
-									<v x="400" y="1280"/>
-									<v x="800" y="1280"/>
-									<v x="1200" y="1280"/>
-									<v x="0" y="1920"/>
-									<v x="400" y="1920"/>
-									<v x="800" y="1920"/>
-									<v x="1200" y="1920"/>
+									<v x="1919.9998779296875" y="-0.0504608154296875"/>
+									<v x="1920.0103759765625" y="399.94952392578125"/>
+									<v x="1920.02099609375" y="799.949462890625"/>
+									<v x="1920.031494140625" y="1199.949462890625"/>
+									<v x="1279.999755859375" y="-0.033655799925327301025"/>
+									<v x="1280.01025390625" y="399.966339111328125"/>
+									<v x="1280.0208740234375" y="799.96624755859375"/>
+									<v x="1280.0313720703125" y="1199.96630859375"/>
+									<v x="639.99981689453125" y="-0.016850790008902549744"/>
+									<v x="640.0103759765625" y="399.983154296875"/>
+									<v x="640.0208740234375" y="799.983154296875"/>
+									<v x="640.03143310546875" y="1199.983154296875"/>
+									<v x="-0.0002593994140625" y="-4.57763671875e-05"/>
+									<v x="0.010258993133902549744" y="399.99993896484375"/>
+									<v x="0.020777383819222450256" y="800"/>
+									<v x="0.0312957763671875" y="1200"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="0" y="0"/>
-									<v x="1200" y="0"/>
-									<v x="1200" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="1919.999755859375" y="-0.050518035888671875"/>
+									<v x="1920.031494140625" y="1199.949462890625"/>
+									<v x="0.03131103515625" y="1200"/>
+									<v x="-0.00030517578125" y="-1.9073486328125e-05"/>
 								</src>
 								<dst>
-									<v x="0" y="0"/>
-									<v x="1200" y="0"/>
-									<v x="1200" y="1920"/>
-									<v x="0" y="1920"/>
+									<v x="1919.999755859375" y="-0.050518035888671875"/>
+									<v x="1920.031494140625" y="1199.949462890625"/>
+									<v x="0.03131103515625" y="1200"/>
+									<v x="-0.00030517578125" y="-1.9073486328125e-05"/>
 								</dst>
 							</Homography>
 						</Warper>
 					</Slice>
 				</layers>
 				<OutputDevice>
-					<OutputDeviceNDI name="LatCour" deviceId="NDILatCour" idHash="12264725829591794653" width="1200" height="1920">
+					<OutputDeviceDisplay name="Display 3" deviceId="\Registry\Machine\System\CurrentControlSet\Control\Video\{B20DA0EA-CD80-11F0-8A10-FD52CB2F54BC}\0002" idHash="8830044811277738641" fullscreen="1" width="1920" height="1200">
 						<Params name="Params">
-							<ParamRange name="Width" T="DOUBLE" default="1920" value="1200">
+							<ParamRange name="Delay" T="DOUBLE" default="0" value="0">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="1" max="16384"/>
-								<ValueRange name="minMax" min="1" max="16384"/>
-								<ValueRange name="startStop" min="1" max="16384"/>
+								<ValueRange name="defaultRange" min="0" max="0.10000000000000000555"/>
+								<ValueRange name="minMax" min="0" max="0.10000000000000000555"/>
+								<ValueRange name="startStop" min="0" max="0.10000000000000000555"/>
 							</ParamRange>
-							<ParamRange name="Height" T="DOUBLE" default="1080" value="1920">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="1" max="16384"/>
-								<ValueRange name="minMax" min="1" max="16384"/>
-								<ValueRange name="startStop" min="1" max="16384"/>
-							</ParamRange>
-							<Param name="Alpha Output" T="BOOL" default="1" value="1"/>
-							<ParamChoice name="Bit depth" T="INT32" default="0" value="0" storeChoices="0"/>
 						</Params>
-					</OutputDeviceNDI>
+					</OutputDeviceDisplay>
 				</OutputDevice>
 			</Screen>
 			<Screen name="Previ" uniqueId="1767988780414">
@@ -1045,13 +1029,13 @@
 					</ScreenGuide>
 				</guides>
 				<layers>
-					<Slice uniqueId="1767988780679">
+					<Slice uniqueId="1767988780813">
 						<Params name="Common">
-							<Param name="Name" T="STRING" default="Layer" value="LatCour"/>
+							<Param name="Name" T="STRING" default="Layer" value="Cercle"/>
 							<Param name="Enabled" T="BOOL" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="4:3" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="4:1" storeChoices="0"/>
 							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
@@ -1124,10 +1108,10 @@
 							<v x="0" y="1080"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="1604.49462890625" y="320"/>
-							<v x="1881.68359375" y="320"/>
-							<v x="1881.68359375" y="763.5025634765625"/>
-							<v x="1604.49462890625" y="763.5025634765625"/>
+							<v x="103.287841796875" y="58.099456787109375"/>
+							<v x="1816.7120361328125" y="58.099456787109375"/>
+							<v x="1816.7120361328125" y="1021.9005126953125"/>
+							<v x="103.287841796875" y="1021.9005126953125"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -1136,36 +1120,36 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="1604.4945068359375" y="319.999969482421875"/>
-									<v x="1696.890869140625" y="319.999969482421875"/>
-									<v x="1789.2872314453125" y="319.999969482421875"/>
-									<v x="1881.68359375" y="319.999969482421875"/>
-									<v x="1604.4945068359375" y="467.83416748046875"/>
-									<v x="1696.890869140625" y="467.83416748046875"/>
-									<v x="1789.2872314453125" y="467.83416748046875"/>
-									<v x="1881.68359375" y="467.83416748046875"/>
-									<v x="1604.4945068359375" y="615.6683349609375"/>
-									<v x="1696.890869140625" y="615.6683349609375"/>
-									<v x="1789.2872314453125" y="615.6683349609375"/>
-									<v x="1881.68359375" y="615.6683349609375"/>
-									<v x="1604.4945068359375" y="763.5025634765625"/>
-									<v x="1696.890869140625" y="763.5025634765625"/>
-									<v x="1789.2872314453125" y="763.5025634765625"/>
-									<v x="1881.68359375" y="763.5025634765625"/>
+									<v x="103.287841796875" y="58.09942626953125"/>
+									<v x="674.42926025390625" y="58.09942626953125"/>
+									<v x="1245.570556640625" y="58.09942626953125"/>
+									<v x="1816.7120361328125" y="58.09942626953125"/>
+									<v x="103.287841796875" y="379.366455078125"/>
+									<v x="674.42926025390625" y="379.366455078125"/>
+									<v x="1245.5704345703125" y="379.366455078125"/>
+									<v x="1816.7120361328125" y="379.366455078125"/>
+									<v x="103.287841796875" y="700.63348388671875"/>
+									<v x="674.42926025390625" y="700.63348388671875"/>
+									<v x="1245.5704345703125" y="700.63348388671875"/>
+									<v x="1816.7120361328125" y="700.63348388671875"/>
+									<v x="103.287841796875" y="1021.9005126953125"/>
+									<v x="674.42926025390625" y="1021.9005126953125"/>
+									<v x="1245.570556640625" y="1021.9005126953125"/>
+									<v x="1816.7120361328125" y="1021.9005126953125"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="1604.49462890625" y="320"/>
-									<v x="1881.68359375" y="320"/>
-									<v x="1881.68359375" y="763.5025634765625"/>
-									<v x="1604.49462890625" y="763.5025634765625"/>
+									<v x="103.287841796875" y="58.099456787109375"/>
+									<v x="1816.7120361328125" y="58.099456787109375"/>
+									<v x="1816.7120361328125" y="1021.9005126953125"/>
+									<v x="103.287841796875" y="1021.9005126953125"/>
 								</src>
 								<dst>
-									<v x="1604.49462890625" y="320"/>
-									<v x="1881.68359375" y="320"/>
-									<v x="1881.68359375" y="763.5025634765625"/>
-									<v x="1604.49462890625" y="763.5025634765625"/>
+									<v x="103.287841796875" y="58.099456787109375"/>
+									<v x="1816.7120361328125" y="58.099456787109375"/>
+									<v x="1816.7120361328125" y="1021.9005126953125"/>
+									<v x="103.287841796875" y="1021.9005126953125"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -1295,13 +1279,13 @@
 							</Homography>
 						</Warper>
 					</Slice>
-					<Slice uniqueId="1767988780813">
+					<Slice uniqueId="1767988780679">
 						<Params name="Common">
-							<Param name="Name" T="STRING" default="Layer" value="Cercle"/>
+							<Param name="Name" T="STRING" default="Layer" value="LatCour"/>
 							<Param name="Enabled" T="BOOL" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="4:1" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="4:3" storeChoices="0"/>
 							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
@@ -1374,10 +1358,10 @@
 							<v x="0" y="1080"/>
 						</InputRect>
 						<OutputRect orientation="0">
-							<v x="103.287841796875" y="58.099456787109375"/>
-							<v x="1816.7120361328125" y="58.099456787109375"/>
-							<v x="1816.7120361328125" y="1021.9005126953125"/>
-							<v x="103.287841796875" y="1021.9005126953125"/>
+							<v x="1604.49462890625" y="320"/>
+							<v x="1881.68359375" y="320"/>
+							<v x="1881.68359375" y="763.5025634765625"/>
+							<v x="1604.49462890625" y="763.5025634765625"/>
 						</OutputRect>
 						<Warper>
 							<Params name="Warper">
@@ -1386,36 +1370,36 @@
 							</Params>
 							<BezierWarper controlWidth="4" controlHeight="4">
 								<vertices>
-									<v x="103.287841796875" y="58.09942626953125"/>
-									<v x="674.42926025390625" y="58.09942626953125"/>
-									<v x="1245.570556640625" y="58.09942626953125"/>
-									<v x="1816.7120361328125" y="58.09942626953125"/>
-									<v x="103.287841796875" y="379.366455078125"/>
-									<v x="674.42926025390625" y="379.366455078125"/>
-									<v x="1245.5704345703125" y="379.366455078125"/>
-									<v x="1816.7120361328125" y="379.366455078125"/>
-									<v x="103.287841796875" y="700.63348388671875"/>
-									<v x="674.42926025390625" y="700.63348388671875"/>
-									<v x="1245.5704345703125" y="700.63348388671875"/>
-									<v x="1816.7120361328125" y="700.63348388671875"/>
-									<v x="103.287841796875" y="1021.9005126953125"/>
-									<v x="674.42926025390625" y="1021.9005126953125"/>
-									<v x="1245.570556640625" y="1021.9005126953125"/>
-									<v x="1816.7120361328125" y="1021.9005126953125"/>
+									<v x="1604.4945068359375" y="319.999969482421875"/>
+									<v x="1696.890869140625" y="319.999969482421875"/>
+									<v x="1789.2872314453125" y="319.999969482421875"/>
+									<v x="1881.68359375" y="319.999969482421875"/>
+									<v x="1604.4945068359375" y="467.83416748046875"/>
+									<v x="1696.890869140625" y="467.83416748046875"/>
+									<v x="1789.2872314453125" y="467.83416748046875"/>
+									<v x="1881.68359375" y="467.83416748046875"/>
+									<v x="1604.4945068359375" y="615.6683349609375"/>
+									<v x="1696.890869140625" y="615.6683349609375"/>
+									<v x="1789.2872314453125" y="615.6683349609375"/>
+									<v x="1881.68359375" y="615.6683349609375"/>
+									<v x="1604.4945068359375" y="763.5025634765625"/>
+									<v x="1696.890869140625" y="763.5025634765625"/>
+									<v x="1789.2872314453125" y="763.5025634765625"/>
+									<v x="1881.68359375" y="763.5025634765625"/>
 								</vertices>
 							</BezierWarper>
 							<Homography>
 								<src>
-									<v x="103.287841796875" y="58.099456787109375"/>
-									<v x="1816.7120361328125" y="58.099456787109375"/>
-									<v x="1816.7120361328125" y="1021.9005126953125"/>
-									<v x="103.287841796875" y="1021.9005126953125"/>
+									<v x="1604.49462890625" y="320"/>
+									<v x="1881.68359375" y="320"/>
+									<v x="1881.68359375" y="763.5025634765625"/>
+									<v x="1604.49462890625" y="763.5025634765625"/>
 								</src>
 								<dst>
-									<v x="103.287841796875" y="58.099456787109375"/>
-									<v x="1816.7120361328125" y="58.099456787109375"/>
-									<v x="1816.7120361328125" y="1021.9005126953125"/>
-									<v x="103.287841796875" y="1021.9005126953125"/>
+									<v x="1604.49462890625" y="320"/>
+									<v x="1881.68359375" y="320"/>
+									<v x="1881.68359375" y="763.5025634765625"/>
+									<v x="1604.49462890625" y="763.5025634765625"/>
 								</dst>
 							</Homography>
 						</Warper>
@@ -1424,14 +1408,14 @@
 				<OutputDevice>
 					<OutputDeviceVirtual name="Previ" deviceId="VirtualPrevi" idHash="15077339288565429393" width="1920" height="1080">
 						<Params name="Params">
-							<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+							<ParamRange name="Width" T="DOUBLE" default="800" value="1920">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 								<BehaviourDouble name="BehaviourDouble"/>
 								<ValueRange name="defaultRange" min="1" max="16384"/>
 								<ValueRange name="minMax" min="1" max="16384"/>
 								<ValueRange name="startStop" min="1" max="16384"/>
 							</ParamRange>
-							<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+							<ParamRange name="Height" T="DOUBLE" default="600" value="1080">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 								<BehaviourDouble name="BehaviourDouble"/>
 								<ValueRange name="defaultRange" min="1" max="16384"/>
