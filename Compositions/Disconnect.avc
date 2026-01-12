@@ -8,6 +8,9 @@
 	</CompositionInfo>
 	<Params name="Params">
 		<Param name="Name" T="STRING" default="" value="Disconnect"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999994837463">
+			<PhaseSourceStatic name="PhaseSourceStatic"/>
+		</ParamRange>
 		<Param name="GlobalTransportTimelineControl" altName="Control Timelines" T="BOOL" default="1" value="0"/>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="Default"/>
 		<Param name="MidiShortcutPreset" T="STRING" default="" value="Disconnect"/>
@@ -78,8 +81,10 @@
 				<FoldState component="/groupedcomponentrenderpasschaincomponentlinearcloner" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentlinearclonerdelay" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentlinearclonerviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentmirror" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentmirrorquad" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentmirrorquadviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform0" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform0anchor" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform0rotation" folded="1"/>
@@ -107,7 +112,6 @@
 					<Params name="Params">
 						<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
 					</Params>
-					<View name="View" folded="1"/>
 					<RenderPass name="Mirror" type="Mirror" uniqueTypeId="A108" uniqueId="1768060313495" baseType="Effect" dwType="Effect">
 						<Params name="Params">
 							<ParamRange name="X" T="DOUBLE" default="0" value="0.5">
@@ -163,7 +167,7 @@
 			<ParamRange name="Master" T="DOUBLE" default="1" value="0.96484375">
 				<PhaseSourceStatic name="PhaseSourceStatic"/>
 			</ParamRange>
-			<ParamRange name="Speed" T="DOUBLE" default="1" value="2.0985923958660408495">
+			<ParamRange name="Speed" T="DOUBLE" default="1" value="2.0985923958659329358">
 				<PhaseSourceStatic name="PhaseSourceStatic"/>
 			</ParamRange>
 		</Params>
@@ -297,21 +301,55 @@
 		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams">
 				<FoldState component="/groupedcomponentlayer" folded="1"/>
-				<FoldState component="/groupedcomponentrenderpasschaincomponentcolorize" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;linearcloner" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;linearclonerdelay" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;linearclonerviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;transform" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;transformanchor" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;transformrotation" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;transformscale" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent&gt;|&lt;transformviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/linearcloner" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/linearclonerdelay" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/linearclonerviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/transform" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/transformanchor" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/transformrotation" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/transformscale" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponent\/transformviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentcolorize" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizecolorparamcolorcomponent" folded="0"/>
-				<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizekeepgreys" folded="1"/>
-				<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizeviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenthuerotate" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenthuerotateviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentmirrorquad" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentmirrorquadviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentpetitenbas" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentpetitenbasanchor" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentpetitenbasrotation" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentpetitenbasscale" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentpetitenbasviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentpixelblur" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentpixelblurgaussianparambasecomponentparambasecomponent" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentpixelblurviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibaslinearcloner" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibaslinearclonerdelay" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibaslinearclonerviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibastransform" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibastransformanchor" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibastransformrotation" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibastransformscale" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentptibastransformviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentsparkles" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentsparklesviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform0" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform0viewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform1" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform1anchor" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform1rotation" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform1scale" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponenttransformrotation" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransformscale" folded="0"/>
 				<FoldState component="/layerpropertiesdashboard" folded="0"/>
 			</FoldParams>
 		</LayerView>
@@ -332,6 +370,7 @@
 			</Params>
 			<RenderPass name="RenderPassChain">
 				<RenderPass storage="0" name="Colorize" type="DryWetEffect" uniqueTypeId="A103" uniqueId="1768157545766" baseType="DryWetEffect">
+					<View name="View" folded="1"/>
 					<RenderPass name="Colorize" type="Colorize" uniqueTypeId="A103" uniqueId="1768157545748" baseType="Effect" dwType="Effect">
 						<Params name="Params">
 							<ParamColor name="Color" T="COLOR" default="4278190335" value="4294967295" channelmode="2" paletteEnabled="1" color="4294967295" interpolated="0">
@@ -367,9 +406,9 @@
 					<View name="View" folded="1"/>
 					<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768060494773" baseType="Effect" dwType="Effect">
 						<Params name="Params">
-							<ParamRange name="Rotation Z" T="DOUBLE" default="0" value="-44.987261696124363652">
+							<ParamRange name="Rotation Z" T="DOUBLE" default="0" value="-64.826661720497028796">
 								<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8"/>
-								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.37503538417743231825" defaultBeatsDuration="8">
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.31992593966528604099" defaultBeatsDuration="8">
 									<Params name="Params">
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8" value="4">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -397,7 +436,7 @@
 							<ParamRange name="Clones" T="DOUBLE" default="25" value="1">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
-							<ParamRange name="Center" T="DOUBLE" default="0" value="0.35211267605633800315">
+							<ParamRange name="Center" T="DOUBLE" default="0" value="0.30882352941176471894">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 							<ParamRange name="Tail Length" T="DOUBLE" default="0.5" value="0">
@@ -416,6 +455,7 @@
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 						</Params>
+						<View name="View" customName="&gt;|&lt; Linear Cloner"/>
 					</RenderPass>
 					<ChoosableMixer name="Mixer">
 						<VideoMixerStateID uniqueId="1768141423847"/>
@@ -430,10 +470,47 @@
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 						</Params>
+						<View name="View" customName="&gt;|&lt; Transform"/>
 					</RenderPass>
 					<ChoosableMixer name="Mixer">
 						<VideoMixerStateID uniqueId="1768141424091"/>
 						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1768141424093" baseType="Mixer"/>
+					</ChoosableMixer>
+				</RenderPass>
+				<RenderPass storage="0" name="LinearCloner" type="DryWetEffect" uniqueTypeId="9611534302831352414" uniqueId="1768255159208" baseType="DryWetEffect">
+					<Params name="Params">
+						<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
+					</Params>
+					<View name="View" folded="1"/>
+					<RenderPass name="LinearCloner" type="LinearCloner" uniqueTypeId="9611534302831352414" uniqueId="1768255159188" baseType="Effect" dwType="Effect">
+						<Params name="Params">
+							<ParamRange name="Clones" T="DOUBLE" default="25" value="1">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Tails" T="DOUBLE" default="2" value="1">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Tail Length" T="DOUBLE" default="0.5" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Start Scale" T="DOUBLE" default="50" value="34.926470588235289938">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="End Rotation" T="DOUBLE" default="90" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Distribution" T="DOUBLE" default="50" value="100">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Distortion" T="DOUBLE" default="45" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+						<View name="View" customName="\/ Linear Cloner"/>
+					</RenderPass>
+					<ChoosableMixer name="Mixer">
+						<VideoMixerStateID uniqueId="1768255159212"/>
+						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1768255159214" baseType="Mixer"/>
 					</ChoosableMixer>
 				</RenderPass>
 			</RenderPass>
@@ -461,6 +538,7 @@
 		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams">
 				<FoldState component="/groupedcomponentrenderpasschaincomponentmirror" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 				<FoldState component="/groupedcomponentvideo" folded="1"/>
 			</FoldParams>
 		</LayerView>
@@ -492,7 +570,7 @@
 				<VideoMixerStateID uniqueId="1763316698293"/>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1755196199792" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99806195497512817383">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99199700355529785156">
 							<PhaseSourceStatic name="PhaseSourceStatic"/>
 						</ParamRange>
 					</Params>
@@ -525,7 +603,7 @@
 		</LayerView>
 		<AudioTrack name="AudioTrack">
 			<Params name="Params">
-				<ParamRange name="Volume" T="DOUBLE" default="0" value="-3.3583004005662759894">
+				<ParamRange name="Volume" T="DOUBLE" default="0" value="-3.3581829650538210785">
 					<PhaseSourceStatic name="PhaseSourceStatic"/>
 				</ParamRange>
 			</Params>
@@ -547,9 +625,9 @@
 				<RenderPass storage="0" name="Goo" type="DryWetEffect" uniqueTypeId="sy06" uniqueId="1755939580228" baseType="DryWetEffect">
 					<Params name="Params">
 						<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.94534072106908895172">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.95118211855058221182">
 							<DurationSource name="DurationSource"/>
-							<PhaseSourceFFT name="PhaseSourceFFT" phase="0.94534072106908895172" linkId="/audioengine/externalfft">
+							<PhaseSourceFFT name="PhaseSourceFFT" phase="0.95118211855058221182" linkId="/audioengine/externalfft">
 								<Params name="Params">
 									<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.49999999999999994449">
 										<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -629,9 +707,9 @@
 					</Params>
 					<RenderPass name="FishEye" type="FishEye" uniqueTypeId="A123" uniqueId="1755939580357" baseType="Effect" dwType="Effect">
 						<Params name="Params">
-							<ParamRange name="FishEye" T="DOUBLE" default="0.5" value="0.68201815266311038854">
+							<ParamRange name="FishEye" T="DOUBLE" default="0.5" value="0.31145174755941246181">
 								<DurationSource name="DurationSource"/>
-								<PhaseSourceFFT name="PhaseSourceFFT" phase="0.68201815266311038854" linkId="/audioengine/externalfft">
+								<PhaseSourceFFT name="PhaseSourceFFT" phase="0.31145174755941246181" linkId="/audioengine/externalfft">
 									<Params name="Params">
 										<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.22632426901114749418">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -671,7 +749,7 @@
 				<VideoMixerStateID uniqueId="1763316697603"/>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1755196199516" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.96061217784881591797">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.99983441829681396484">
 							<PhaseSourceStatic name="PhaseSourceStatic"/>
 						</ParamRange>
 					</Params>
@@ -698,7 +776,7 @@
 		</LayerView>
 		<AudioTrack name="AudioTrack">
 			<Params name="Params">
-				<ParamRange name="Volume" T="DOUBLE" default="0" value="-0.62159007827658918632">
+				<ParamRange name="Volume" T="DOUBLE" default="0" value="-0.62157001862336391795">
 					<PhaseSourceStatic name="PhaseSourceStatic"/>
 				</ParamRange>
 			</Params>
@@ -735,7 +813,7 @@
 				<VideoMixerStateID uniqueId="1763316697879"/>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1755227870067" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.96211504936218261719">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.98539519309997558594">
 							<PhaseSourceStatic name="PhaseSourceStatic"/>
 						</ParamRange>
 					</Params>
@@ -750,6 +828,9 @@
 		<ClipTransition name="ClipTransition"/>
 		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams">
+				<FoldState component="/groupedcomponentrenderpasschaincomponentautomask" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentautomaskviewgroupedcomponent" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 				<FoldState component="/groupedcomponentvideo" folded="1"/>
 			</FoldParams>
 		</LayerView>
@@ -776,6 +857,7 @@
 					<Params name="Params">
 						<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
 					</Params>
+					<View name="View" folded="1"/>
 					<RenderPass name="LinearCloner" type="LinearCloner" uniqueTypeId="9611534302831352414" uniqueId="1755939582056" baseType="Effect" dwType="Effect">
 						<Params name="Params">
 							<ParamRange name="Clones" T="DOUBLE" default="25" value="18">
@@ -784,11 +866,11 @@
 							<ParamRange name="Tails" T="DOUBLE" default="2" value="8">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
-							<ParamRange name="Tail Length" T="DOUBLE" default="0.5" value="0.37507075833622338656">
+							<ParamRange name="Tail Length" T="DOUBLE" default="0.5" value="-0.29535741041620910963">
 								<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8" scale="0.5"/>
-								<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.37503538417627141355">
+								<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.84006150026346415594">
 									<Params name="Params">
-										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999979605203">
+										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999790889493">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8" value="8">
@@ -815,11 +897,11 @@
 							<ParamRange name="Start Scale" T="DOUBLE" default="50" value="30.434782608695655881">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
-							<ParamRange name="Start Rotation" T="DOUBLE" default="0" value="-42.148522905015255446">
+							<ParamRange name="Start Rotation" T="DOUBLE" default="0" value="98.630841502503244556">
 								<DurationSource name="DurationSource"/>
-								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.38292076970829092009">
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.7739745597291757262">
 									<Params name="Params">
-										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.49999999999898286918">
+										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.499999999998957112">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -834,11 +916,11 @@
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 							<Param name="Reverse" T="BOOL" default="0" value="1"/>
-							<ParamRange name="Master Rotation" T="DOUBLE" default="0" value="42.14852290501315224">
+							<ParamRange name="Master Rotation" T="DOUBLE" default="0" value="-98.630841502509511542">
 								<DurationSource name="DurationSource"/>
-								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.61707923029170319573">
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.22602544027080692657">
 									<Params name="Params">
-										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.49999999999898286918">
+										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.499999999998957112">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -858,6 +940,19 @@
 					<ChoosableMixer name="Mixer">
 						<VideoMixerStateID uniqueId="1763316699678"/>
 						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1755939582136" baseType="Mixer"/>
+					</ChoosableMixer>
+				</RenderPass>
+				<RenderPass storage="0" name="AutoMask" type="DryWetEffect" uniqueTypeId="A120" uniqueId="1768255095809" baseType="DryWetEffect">
+					<RenderPass name="AutoMask" type="AutoMask" uniqueTypeId="A120" uniqueId="1768255095803" baseType="Effect" dwType="Effect">
+						<Params name="Params">
+							<ParamRange name="Contrast" T="DOUBLE" default="0.5" value="1">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+					</RenderPass>
+					<ChoosableMixer name="Mixer">
+						<VideoMixerStateID uniqueId="1768255095813"/>
+						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1768255095815" baseType="Mixer"/>
 					</ChoosableMixer>
 				</RenderPass>
 			</RenderPass>
@@ -919,7 +1014,7 @@
 				<VideoMixerStateID uniqueId="1763316698017"/>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1759445476827" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.93097865581512451172">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.93368959426879882812">
 							<PhaseSourceStatic name="PhaseSourceStatic"/>
 						</ParamRange>
 					</Params>
@@ -940,9 +1035,10 @@
 		<LayerView name="LayerView" foldedControl="0">
 			<FoldParams name="FoldParams">
 				<FoldState component="/groupedcomponentlayer" folded="1"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentautomask" folded="0"/>
+				<FoldState component="/groupedcomponentrenderpasschaincomponentautomaskviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentfumee" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentmirror" folded="1"/>
-				<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 				<FoldState component="/groupedcomponentvideo" folded="1"/>
 			</FoldParams>
 		</LayerView>
@@ -951,7 +1047,7 @@
 		</AudioTrack>
 		<VideoTrack name="VideoTrack">
 			<Params name="Params">
-				<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.51020408163265307255">
+				<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.58051658163265307255">
 					<PhaseSourceStatic name="PhaseSourceStatic"/>
 				</ParamRange>
 				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
@@ -972,9 +1068,9 @@
 					<View name="View" folded="1"/>
 					<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1755227871196" baseType="Effect" dwType="Effect">
 						<Params name="Params">
-							<ParamRange name="Position X" T="DOUBLE" default="0" value="-33.257841746106350911">
+							<ParamRange name="Position X" T="DOUBLE" default="0" value="-272.50586283103075402">
 								<DurationSource name="DurationSource" defaultDuration="4b" userDuration="3" scale="0.15625"/>
-								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.66676102447315277466" defaultBeatsDuration="3">
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.21406438738912914044" defaultBeatsDuration="3">
 									<Params name="Params">
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="3" value="0">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -998,14 +1094,13 @@
 								<ValueRange name="minMax" min="-16384" max="16384"/>
 								<ValueRange name="startStop" min="-300" max="300"/>
 							</ParamRange>
-							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-112.45322016730642645">
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="-88.113381489498351584">
 								<DurationSource name="DurationSource" defaultDuration="4b" userDuration="2" scale="0.18518518518518517491"/>
-								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.49985846329027072699" defaultBeatsDuration="2">
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.32109658108369371066" defaultBeatsDuration="2">
 									<Params name="Params">
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="0">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
-										<ParamChoice name="PlayDirection" T="INT32" default="2" value="0" storeChoices="0"/>
 										<ParamChoice name="PlayMode" T="INT32" default="0" value="1" storeChoices="0"/>
 										<Param name="DurationIsScalable" altName="Duration Changes With In &amp; Out Points" T="BOOL" default="1" value="0"/>
 									</Params>
@@ -1094,6 +1189,19 @@
 						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1755939580016" baseType="Mixer"/>
 					</ChoosableMixer>
 				</RenderPass>
+				<RenderPass storage="0" name="AutoMask" type="DryWetEffect" uniqueTypeId="A120" uniqueId="1768255069305" baseType="DryWetEffect">
+					<RenderPass name="AutoMask" type="AutoMask" uniqueTypeId="A120" uniqueId="1768255069299" baseType="Effect" dwType="Effect">
+						<Params name="Params">
+							<ParamRange name="Contrast" T="DOUBLE" default="0.5" value="1">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+					</RenderPass>
+					<ChoosableMixer name="Mixer">
+						<VideoMixerStateID uniqueId="1768255069309"/>
+						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1768255069311" baseType="Mixer"/>
+					</ChoosableMixer>
+				</RenderPass>
 			</RenderPass>
 			<ChoosableMixer name="Blend">
 				<Params name="Params">
@@ -1102,7 +1210,7 @@
 				<VideoMixerStateID uniqueId="1763316698150"/>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1768157543242" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.51020407676696777344">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.58051657676696777344">
 							<PhaseSourceStatic name="PhaseSourceStatic"/>
 						</ParamRange>
 					</Params>
@@ -1326,28 +1434,28 @@
 								<ParamRange name="Width" T="DOUBLE" default="0.2999999999999999889" value="0.26057477678571427937">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
-								<ParamRange name="Rotation" T="DOUBLE" default="0" value="165.00789873322298718">
+								<ParamRange name="Rotation" T="DOUBLE" default="0" value="178.76588169035758824">
 									<DurationSource name="DurationSource" scale="0.16793532243276276805"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.50152148683458219747">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.50152148683432395959">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.83967661216381384026" value="0.83967661216381384026">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
-											<ParamChoice name="PlayDirection" T="INT32" default="1" value="2" storeChoices="0"/>
+											<ParamChoice name="PlayDirection" T="INT32" default="1" value="0" storeChoices="0"/>
 											<ParamChoice name="PlayMode" T="INT32" default="0" value="1" storeChoices="0"/>
 										</Params>
 										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
 									</PhaseSourceTimeline>
 									<ValueRange name="startStop" min="148.40063416870415836" max="208.85735024449877528"/>
 								</ParamRange>
-								<ParamRange name="Position" T="DOUBLE" default="0.5" value="0.14355358517799965412">
+								<ParamRange name="Position" T="DOUBLE" default="0.5" value="0.44652776125034565613">
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="2.6791505997660580718">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="2.6791505997646769544">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1372,12 +1480,12 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1759445474292" layerIndex="1" columnIndex="0">
+		<Clip name="Clip" uniqueId="1768255146503" layerIndex="1" columnIndex="0">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_disconnect.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\EXNIHILO.png"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Logo_disconnect" value="Logo_disconnect"/>
+				<Param name="Name" T="STRING" default="EXNIHILO" value="EXNIHILO"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -1386,6 +1494,9 @@
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999963862241">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
@@ -1401,10 +1512,10 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="7016" value="1920">
+					<ParamRange name="Width" T="DOUBLE" default="4000" value="4000">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="2565" value="701.93842645381982948">
+					<ParamRange name="Height" T="DOUBLE" default="347" value="347">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
@@ -1413,9 +1524,9 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768141422636" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255146505" baseType="Effect">
 						<Params name="Params">
-							<ParamRange name="Scale" T="DOUBLE" default="100" value="40">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="10">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 						</Params>
@@ -1423,15 +1534,15 @@
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768141422634"/>
+					<VideoMixerStateID uniqueId="1768255146507"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="7016" height="2565" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_disconnect.png"/>
+					<VideoSource name="VideoSource" width="4000" height="347" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\EXNIHILO.png"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768141422634"/>
+					<VideoMixerStateID uniqueId="1768255146507"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
@@ -1461,7 +1572,6 @@
 					<FoldState component="/clippropertiestransport" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentsuckr" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentsuckrviewgroupedcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -1482,7 +1592,7 @@
 						<View name="View" folded="1"/>
 						<RenderPass name="NoisyEffect" type="NoisyEffect" uniqueTypeId="A185" uniqueId="1759590135098" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Noise" T="DOUBLE" default="0.125" value="0.0054007979276775386693">
+								<ParamRange name="Noise" T="DOUBLE" default="0.125" value="0">
 									<DurationSource name="DurationSource" userDuration="0.31007751937984495694" scale="0.0055038759689922476387"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
@@ -1500,7 +1610,7 @@
 									</PhaseSourceTimeline>
 									<ValueRange name="startStop" min="0" max="0.0055038759689922476387"/>
 								</ParamRange>
-								<ParamRange name="Resolution" T="DOUBLE" default="1" value="0.58575945362976067354">
+								<ParamRange name="Resolution" T="DOUBLE" default="1" value="0.27441855733708819809">
 									<DurationSource name="DurationSource" scale="0.72558144266291180191"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
@@ -1572,7 +1682,7 @@
 								<ParamRange name="Horizontal" T="DOUBLE" default="0.5" value="0.058823529411764705066">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
-								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0.098758284657216338642">
+								<ParamRange name="Size" T="DOUBLE" default="0.5" value="0">
 									<DurationSource name="DurationSource" scale="0.10317834188771803083"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
@@ -1627,7 +1737,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999988640198">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999845101684">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1654,12 +1764,9 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentbright.contrast" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentbright.contrastviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponenttrails" folded="1"/>
-					<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponenttwisted" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentwavewarp" folded="1"/>
 					<FoldState component="/groupedcomponentsolidcolorcolorparamcolorcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -1708,11 +1815,11 @@
 						<View name="View" folded="1"/>
 						<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1759590136193" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Position X" T="DOUBLE" default="0" value="-405.99265481717702642">
+								<ParamRange name="Position X" T="DOUBLE" default="0" value="-900">
 									<DurationSource name="DurationSource" scale="0.46875"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999918539606">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.1499999999991236399">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2.34375" value="2">
@@ -1726,11 +1833,11 @@
 									<ValueRange name="minMax" min="-16384" max="16384"/>
 									<ValueRange name="startStop" min="-900" max="900"/>
 								</ParamRange>
-								<ParamRange name="Position Y" T="DOUBLE" default="0" value="195.96435568605375011">
+								<ParamRange name="Position Y" T="DOUBLE" default="0" value="-500">
 									<DurationSource name="DurationSource" scale="0.46296296296296296502"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999918539606">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.1499999999991236399">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2.3148148148148148806" value="2">
@@ -1744,11 +1851,11 @@
 									<ValueRange name="minMax" min="-16384" max="16384"/>
 									<ValueRange name="startStop" min="-500" max="500"/>
 								</ParamRange>
-								<ParamRange name="Scale" T="DOUBLE" default="100" value="53.003788999158757633">
+								<ParamRange name="Scale" T="DOUBLE" default="100" value="50">
 									<DurationSource name="DurationSource" scale="0.050000000000000002776"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999918539606">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.1499999999991236399">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.25" value="0.25">
@@ -1931,7 +2038,7 @@
 					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
 						<RenderPass name="SolidColor" type="SolidColor" uniqueTypeId="A403" uniqueId="1759590135843" baseType="Generator">
 							<Params name="Params">
-								<ParamColor name="Color" T="COLOR" default="4278190335" value="4294967295" channelmode="0" paletteEnabled="1" color="4294967295" interpolated="0">
+								<ParamColor name="Color" T="COLOR" default="4278190335" value="4278190335" channelmode="0" paletteEnabled="1" color="4278190335" interpolated="0">
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
@@ -1943,19 +2050,19 @@
 										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
 									</PhaseSourceTimeline>
 									<Params name="Channels">
-										<ParamRange name="Green" T="DOUBLE" default="0" value="1">
-											<PhaseSourceStatic name="PhaseSourceStatic"/>
-										</ParamRange>
-										<ParamRange name="Blue" T="DOUBLE" default="0" value="1">
+										<ParamRange name="Red" T="DOUBLE" default="1" value="0">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Saturation" T="DOUBLE" default="1" value="0">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="1" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
 									</Params>
 									<ColorPalette name="ColorPalette">
 										<Params name="Params">
-											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4294967295" storeChoices="1">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4278190335" storeChoices="1">
 												<Choice name="Red" value="4278190335" enabled="1" active="1" shortName=""/>
 												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
 											</ParamChoice>
@@ -1986,7 +2093,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999535305051">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999493993652">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2003,6 +2110,8 @@
 				<FoldParams name="FoldParams">
 					<FoldState component="/groupedcomponentrenderpasschaincomponentblurblurxdistanceparambasecomponentparambasecomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentblurblurydistanceparambasecomponentparambasecomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="0"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -2022,9 +2131,9 @@
 					<RenderPass storage="0" name="Blur" type="DryWetEffect" uniqueTypeId="A140" uniqueId="1765706072984" baseType="DryWetEffect">
 						<RenderPass name="Blur" type="Blur" uniqueTypeId="A140" uniqueId="1765706072986" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Blur X Distance" T="DOUBLE" default="0.050000000745058059692" value="0.22449618939437571141">
+								<ParamRange name="Blur X Distance" T="DOUBLE" default="0.050000000745058059692" value="0.070310576537842103817">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceFFT name="PhaseSourceFFT" phase="0.63562189686070957872" linkId="/audioengine/externalfft">
+									<PhaseSourceFFT name="PhaseSourceFFT" phase="0.19907216309067979343" linkId="/audioengine/externalfft">
 										<Params name="Params">
 											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.48547117095332908976">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -2040,9 +2149,9 @@
 									</PhaseSourceFFT>
 									<ValueRange name="startStop" min="0" max="0.35319140278701238733"/>
 								</ParamRange>
-								<ParamRange name="Blur Y Distance" T="DOUBLE" default="0.050000000745058059692" value="0.16705522808459838391">
+								<ParamRange name="Blur Y Distance" T="DOUBLE" default="0.050000000745058059692" value="0.036099361940391039294">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceFFT name="PhaseSourceFFT" phase="0.47109574319856739599" linkId="/audioengine/externalfft">
+									<PhaseSourceFFT name="PhaseSourceFFT" phase="0.10180020067190273525" linkId="/audioengine/externalfft">
 										<Params name="Params">
 											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.48754448398576510915">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -2186,11 +2295,11 @@
 								<ParamRange name="Gap" T="DOUBLE" default="60" value="347.9999542236328125">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
-								<ParamRange name="Rotation" T="DOUBLE" default="0" value="76.420743533268932879">
+								<ParamRange name="Rotation" T="DOUBLE" default="0" value="150.85608085994675776">
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="8">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999398470063">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999377819915">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8" value="2">
@@ -2206,22 +2315,19 @@
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<Param name="Rotation Alternate" altName="Alternate" T="BOOL" default="1" value="0"/>
-								<ParamColor name="Color 1" T="COLOR" default="4288755967" value="4294937344" channelmode="0" paletteEnabled="0" color="4294937344" interpolated="0">
+								<ParamColor name="Color 1" T="COLOR" default="4288755967" value="4278253567" channelmode="0" paletteEnabled="0" color="4278253567" interpolated="0">
 									<Params name="Channels">
-										<ParamRange name="Red" T="DOUBLE" default="1" value="0">
+										<ParamRange name="Green" T="DOUBLE" default="0.21960784494876861572" value="0.97146403789520263672">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
-										<ParamRange name="Green" T="DOUBLE" default="0.21960784494876861572" value="0.54735827445983886719">
+										<ParamRange name="Blue" T="DOUBLE" default="0.63137257099151611328" value="0">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
-										<ParamRange name="Blue" T="DOUBLE" default="0.63137257099151611328" value="1">
-											<PhaseSourceStatic name="PhaseSourceStatic"/>
-										</ParamRange>
-										<ParamRange name="Hue" T="DOUBLE" default="0.91206026077270507812" value="0.57544031370406156789">
+										<ParamRange name="Hue" T="DOUBLE" default="0.91206026077270507812" value="0.16191066188918470936">
 											<DurationSource name="DurationSource" defaultDuration="4b"/>
 											<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 												<Params name="Params">
-													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999994036326">
+													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999382982452">
 														<PhaseSourceStatic name="PhaseSourceStatic"/>
 													</ParamRange>
 													<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="2">
@@ -2237,19 +2343,22 @@
 										</ParamRange>
 									</Params>
 								</ParamColor>
-								<ParamColor name="Color 2" T="COLOR" default="4294637568" value="4287364864" channelmode="0" paletteEnabled="0" color="4287364864" interpolated="0">
+								<ParamColor name="Color 2" T="COLOR" default="4294637568" value="4294377727" channelmode="0" paletteEnabled="0" color="4294377727" interpolated="0">
 									<Params name="Channels">
-										<ParamRange name="Green" T="DOUBLE" default="0.97254902124404907227" value="1">
+										<ParamRange name="Red" T="DOUBLE" default="0" value="1">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
-										<ParamRange name="Blue" T="DOUBLE" default="0.98039215803146362305" value="0.54735827445983886719">
+										<ParamRange name="Green" T="DOUBLE" default="0.97254902124404907227" value="0">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
-										<ParamRange name="Hue" T="DOUBLE" default="0.50133329629898071289" value="0.42455968629593843211">
+										<ParamRange name="Blue" T="DOUBLE" default="0.98039215803146362305" value="0.9714641571044921875">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.50133329629898071289" value="0.83808933811081531839">
 											<DurationSource name="DurationSource" defaultDuration="4b"/>
 											<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 												<Params name="Params">
-													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999994036326">
+													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999382982452">
 														<PhaseSourceStatic name="PhaseSourceStatic"/>
 													</ParamRange>
 													<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="3">
@@ -2291,7 +2400,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999413968776">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999362332304">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2307,7 +2416,6 @@
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams">
 					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizecolorparamcolorcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -2386,6 +2494,8 @@
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams">
 					<FoldState component="/groupedcomponentlinescolorparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -2425,11 +2535,11 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
-								<ParamRange name="Position" T="DOUBLE" default="0.5" value="0.87929875957725689428">
+								<ParamRange name="Position" T="DOUBLE" default="0.5" value="0">
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="8">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999997779776">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
 												<DurationSource name="DurationSource"/>
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
@@ -2504,8 +2614,6 @@
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams">
 					<FoldState component="/groupedcomponentrenderpasschaincomponenttransformscale" folded="0"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="0"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="0"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -2558,7 +2666,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999984512389">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999932875916">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2610,28 +2718,28 @@
 								<ParamRange name="Width" T="DOUBLE" default="0.2999999999999999889" value="0.26057477678571427937">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
-								<ParamRange name="Rotation" T="DOUBLE" default="0" value="148.40063416870415836">
+								<ParamRange name="Rotation" T="DOUBLE" default="0" value="179.36530389889503567">
 									<DurationSource name="DurationSource" scale="0.16793532243276276805"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.50152148683455632927">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.5015214868342980914">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.83967661216381384026" value="0.83967661216381384026">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
-											<ParamChoice name="PlayDirection" T="INT32" default="1" value="0" storeChoices="0"/>
+											<ParamChoice name="PlayDirection" T="INT32" default="1" value="2" storeChoices="0"/>
 											<ParamChoice name="PlayMode" T="INT32" default="0" value="1" storeChoices="0"/>
 										</Params>
 										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
 									</PhaseSourceTimeline>
 									<ValueRange name="startStop" min="148.40063416870415836" max="208.85735024449877528"/>
 								</ParamRange>
-								<ParamRange name="Position" T="DOUBLE" default="0.5" value="0">
+								<ParamRange name="Position" T="DOUBLE" default="0.5" value="0.91625719851863862697">
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="2.67915059976591996">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="2.6791505997645388426">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2668,12 +2776,12 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1755227870699" layerIndex="1" columnIndex="1">
+		<Clip name="Clip" uniqueId="1768255146510" layerIndex="1" columnIndex="1">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_TC.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\HIPPOb2bTML.png"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="Logo_TC" value="Logo_TC"/>
+				<Param name="Name" T="STRING" default="HIPPOb2bTML" value="HIPPOb2bTML"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -2682,6 +2790,9 @@
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999963862241">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
@@ -2697,10 +2808,10 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="7016" value="1920">
+					<ParamRange name="Width" T="DOUBLE" default="4000" value="4000">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="2565" value="701.93842645381982948">
+					<ParamRange name="Height" T="DOUBLE" default="1072" value="1072">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
@@ -2709,9 +2820,9 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768141422793" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255146512" baseType="Effect">
 						<Params name="Params">
-							<ParamRange name="Scale" T="DOUBLE" default="100" value="49.295774647887320441">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="10">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 						</Params>
@@ -2719,15 +2830,15 @@
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768141422791"/>
+					<VideoMixerStateID uniqueId="1768255146514"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="7016" height="2565" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_TC.png"/>
+					<VideoSource name="VideoSource" width="4000" height="1072" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\HIPPOb2bTML.png"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768141422791"/>
+					<VideoMixerStateID uniqueId="1768255146514"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
@@ -2862,9 +2973,9 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="4370.5917406910757563">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.87411834813821509549" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -2881,8 +2992,6 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentacuarela" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentacuarelaviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentsolidcolorcolorparamcolorcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -2963,11 +3072,11 @@
 					<RenderPass storage="0" name="Twisted" type="DryWetEffect" uniqueTypeId="A122" uniqueId="1768060515967" baseType="DryWetEffect">
 						<RenderPass name="Twisted" type="Twisted" uniqueTypeId="A122" uniqueId="1768060515961" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0.75373768254349249318">
+								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.06788345206752911809" hardSynced="0">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123804997071">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123796354679">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.96244131455399062336">
@@ -3162,7 +3271,7 @@
 						<View name="View" folded="1"/>
 						<RenderPass name="HueRotate" type="HueRotate" uniqueTypeId="A128" uniqueId="1768146262579" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Hue Rotate" T="DOUBLE" default="0" value="0.32355006810519992833">
+								<ParamRange name="Hue Rotate" T="DOUBLE" default="0" value="0.64705882352941190838">
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
@@ -3371,7 +3480,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999408795137">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999357169767">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3461,7 +3570,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10.016666666666667496s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10016.666666666667879" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10.016666666666667496" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 							</Params>
@@ -3522,7 +3631,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999932875916">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999881239443">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3618,11 +3727,11 @@
 					<RenderPass storage="0" name="Twisted" type="DryWetEffect" uniqueTypeId="A122" uniqueId="1768060518396" baseType="DryWetEffect">
 						<RenderPass name="Twisted" type="Twisted" uniqueTypeId="A122" uniqueId="1768060518398" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0.35608318790492970995">
+								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.40399786544206861549" hardSynced="0">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123807592218">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123798946356">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.96244131455399062336">
@@ -3780,12 +3889,12 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1768060451659" layerIndex="1" columnIndex="2">
+		<Clip name="Clip" uniqueId="1768255146517" layerIndex="1" columnIndex="2">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\EXNIHILO.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\LINDS.png"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="EXNIHILO" value="EXNIHILO"/>
+				<Param name="Name" T="STRING" default="LINDS" value="LINDS"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -3794,6 +3903,9 @@
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999963862241">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
@@ -3812,7 +3924,7 @@
 					<ParamRange name="Width" T="DOUBLE" default="4000" value="4000">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="347" value="347">
+					<ParamRange name="Height" T="DOUBLE" default="537" value="537">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
@@ -3821,7 +3933,7 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157516139" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255146519" baseType="Effect">
 						<Params name="Params">
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="10">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -3831,15 +3943,15 @@
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157516137"/>
+					<VideoMixerStateID uniqueId="1768255146521"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="4000" height="347" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\EXNIHILO.png"/>
+					<VideoSource name="VideoSource" width="4000" height="537" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\LINDS.png"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157516137"/>
+					<VideoMixerStateID uniqueId="1768255146521"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
@@ -3888,7 +4000,7 @@
 					<RenderPass storage="0" name="Sharpen" type="DryWetEffect" uniqueTypeId="89209435418021" uniqueId="1755227880342" baseType="DryWetEffect">
 						<RenderPass name="Sharpen" type="Sharpen" uniqueTypeId="89209435418021" uniqueId="1755227880337" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Strength" T="DOUBLE" default="0.5" value="0.02563005412450880538">
+								<ParamRange name="Strength" T="DOUBLE" default="0.5" value="1">
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
@@ -3957,7 +4069,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999984512389">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999932875916">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3975,8 +4087,6 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentacuarela" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentacuarelaviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentsolidcolorcolorparamcolorcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -4057,11 +4167,11 @@
 					<RenderPass storage="0" name="Twisted" type="DryWetEffect" uniqueTypeId="A122" uniqueId="1768157513764" baseType="DryWetEffect">
 						<RenderPass name="Twisted" type="Twisted" uniqueTypeId="A122" uniqueId="1768157513766" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0.84868987294856401693">
+								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0.62742480991850313465">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.84110774387426068266" hardSynced="0">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.34088118965110675296" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123804133179">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123795490787">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.96244131455399062336">
@@ -4237,7 +4347,6 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentbendoscopeviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentblow" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentblowviewgroupedcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentrenderpasschaincomponentblur" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentchromakey" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentchromakeyviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizecolorparamcolorcomponent" folded="0"/>
@@ -4301,8 +4410,6 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentthresholdcolor2paramcolorcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentthresholdviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -4463,7 +4570,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999530142514">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999478506041">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4481,6 +4588,8 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentinfinitecirclezoomaccelerationparambasecomponentparambasecomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentinfinitecirclezoomcolorinparamcolorcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentinifinitecirclezoomcolorinparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="0"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -4503,11 +4612,11 @@
 					<RenderPass storage="0" name="InifiniteCircleZoom" type="DryWetEffect" uniqueTypeId="c_b9899053-7b9d-4264-a620-512c232b9cc8" uniqueId="1768157518798" baseType="DryWetEffect">
 						<RenderPass name="InifiniteCircleZoom" type="WireEffect" uniqueTypeId="c_b9899053-7b9d-4264-a620-512c232b9cc8" uniqueId="1768157518800" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Offset" T="DOUBLE" default="0.30769199132919311523" value="0.68760506868384574375" key="19">
+								<ParamRange name="Offset" T="DOUBLE" default="0.30769199132919311523" value="0" key="19">
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999984512389">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999932875916">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -4521,7 +4630,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceFFT name="PhaseSourceFFT" phase="0" linkId="/audioengine/externalfft">
 										<Params name="Params">
-											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.00075277889768840826248">
+											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="4.2231687494939541889e-15">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 												<ValueRange name="startStop" min="0" max="0.27380952380952383596"/>
 											</ParamRange>
@@ -4565,7 +4674,13 @@
 						<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464319" storeChoices="0"/>
 					</Params>
 					<VideoMixerStateID uniqueId="1768157518805"/>
-					<RenderPass name="Add50" type="Add50" uniqueTypeId="A028" uniqueId="1768157518965" baseType="Mixer"/>
+					<RenderPass name="Add50" type="Add50" uniqueTypeId="A028" uniqueId="1768157518965" baseType="Mixer">
+						<Params name="Params">
+							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.57142859697341918945">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+					</RenderPass>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="CompositionRouterVideoSource"/>
@@ -4575,7 +4690,13 @@
 						<ParamChoice name="Blend Mode" T="UINT64" default="0" value="67464319" storeChoices="0"/>
 					</Params>
 					<VideoMixerStateID uniqueId="1768157518805"/>
-					<RenderPass name="Add50" type="Add50" uniqueTypeId="A028" uniqueId="1768157518965" baseType="Mixer"/>
+					<RenderPass name="Add50" type="Add50" uniqueTypeId="A028" uniqueId="1768157518965" baseType="Mixer">
+						<Params name="Params">
+							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.57142859697341918945">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+					</RenderPass>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
@@ -4590,7 +4711,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999439781462">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999388144989">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4683,7 +4804,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 							</Params>
@@ -4742,7 +4863,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999927713379">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999876076906">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4760,8 +4881,6 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentacuarela" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentacuarelaviewgroupedcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentsolidcolorcolorparamcolorcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
 				</FoldParams>
 			</ClipView>
 			<VideoTrack name="VideoTrack">
@@ -4838,11 +4957,11 @@
 					<RenderPass storage="0" name="Twisted" type="DryWetEffect" uniqueTypeId="A122" uniqueId="1768157513714" baseType="DryWetEffect">
 						<RenderPass name="Twisted" type="Twisted" uniqueTypeId="A122" uniqueId="1768157513716" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0.40135087952828640834">
+								<ParamRange name="Twirl" T="DOUBLE" default="0.60000002384185791016" value="0.77672131286190215782">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.70724317981414253076" hardSynced="0">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.76077288982163993047" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123806724856">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123798082464">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.96244131455399062336">
@@ -4997,12 +5116,12 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1759445473873" layerIndex="1" columnIndex="3">
+		<Clip name="Clip" uniqueId="1768255146490" layerIndex="1" columnIndex="3">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\HIPPOb2bTML.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\ANGIE.png"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="HIPPOb2bTML" value="HIPPOb2bTML"/>
+				<Param name="Name" T="STRING" default="" value="Artiste Name "/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
@@ -5011,6 +5130,9 @@
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999963862241">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
@@ -5029,7 +5151,7 @@
 					<ParamRange name="Width" T="DOUBLE" default="4000" value="4000">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="1072" value="1072">
+					<ParamRange name="Height" T="DOUBLE" default="516" value="516">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
@@ -5038,7 +5160,7 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157516211" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255146492" baseType="Effect">
 						<Params name="Params">
 							<ParamRange name="Scale" T="DOUBLE" default="100" value="10">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5046,21 +5168,153 @@
 						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
+					<RenderPass storage="0" name="Mask" type="Mask" uniqueTypeId="80334396" uniqueId="1768255146494" baseType="Effect">
+						<Params name="Params">
+							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
+							<ParamImageFile name="Image" T="FILE" default="" value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\EXNIHILO.png" relocatable="1"/>
+						</Params>
+						<View name="View" bCanHavePresets="0"/>
+					</RenderPass>
+					<RenderPass storage="0" name="Mask" type="Mask" uniqueTypeId="80334396" uniqueId="1768255146496" baseType="Effect">
+						<Params name="Params">
+							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
+							<ParamImageFile name="Image" T="FILE" default="" value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\HIPPOb2bTML.png" relocatable="1"/>
+						</Params>
+						<View name="View" folded="1" bCanHavePresets="0"/>
+					</RenderPass>
+					<RenderPass storage="0" name="Mask" type="Mask" uniqueTypeId="80334396" uniqueId="1768255146498" baseType="Effect">
+						<Params name="Params">
+							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
+							<ParamImageFile name="Image" T="FILE" default="" value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\LINDS.png" relocatable="1"/>
+						</Params>
+						<View name="View" folded="1" bCanHavePresets="0"/>
+					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157516209"/>
+					<VideoMixerStateID uniqueId="1768255146500"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="4000" height="1072" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\HIPPOb2bTML.png"/>
+					<VideoSource name="VideoSource" width="4000" height="516" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\ANGIE.png"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157516209"/>
+					<VideoMixerStateID uniqueId="1768255146500"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1765706286769" layerIndex="2" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1768255069598" layerIndex="2" columnIndex="3">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="" value="Blur"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999509481263">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponentblurblurxdistanceparambasecomponentparambasecomponent" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentblurblurydistanceparambasecomponentparambasecomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Blur" type="DryWetEffect" uniqueTypeId="A140" uniqueId="1768255069600" baseType="DryWetEffect">
+						<RenderPass name="Blur" type="Blur" uniqueTypeId="A140" uniqueId="1768255069602" baseType="Effect" dwType="Effect">
+							<Params name="Params">
+								<ParamRange name="Blur X Distance" T="DOUBLE" default="0.050000000745058059692" value="0.22335378606690384218">
+									<DurationSource name="DurationSource"/>
+									<PhaseSourceFFT name="PhaseSourceFFT" phase="0.63238738062260968498" linkId="/audioengine/externalfft">
+										<Params name="Params">
+											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.48547117095332908976">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+												<ValueRange name="startStop" min="0.33333333333333331483" max="0.64671515026231751744"/>
+											</ParamRange>
+											<ParamRange name="Gain" T="DOUBLE" default="0" value="19.430390625000001137">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+											</ParamRange>
+											<ParamRange name="Fallback" T="DOUBLE" default="1000" value="388.95981445312492042">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+											</ParamRange>
+										</Params>
+									</PhaseSourceFFT>
+									<ValueRange name="startStop" min="0" max="0.35319140278701238733"/>
+								</ParamRange>
+								<ParamRange name="Blur Y Distance" T="DOUBLE" default="0.050000000745058059692" value="0.16100365995710505529">
+									<DurationSource name="DurationSource"/>
+									<PhaseSourceFFT name="PhaseSourceFFT" phase="0.45403032107903623649" linkId="/audioengine/externalfft">
+										<Params name="Params">
+											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.48754448398576510915">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+												<ValueRange name="startStop" min="0.33333333333333331483" max="0.64963503649635034876"/>
+											</ParamRange>
+											<ParamRange name="Gain" T="DOUBLE" default="0" value="16.28160937500000216">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+											</ParamRange>
+											<ParamRange name="Fallback" T="DOUBLE" default="1000" value="373.76027832031252274">
+												<PhaseSourceStatic name="PhaseSourceStatic"/>
+											</ParamRange>
+										</Params>
+									</PhaseSourceFFT>
+									<ValueRange name="startStop" min="0" max="0.3546099290780141966"/>
+								</ParamRange>
+								<ParamRange name="Gaussian" T="DOUBLE" default="0.20000000298023223877" value="0.20000012715657553009">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<AnimationSettings name="AnimationSettings" uniqueId="1768255069603">
+								<Setting name="Blur X Distance" flags="9223372036854775809"/>
+								<Setting name="Blur Y Distance" flags="9223372036854775809"/>
+							</AnimationSettings>
+						</RenderPass>
+						<ChoosableMixer name="Mixer">
+							<VideoMixerStateID uniqueId="1768255069604"/>
+							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1768255069605" baseType="Mixer"/>
+						</ChoosableMixer>
+					</RenderPass>
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255069607" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1768255069609"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="1920" height="1080" type="CompositionRouterVideoSource"/>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1768255069609"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
 		<Clip name="Clip" uniqueId="1755196199488" layerIndex="3" columnIndex="3">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\TouchDesigner export\Tunel_01_movie1.mov"/>
@@ -5075,7 +5329,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 							</Params>
@@ -5237,7 +5491,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999398470063">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999346844692">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5325,9 +5579,10 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
+								<ParamChoice name="PlayMode" T="INT32" default="0" value="1" storeChoices="0"/>
 							</Params>
 							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1"/>
 						</PhaseSourceTransportTimeline>
@@ -5337,7 +5592,9 @@
 			</Transport>
 			<ClipView name="ClipView">
 				<FoldParams name="FoldParams">
-					<FoldState component="/clippropertiestransport" folded="1"/>
+					<FoldState component="/clippropertiescuepoints" folded="0"/>
+					<FoldState component="/clippropertiesdashboard" folded="0"/>
+					<FoldState component="/groupedcomponentautopilot" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizecolorparamcolorcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponenttextblockcolorparamcolorcomponent" folded="0"/>
 					<FoldState component="/groupedcomponentshaper" folded="1"/>
@@ -5402,19 +5659,19 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1768060486860" layerIndex="8" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1755196199477" layerIndex="0" columnIndex="4"/>
-		<Clip name="Clip" uniqueId="1755227869936" layerIndex="1" columnIndex="4">
+		<Clip name="Clip" uniqueId="1759445474292" layerIndex="1" columnIndex="4">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\LINDS.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_disconnect.png"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="LINDS" value="LINDS"/>
+				<Param name="Name" T="STRING" default="Logo_disconnect" value="Logo_disconnect"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="896.040400000282375">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.89604040000028239987" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5431,10 +5688,10 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="4000" value="4000">
+					<ParamRange name="Width" T="DOUBLE" default="7016" value="1920">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="537" value="537">
+					<ParamRange name="Height" T="DOUBLE" default="2565" value="701.93842645381982948">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
@@ -5443,9 +5700,9 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157516283" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768141422636" baseType="Effect">
 						<Params name="Params">
-							<ParamRange name="Scale" T="DOUBLE" default="100" value="10">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="40">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 						</Params>
@@ -5453,15 +5710,15 @@
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157516281"/>
+					<VideoMixerStateID uniqueId="1768141422634"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="4000" height="537" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\LINDS.png"/>
+					<VideoSource name="VideoSource" width="7016" height="2565" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_disconnect.png"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157516281"/>
+					<VideoMixerStateID uniqueId="1768141422634"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
@@ -5474,11 +5731,11 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="708.28852690164285377">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.14165770538032856907" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999535305051">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999483668578">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5519,23 +5776,23 @@
 					<RenderPass storage="0" name="InifiniteCircleZoom" type="DryWetEffect" uniqueTypeId="c_b9899053-7b9d-4264-a620-512c232b9cc8" uniqueId="1768157518079" baseType="DryWetEffect">
 						<RenderPass name="InifiniteCircleZoom" type="WireEffect" uniqueTypeId="c_b9899053-7b9d-4264-a620-512c232b9cc8" uniqueId="1768157518081" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Offset" T="DOUBLE" default="0.30769199132919311523" value="0.38538262749143359365" key="19">
+								<ParamRange name="Offset" T="DOUBLE" default="0.30769199132919311523" value="0" key="19">
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.38538262749143359365">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="8">
 										<Params name="Params">
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8" value="4">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<Param name="DurationIsScalable" altName="Duration Changes With In &amp; Out Points" T="BOOL" default="1" value="0"/>
 										</Params>
-										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
+										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
 									</PhaseSourceTimeline>
 								</ParamRange>
 								<ParamRange name="Acceleration" T="DOUBLE" default="0.35294100642204284668" value="0" key="20">
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceFFT name="PhaseSourceFFT" phase="0" linkId="/audioengine/externalfft">
 										<Params name="Params">
-											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.28869047619047616404">
+											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="1.2754115462446157316e-11">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 												<ValueRange name="startStop" min="0" max="0.30357142857142854764"/>
 											</ParamRange>
@@ -5621,7 +5878,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2" value="2">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 							</Params>
@@ -5667,19 +5924,19 @@
 		</Clip>
 		<Clip name="Clip" uniqueId="1768060486861" layerIndex="8" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1768060517305" layerIndex="0" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1759445473935" layerIndex="1" columnIndex="5">
+		<Clip name="Clip" uniqueId="1755227870699" layerIndex="1" columnIndex="5">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\ANGIE.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_TC.png"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="" value="Artiste Name "/>
+				<Param name="Name" T="STRING" default="Logo_TC" value="Logo_TC"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="333.663399999481328">
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.33366339999948130268" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5696,10 +5953,10 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="4000" value="4000">
+					<ParamRange name="Width" T="DOUBLE" default="7016" value="1920">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="516" value="516">
+					<ParamRange name="Height" T="DOUBLE" default="2565" value="701.93842645381982948">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
@@ -5708,46 +5965,25 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157517755" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768141422793" baseType="Effect">
 						<Params name="Params">
-							<ParamRange name="Scale" T="DOUBLE" default="100" value="10">
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="49.295774647887320441">
 								<PhaseSourceStatic name="PhaseSourceStatic"/>
 							</ParamRange>
 						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
-					<RenderPass storage="0" name="Mask" type="Mask" uniqueTypeId="80334396" uniqueId="1768157517894" baseType="Effect">
-						<Params name="Params">
-							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
-							<ParamImageFile name="Image" T="FILE" default="" value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\EXNIHILO.png" relocatable="1"/>
-						</Params>
-						<View name="View" bCanHavePresets="0"/>
-					</RenderPass>
-					<RenderPass storage="0" name="Mask" type="Mask" uniqueTypeId="80334396" uniqueId="1768157517923" baseType="Effect">
-						<Params name="Params">
-							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
-							<ParamImageFile name="Image" T="FILE" default="" value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\HIPPOb2bTML.png" relocatable="1"/>
-						</Params>
-						<View name="View" folded="1" bCanHavePresets="0"/>
-					</RenderPass>
-					<RenderPass storage="0" name="Mask" type="Mask" uniqueTypeId="80334396" uniqueId="1768157517952" baseType="Effect">
-						<Params name="Params">
-							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
-							<ParamImageFile name="Image" T="FILE" default="" value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\LINDS.png" relocatable="1"/>
-						</Params>
-						<View name="View" folded="1" bCanHavePresets="0"/>
-					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157517753"/>
+					<VideoMixerStateID uniqueId="1768141422791"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="4000" height="516" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Artistes PNG\ANGIE.png"/>
+					<VideoSource name="VideoSource" width="7016" height="2565" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\Logo_TC.png"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157517753"/>
+					<VideoMixerStateID uniqueId="1768141422791"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
@@ -5758,9 +5994,9 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="4910.3937999998061059">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.98207875999996119276" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5834,9 +6070,9 @@
 						<View name="View" folded="1"/>
 						<RenderPass name="HueRotate" type="HueRotate" uniqueTypeId="A128" uniqueId="1759590134081" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Hue Rotate" T="DOUBLE" default="0" value="0.77076525498286718729">
+								<ParamRange name="Hue Rotate" T="DOUBLE" default="0" value="0">
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.77076525498286718729">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5845,9 +6081,9 @@
 										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
 									</PhaseSourceTimeline>
 								</ParamRange>
-								<ParamRange name="Sat. Scale" T="DOUBLE" default="0.5" value="0.46029218391777992903">
+								<ParamRange name="Sat. Scale" T="DOUBLE" default="0.5" value="0.38655462184873951026">
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="3"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.69435367331048958306" defaultBeatsDuration="3">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="3">
 										<Params name="Params">
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="3" value="2">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5886,9 +6122,9 @@
 								<ParamRange name="Size" T="DOUBLE" default="0.5" value="1.4964707318474264053">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
-								<ParamRange name="Color" T="DOUBLE" default="0" value="0.76999448972788431256">
+								<ParamRange name="Color" T="DOUBLE" default="0" value="0">
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.77076525498286718729">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -5976,7 +6212,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999398470063">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999346844692">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -6070,33 +6306,27 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1755196199484" layerIndex="7" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1768060486864" layerIndex="8" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1768060451661" layerIndex="0" columnIndex="6"/>
-		<Clip name="Clip" uniqueId="1759445473966" layerIndex="1" columnIndex="6">
+		<Clip name="Clip" uniqueId="1755196199484" layerIndex="7" columnIndex="5">
 			<PreloadData>
-				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\CF-Logo-White-Trans.png"/>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\TouchDesigner export\Okamirufu.0.mov"/>
 			</PreloadData>
 			<Params name="Params">
-				<Param name="Name" T="STRING" default="CF-Logo-White-Trans" value="Collecti-Frog "/>
+				<Param name="Name" T="STRING" default="Okamirufu.0" value="Okamirufu.0"/>
 				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
 					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="1s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+						<DurationSource name="DurationSource" defaultDuration="10s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999994837463">
-									<PhaseSourceStatic name="PhaseSourceStatic"/>
-								</ParamRange>
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 							</Params>
-							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1"/>
+							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="16" detectedTempo="-1"/>
 						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="1000"/>
+						<ValueRange name="minMax" min="0" max="10000"/>
 					</ParamRange>
 				</Params>
 			</Transport>
@@ -6105,35 +6335,46 @@
 			</ClipView>
 			<VideoTrack name="VideoTrack">
 				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="881" value="881">
+					<ParamRange name="Width" T="DOUBLE" default="1280" value="1280">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="881" value="881">
+					<ParamRange name="Height" T="DOUBLE" default="1280" value="1280">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 					<Param name="RScale" T="BOOL" default="1" value="1"/>
 					<Param name="GScale" T="BOOL" default="1" value="1"/>
 					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="0" value="0"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157543482" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255069084" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="95">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="148.89514066496161604">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157543480"/>
+					<VideoMixerStateID uniqueId="1768255069082"/>
 				</ChoosableMixer>
 				<PrimarySource>
-					<VideoSource name="VideoSource" width="881" height="881" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\CF-Logo-White-Trans.png"/>
+					<VideoSource name="VideoSource" width="1280" height="1280" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\Disconnect\TouchDesigner export\Okamirufu.0.mov"/>
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157543480"/>
+					<VideoMixerStateID uniqueId="1768255069082"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1768060486864" layerIndex="8" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1768060451661" layerIndex="0" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1759445473966" layerIndex="1" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1768060512816" layerIndex="2" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1755196199478" layerIndex="3" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1755227869967" layerIndex="4" columnIndex="6"/>
@@ -6182,7 +6423,7 @@
 				<RenderPass name="RenderPassChain">
 					<RenderPass storage="0" name="Bloom" type="DryWetEffect" uniqueTypeId="6980402605" uniqueId="1759582321756" baseType="DryWetEffect">
 						<Params name="Params">
-							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.087654410698035034599">
+							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.94999999999999995559">
 								<DurationSource name="DurationSource" defaultDuration="4b"/>
 								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 									<Params name="Params">
@@ -6247,7 +6488,7 @@
 						<View name="View" folded="1"/>
 						<RenderPass name="Sharpen" type="Sharpen" uniqueTypeId="89209435418021" uniqueId="1759582322941" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Strength" T="DOUBLE" default="0.5" value="0.30157819931713014672">
+								<ParamRange name="Strength" T="DOUBLE" default="0.5" value="1">
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
@@ -6287,7 +6528,7 @@
 					<RenderPass storage="0" name="DropShadow" type="DryWetEffect" uniqueTypeId="372541077550622327" uniqueId="1759582322350" baseType="DryWetEffect">
 						<RenderPass name="DropShadow" type="DropShadow" uniqueTypeId="372541077550622327" uniqueId="1759582322334" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Distance" T="DOUBLE" default="10" value="11.440540931177492823">
+								<ParamRange name="Distance" T="DOUBLE" default="10" value="84.837163880813946548">
 									<DurationSource name="DurationSource" defaultDuration="4b" scale="0.17674409141836239234"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
@@ -6316,7 +6557,7 @@
 									<ValueRange name="minMax" min="0" max="480"/>
 									<ValueRange name="startStop" min="0" max="84.837163880813946548"/>
 								</ParamRange>
-								<ParamRange name="Angle" T="DOUBLE" default="45" value="-128.01016128713681042">
+								<ParamRange name="Angle" T="DOUBLE" default="45" value="-180">
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="16">
 										<Params name="Params">
@@ -6441,7 +6682,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999988640198">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999834776609">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -6707,7 +6948,7 @@
 						<RenderPass name="ShaperGenerator" type="ShaperGenerator" uniqueTypeId="7946640550597690042" uniqueId="1768060513423" baseType="Generator">
 							<Params name="Params">
 								<ParamChoice name="Combine" T="INT32" default="1" value="3" storeChoices="0"/>
-								<ParamRange name="Phase" T="DOUBLE" default="1" value="0.99832601527711350986">
+								<ParamRange name="Phase" T="DOUBLE" default="1" value="1">
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
@@ -6738,7 +6979,7 @@
 										</ParamRange>
 									</Params>
 								</ParamColor>
-								<ParamRange name="Outline" T="DOUBLE" default="0.10000000000000000555" value="0.0048499056687736127186">
+								<ParamRange name="Outline" T="DOUBLE" default="0.10000000000000000555" value="0">
 									<DurationSource name="DurationSource" userDuration="320.00000000000005684" scale="0.2957198443579766578"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
@@ -6849,7 +7090,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999994837463">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999994320099">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -7179,7 +7420,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999876076906">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999824451535">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -7420,7 +7661,7 @@
 									<DurationSource name="DurationSource" scale="0.20304568500000003128"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999367494841">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999315858368">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1.0152284250000001009" value="1.0152284250000001009">
@@ -7437,7 +7678,7 @@
 									<DurationSource name="DurationSource" scale="0.19543147199999999497"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999367494841">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999315858368">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.97715735999999997485" value="0.97715735999999997485">
@@ -7454,7 +7695,7 @@
 									<DurationSource name="DurationSource" scale="0.18527918800000003907"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999367494841">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999315858368">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.92639594000000013985" value="0.92639594000000013985">
@@ -7567,7 +7808,7 @@
 		<Clip name="Clip" uniqueId="1768157543924" layerIndex="7" columnIndex="17"/>
 		<Clip name="Clip" uniqueId="1768157543954" layerIndex="8" columnIndex="17"/>
 	</Deck>
-	<Deck name="Deck" uniqueId="1755196199460" numLayersWithContent="8" numColumnsWithContent="8" numLayers="9" numColumns="13" closed="0" deckIndex="1">
+	<Deck name="Deck" uniqueId="1755196199460" numLayersWithContent="6" numColumnsWithContent="8" numLayers="9" numColumns="13" closed="0" deckIndex="1">
 		<Column uniqueId="1765637677058" columnIndex="0"/>
 		<Column uniqueId="1765637677059" columnIndex="1"/>
 		<Column uniqueId="1765637677060" columnIndex="2"/>
@@ -7621,7 +7862,67 @@
 		<Column uniqueId="1765637708103" groupIndex="2" columnIndex="11"/>
 		<Column uniqueId="1765637708428" groupIndex="2" columnIndex="12"/>
 		<Clip name="Clip" uniqueId="1765637676919" layerIndex="0" columnIndex="0"/>
-		<Clip name="Clip" uniqueId="1765637676957" layerIndex="1" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1768255159056" layerIndex="1" columnIndex="0">
+			<PreloadData>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\CF-Logo-White-Trans.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="CF-Logo-White-Trans" value="Collecti-Frog Full"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="826.35059979740947256">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.82635059979740943525" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999938038453">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="881" value="881">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="881" value="881">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255159058" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1768255159060"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="881" height="881" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\CF-Logo-White-Trans.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1768255159060"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
 		<Clip name="Clip" uniqueId="1767988817502" layerIndex="2" columnIndex="0"/>
 		<Clip name="Clip" uniqueId="1768060572958" layerIndex="3" columnIndex="0">
 			<PreloadData>
@@ -7637,7 +7938,7 @@
 						<DurationSource name="DurationSource" defaultDuration="4s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="4000" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="2">
@@ -7685,9 +7986,7 @@
 			</VideoTrack>
 		</Clip>
 		<Clip name="Clip" uniqueId="1765637676984" layerIndex="4" columnIndex="0"/>
-		<Clip name="Clip" uniqueId="1767988818482" layerIndex="5" columnIndex="0"/>
-		<Clip name="Clip" uniqueId="1765637677002" layerIndex="6" columnIndex="0"/>
-		<Clip name="Clip" uniqueId="1768157529763" layerIndex="7" columnIndex="0">
+		<Clip name="Clip" uniqueId="1768255093454" layerIndex="5" columnIndex="0">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+001.mov"/>
 			</PreloadData>
@@ -7701,7 +8000,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999974183984">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -7731,12 +8030,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529765" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093456" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529767"/>
+					<VideoMixerStateID uniqueId="1768255093458"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -7744,13 +8043,83 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529767"/>
+					<VideoMixerStateID uniqueId="1768255093458"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677002" layerIndex="6" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1768157529763" layerIndex="7" columnIndex="0"/>
 		<Clip name="Clip" uniqueId="1768060489038" layerIndex="8" columnIndex="0"/>
 		<Clip name="Clip" uniqueId="1765637676949" layerIndex="0" columnIndex="1"/>
-		<Clip name="Clip" uniqueId="1765637676958" layerIndex="1" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1768255148709" layerIndex="1" columnIndex="1">
+			<PreloadData>
+				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\CF-Logo-White-Trans.png"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="CF-Logo-White-Trans" value="Collecti-Frog Little"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999994320099">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="881" value="881">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="881" value="881">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255148711" baseType="Effect">
+						<Params name="Params">
+							<ParamRange name="Position Y" T="DOUBLE" default="0" value="450">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+							<ParamRange name="Scale" T="DOUBLE" default="100" value="44.665012406947887769">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1768255148713"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="881" height="881" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\CF-Logo-White-Trans.png"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1768255148713"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
 		<Clip name="Clip" uniqueId="1767988817509" layerIndex="2" columnIndex="1"/>
 		<Clip name="Clip" uniqueId="1768060572951" layerIndex="3" columnIndex="1">
 			<PreloadData>
@@ -7766,7 +8135,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -7814,9 +8183,7 @@
 			</VideoTrack>
 		</Clip>
 		<Clip name="Clip" uniqueId="1765637676985" layerIndex="4" columnIndex="1"/>
-		<Clip name="Clip" uniqueId="1767988818489" layerIndex="5" columnIndex="1"/>
-		<Clip name="Clip" uniqueId="1765637677003" layerIndex="6" columnIndex="1"/>
-		<Clip name="Clip" uniqueId="1768157529770" layerIndex="7" columnIndex="1">
+		<Clip name="Clip" uniqueId="1768255093461" layerIndex="5" columnIndex="1">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+002.mov"/>
 			</PreloadData>
@@ -7830,7 +8197,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999974183984">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -7860,12 +8227,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529772" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093463" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529774"/>
+					<VideoMixerStateID uniqueId="1768255093465"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -7873,19 +8240,19 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529774"/>
+					<VideoMixerStateID uniqueId="1768255093465"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677003" layerIndex="6" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1768157529770" layerIndex="7" columnIndex="1"/>
 		<Clip name="Clip" uniqueId="1768060489039" layerIndex="8" columnIndex="1"/>
 		<Clip name="Clip" uniqueId="1765637676950" layerIndex="0" columnIndex="2"/>
-		<Clip name="Clip" uniqueId="1765637676959" layerIndex="1" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1768255117747" layerIndex="1" columnIndex="2"/>
 		<Clip name="Clip" uniqueId="1767988817516" layerIndex="2" columnIndex="2"/>
 		<Clip name="Clip" uniqueId="1768060572972" layerIndex="3" columnIndex="2"/>
 		<Clip name="Clip" uniqueId="1765637676988" layerIndex="4" columnIndex="2"/>
-		<Clip name="Clip" uniqueId="1767988818496" layerIndex="5" columnIndex="2"/>
-		<Clip name="Clip" uniqueId="1765637677004" layerIndex="6" columnIndex="2"/>
-		<Clip name="Clip" uniqueId="1768157529777" layerIndex="7" columnIndex="2">
+		<Clip name="Clip" uniqueId="1768255093468" layerIndex="5" columnIndex="2">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+005.mov"/>
 			</PreloadData>
@@ -7899,7 +8266,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -7929,12 +8296,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529779" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093470" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529781"/>
+					<VideoMixerStateID uniqueId="1768255093472"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -7942,19 +8309,19 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529781"/>
+					<VideoMixerStateID uniqueId="1768255093472"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677004" layerIndex="6" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1768157529777" layerIndex="7" columnIndex="2"/>
 		<Clip name="Clip" uniqueId="1768060489040" layerIndex="8" columnIndex="2"/>
 		<Clip name="Clip" uniqueId="1765637676951" layerIndex="0" columnIndex="3"/>
-		<Clip name="Clip" uniqueId="1765637676960" layerIndex="1" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1768255117754" layerIndex="1" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1767988817523" layerIndex="2" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1768060572979" layerIndex="3" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1765637676989" layerIndex="4" columnIndex="3"/>
-		<Clip name="Clip" uniqueId="1767988818503" layerIndex="5" columnIndex="3"/>
-		<Clip name="Clip" uniqueId="1765637677005" layerIndex="6" columnIndex="3"/>
-		<Clip name="Clip" uniqueId="1768157529784" layerIndex="7" columnIndex="3">
+		<Clip name="Clip" uniqueId="1768255093475" layerIndex="5" columnIndex="3">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+006.mov"/>
 			</PreloadData>
@@ -7968,7 +8335,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -7998,12 +8365,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529786" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093477" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529788"/>
+					<VideoMixerStateID uniqueId="1768255093479"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -8011,19 +8378,19 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529788"/>
+					<VideoMixerStateID uniqueId="1768255093479"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677005" layerIndex="6" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1768157529784" layerIndex="7" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1768060489041" layerIndex="8" columnIndex="3"/>
 		<Clip name="Clip" uniqueId="1765637676952" layerIndex="0" columnIndex="4"/>
-		<Clip name="Clip" uniqueId="1765637676961" layerIndex="1" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1768255117733" layerIndex="1" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1767988817530" layerIndex="2" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1768060572986" layerIndex="3" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1765637676991" layerIndex="4" columnIndex="4"/>
-		<Clip name="Clip" uniqueId="1767988818510" layerIndex="5" columnIndex="4"/>
-		<Clip name="Clip" uniqueId="1765637677035" layerIndex="6" columnIndex="4"/>
-		<Clip name="Clip" uniqueId="1768157529791" layerIndex="7" columnIndex="4">
+		<Clip name="Clip" uniqueId="1768255093482" layerIndex="5" columnIndex="4">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+008.mov"/>
 			</PreloadData>
@@ -8037,7 +8404,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -8067,12 +8434,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529793" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093484" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529795"/>
+					<VideoMixerStateID uniqueId="1768255093486"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -8080,19 +8447,19 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529795"/>
+					<VideoMixerStateID uniqueId="1768255093486"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677035" layerIndex="6" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1768157529791" layerIndex="7" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1768060489042" layerIndex="8" columnIndex="4"/>
 		<Clip name="Clip" uniqueId="1765637676953" layerIndex="0" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1765637676962" layerIndex="1" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1767988817537" layerIndex="2" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1768060572993" layerIndex="3" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1765637676992" layerIndex="4" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1767988818517" layerIndex="5" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1765637677036" layerIndex="6" columnIndex="5"/>
-		<Clip name="Clip" uniqueId="1768157529798" layerIndex="7" columnIndex="5">
+		<Clip name="Clip" uniqueId="1768255093489" layerIndex="5" columnIndex="5">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+009.mov"/>
 			</PreloadData>
@@ -8106,7 +8473,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -8136,12 +8503,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529800" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093491" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529802"/>
+					<VideoMixerStateID uniqueId="1768255093493"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -8149,19 +8516,19 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529802"/>
+					<VideoMixerStateID uniqueId="1768255093493"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677036" layerIndex="6" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1768157529798" layerIndex="7" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1768060489043" layerIndex="8" columnIndex="5"/>
 		<Clip name="Clip" uniqueId="1765637676954" layerIndex="0" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1765637676963" layerIndex="1" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1767988817544" layerIndex="2" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1768060572965" layerIndex="3" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1765637680938" layerIndex="4" columnIndex="6"/>
-		<Clip name="Clip" uniqueId="1767988818524" layerIndex="5" columnIndex="6"/>
-		<Clip name="Clip" uniqueId="1765637677037" layerIndex="6" columnIndex="6"/>
-		<Clip name="Clip" uniqueId="1768157529805" layerIndex="7" columnIndex="6">
+		<Clip name="Clip" uniqueId="1768255093496" layerIndex="5" columnIndex="6">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+010.mov"/>
 			</PreloadData>
@@ -8175,7 +8542,7 @@
 						<DurationSource name="DurationSource" defaultDuration="8.0000000000000017764s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="8000.000000000001819" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8.0000000000000017764" value="2">
@@ -8205,12 +8572,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529807" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093498" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529809"/>
+					<VideoMixerStateID uniqueId="1768255093500"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -8218,19 +8585,19 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529809"/>
+					<VideoMixerStateID uniqueId="1768255093500"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677037" layerIndex="6" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1768157529805" layerIndex="7" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1768060489044" layerIndex="8" columnIndex="6"/>
 		<Clip name="Clip" uniqueId="1765637676955" layerIndex="0" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1765637676964" layerIndex="1" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1765637676973" layerIndex="2" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1765637676982" layerIndex="3" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1765637708064" layerIndex="4" columnIndex="7"/>
-		<Clip name="Clip" uniqueId="1767988818531" layerIndex="5" columnIndex="7"/>
-		<Clip name="Clip" uniqueId="1765637677038" layerIndex="6" columnIndex="7"/>
-		<Clip name="Clip" uniqueId="1768157529812" layerIndex="7" columnIndex="7">
+		<Clip name="Clip" uniqueId="1768255093503" layerIndex="5" columnIndex="7">
 			<PreloadData>
 				<VideoFile value="C:\Users\trist\OneDrive\Documents\Resolume Arena\Media\media_scenofrog\vj_loop\Tambah_loops_rptv\+012.mov"/>
 			</PreloadData>
@@ -8244,7 +8611,7 @@
 						<DurationSource name="DurationSource" defaultDuration="4.0000000000000008882s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="4000.0000000000009095" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4.0000000000000008882" value="2">
@@ -8274,12 +8641,12 @@
 					<Param name="AScale" T="BOOL" default="1" value="1"/>
 				</Params>
 				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768157529814" baseType="Effect">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1768255093505" baseType="Effect">
 						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
 					</RenderPass>
 				</RenderPass>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529816"/>
+					<VideoMixerStateID uniqueId="1768255093507"/>
 				</ChoosableMixer>
 				<PrimarySource>
 					<VideoSource name="VideoSource" width="1920" height="1080" type="VideoFormatReaderSource">
@@ -8287,10 +8654,12 @@
 					</VideoSource>
 				</PrimarySource>
 				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1768157529816"/>
+					<VideoMixerStateID uniqueId="1768255093507"/>
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
+		<Clip name="Clip" uniqueId="1765637677038" layerIndex="6" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1768157529812" layerIndex="7" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1768060489045" layerIndex="8" columnIndex="7"/>
 		<Clip name="Clip" uniqueId="1765637676956" layerIndex="0" columnIndex="8"/>
 		<Clip name="Clip" uniqueId="1765637676965" layerIndex="1" columnIndex="8"/>
@@ -8405,7 +8774,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999747002377">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999731503664">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
@@ -8474,7 +8843,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999972117859">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -8543,7 +8912,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999752164914">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
@@ -8608,11 +8977,11 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="9405.3406574588389049">
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.9405340657458839404" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999972117859">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
@@ -8681,7 +9050,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999726341127">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -8750,7 +9119,7 @@
 						<DurationSource name="DurationSource" defaultDuration="10s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="10000" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999972117859">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
@@ -8820,7 +9189,7 @@
 						<DurationSource name="DurationSource" defaultDuration="9.9413125000000004405s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="9941.3125" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999972117859">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="9.9413125000000004405" value="2">
@@ -8838,7 +9207,7 @@
 			</ClipView>
 			<AudioTrack name="AudioTrack">
 				<Params name="Params">
-					<ParamRange name="Volume" T="DOUBLE" default="0" value="0.013996932273406967329">
+					<ParamRange name="Volume" T="DOUBLE" default="0" value="0.014819577172500640952">
 						<PhaseSourceStatic name="PhaseSourceStatic"/>
 					</ParamRange>
 				</Params>
@@ -8900,7 +9269,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999972117859">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -8969,7 +9338,7 @@
 						<DurationSource name="DurationSource" defaultDuration="6.6669999999999998153s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="6667" defaultBeatsDuration="16">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999972117859">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="6.6669999999999998153" value="1.999999999999999778">
