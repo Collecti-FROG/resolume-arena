@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MidiShortcutPreset name="Disconnect" presetId="-1271468497">
+<MidiShortcutPreset name="Disconnect" presetId="-1114869426">
 	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
 	<ShortcutManager name="MIDIShortcutManagerShortcuts">
-		<Shortcut name="Shortcut" uniqueId="1768060451176" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768141424189" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/linearcloner/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/linearcloner/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672208" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
@@ -25,12 +25,12 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706126029" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563663504" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1755345874650" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563658384" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -39,21 +39,30 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768141424189" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/linearcloner/bypassed" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/linearcloner/bypassed" translationType="1" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672208" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060449803" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874650" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563658384" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060450927" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755196199508/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199508/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706126017" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563662736" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -71,6 +80,29 @@
 				<Value first="On" second="0.039370078740157479769"/>
 			</NamedValues>
 		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060451176" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706126029" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563663504" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060451172" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/objects/1755196199676/clear" translationType="2" allowedTranslationTypes="11"/>
 			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199676/clear" translationType="2" allowedTranslationTypes="11"/>
@@ -80,21 +112,12 @@
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060449803" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060486406" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759445473811/connect" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759445473811/connect" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1759445473811/connected" translationType="2" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1759445473811/connected" translationType="2" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563654800" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1765706072886" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563654544" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -103,69 +126,214 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768146262516" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/groups/1/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="19"/>
-			<ShortcutPath name="OutputPath" path="/composition/groups/1/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="19"/>
-			<RawInputMessage key="83287645563672464" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1765706072890" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563654288" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768141424100" paramNodeName="RangedParam[bool]" behaviour="2052" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/groups/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="19"/>
+			<RawInputMessage key="83287645563672208" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060449779" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755227870342/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755227870342/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563664272" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1759445475709" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759445474291/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759445474291/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563656080" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0.023622047244094487861"/>
 				<Value first="On" second="0.039370078740157479769"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060459320" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectprevdeck" translationType="1" allowedTranslationTypes="1"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectprevdeck" translationType="1" allowedTranslationTypes="1"/>
-			<RawInputMessage key="83287645563667088" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060451724" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563653264" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="1"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768141424221" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672208" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451736" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563654032" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060487039" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/2/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/2/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/2/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/2/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563650448" value="0" numSteps="128"/>
 			<NamedValues>
-				<Value first="Off" second="0.023622047244094487861"/>
-				<Value first="On" second="0.039370078740157479769"/>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060451728" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563653520" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="1"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874670" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563659664" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060487053" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/4/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/4/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/4/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/4/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563650960" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060450485" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/objects/1759445476432/clear" translationType="2" allowedTranslationTypes="11"/>
 			<ShortcutPath name="OutputPath" path="/composition/objects/1759445476432/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563671184" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="1"/>
-				<Value first="On" second="0"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060486986" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755196199676/select" translationType="2" allowedTranslationTypes="3"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199676/select" translationType="2" allowedTranslationTypes="3"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1755196199676/selected" translationType="2" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1755196199676/selected" translationType="2" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563666832" value="0" numSteps="128"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451172" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clear" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clear" translationType="8" allowedTranslationTypes="11"/>
+		<Shortcut name="Shortcut" uniqueId="1765706123924" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759733470380/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759733470380/clear" translationType="2" allowedTranslationTypes="11"/>
 			<RawInputMessage key="83287645563651984" value="0" numSteps="128"/>
 			<NamedValues>
-				<Value first="Off" second="0.023622047244094487861"/>
-				<Value first="On" second="0.039370078740157479769"/>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706123809" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563660432" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060487058" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/5/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/5/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/5/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/5/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563651216" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1759445475949" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759445474291/select" translationType="2" allowedTranslationTypes="3"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759445474291/select" translationType="2" allowedTranslationTypes="3"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1759445474291/selected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1759445474291/selected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563655568" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0.039370078740157479769"/>
+				<Value first="On" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060434083" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563665552" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060434077" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563665296" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874626" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563660688" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060451708" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
@@ -182,26 +350,21 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706072906" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563655568" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060449803" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563662224" value="0" numSteps="128"/>
 			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
+				<Value first="Off" second="0.023622047244094487861"/>
+				<Value first="On" second="0.039370078740157479769"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451732" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563653776" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060451712" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1768060451656/connect" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1768060451656/connect" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1768060451656/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1768060451656/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563652496" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="1"/>
@@ -210,12 +373,12 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874654" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563658640" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060486406" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759445473811/connect" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759445473811/connect" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1759445473811/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1759445473811/connected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563654800" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -224,12 +387,21 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060450755" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563661456" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060451172" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clear" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clear" translationType="8" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563651984" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094487861"/>
+				<Value first="On" second="0.039370078740157479769"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874642" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563661712" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -238,18 +410,69 @@
 				<Value first="Previewing" second="0.047244094488188975722"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874626" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563660688" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1755345874674" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563659920" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
 				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706126037" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563664016" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060450485" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759445476432/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759445476432/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563671184" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="1"/>
+				<Value first="On" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706126021" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563662992" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060434095" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563666064" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060451720" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
@@ -275,12 +498,371 @@
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706072906" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563655568" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060451176" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563656080" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094487861"/>
+				<Value first="On" second="0.039370078740157479769"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874666" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563659408" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768146262519" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="83287645563672464" value="1" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706072910" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563655824" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060434089" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563665808" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060449752" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060459320" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectprevdeck" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectprevdeck" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="83287645563667088" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706126013" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563662480" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060434071" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563665040" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768141422488" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563654800" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874634" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563661200" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060486412" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563652496" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060486986" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755196199676/select" translationType="2" allowedTranslationTypes="3"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199676/select" translationType="2" allowedTranslationTypes="3"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1755196199676/selected" translationType="2" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1755196199676/selected" translationType="2" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563666832" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1767988819563" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/7/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/7/video/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="155345239601590704" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060486418" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563652752" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1765706126033" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563663760" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768146262516" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/groups/1/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="19"/>
+			<ShortcutPath name="OutputPath" path="/composition/groups/1/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="19"/>
+			<RawInputMessage key="83287645563672464" value="1" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874654" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563658640" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060459316" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectnextdeck" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectnextdeck" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="83287645563667344" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060451732" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563653776" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="1"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060449779" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755227870342/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755227870342/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563664272" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094487861"/>
+				<Value first="On" second="0.039370078740157479769"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060451736" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563654032" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0.023622047244094487861"/>
+				<Value first="On" second="0.039370078740157479769"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060450755" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563661456" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060487021" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/9/clear" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/9/clear" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1755345874646" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
 			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
 			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
 			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
 			<RawInputMessage key="83287645563661968" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060433976" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563664528" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.015748031496062991907"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060451736" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874630" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563660944" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060487064" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/6/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/6/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/6/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/6/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563651472" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Connected" second="0.023622047244094487861"/>
+				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
+				<Value first="Empty" second="0"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060487034" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/1/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/1/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/1/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/1/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563650192" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -312,90 +894,6 @@
 				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874630" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563660944" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451724" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563653264" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="1"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874670" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563659664" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451728" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563653520" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="1"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706072886" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563654544" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487064" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/6/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/6/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/6/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/6/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563651472" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060434062" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
 			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
@@ -408,122 +906,6 @@
 				<Value first="Disconnected" second="0.0078740157480314959537"/>
 				<Value first="Empty" second="0"/>
 				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874662" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563659152" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451736" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1768060451654/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706126017" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563662736" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060434083" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563665552" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060450927" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755196199508/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199508/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874658" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563658896" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060452957" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
-			<ShortcutPath name="OutputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
-			<Subtarget type="5" optionIndex="-1"/>
-			<RawInputMessage key="155345239601592496" value="0.61417322834645671215" numSteps="128"/>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768141424221" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672208" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060449752" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563666320" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0.023622047244094487861"/>
-				<Value first="On" second="0.039370078740157479769"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060449752" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768141424100" paramNodeName="RangedParam[bool]" behaviour="2052" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/groups/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="19"/>
-			<ShortcutPath name="OutputPath" path="/composition/groups/1/video/effects/mirror/bypassed" translationType="1" allowedTranslationTypes="19"/>
-			<RawInputMessage key="83287645563672208" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1765706072898" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
@@ -540,35 +922,50 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1759445475709" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759445474291/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759445474291/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563656080" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060449752" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/objects/1755196199538/clear" translationType="2" allowedTranslationTypes="11"/>
+			<RawInputMessage key="83287645563666320" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0.023622047244094487861"/>
 				<Value first="On" second="0.039370078740157479769"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060433976" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563664528" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060487070" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/7/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/7/connect" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/7/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/7/connected" translationType="8" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563651728" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
+				<Value first="Disconnected" second="0.039370078740157479769"/>
 				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
+				<Value first="Previewing" second="0.047244094488188975722"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060434089" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563665808" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1768060452957" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="155345239601592496" value="0.43307086614173229133" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768060452950" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="83287645563672720" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1755345874662" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563659152" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
@@ -591,310 +988,18 @@
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487070" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/7/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/7/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/7/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/7/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563651728" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060486418" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563652752" value="0" numSteps="128"/>
+		<Shortcut name="Shortcut" uniqueId="1755345874658" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="83287645563658896" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Connected" second="0.023622047244094487861"/>
 				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
 				<Value first="Disconnected" second="0.0078740157480314959537"/>
 				<Value first="Empty" second="0"/>
 				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060452950" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1"/>
-			<ShortcutPath name="OutputPath" path="/composition/tempocontroller/tempotap" translationType="1" allowedTranslationTypes="1"/>
-			<RawInputMessage key="83287645563672720" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487021" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/9/clear" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/9/clear" translationType="1" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060486412" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/clips/2/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563652496" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060434077" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563665296" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706126033" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563663760" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060434071" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563665040" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874634" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/4/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563661200" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060459316" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectnextdeck" translationType="1" allowedTranslationTypes="1"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectnextdeck" translationType="1" allowedTranslationTypes="1"/>
-			<RawInputMessage key="83287645563667344" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874674" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563659920" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060449803" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1755227869810/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563662224" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0.023622047244094487861"/>
-				<Value first="On" second="0.039370078740157479769"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874666" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/4/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/4/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/4/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/4/clips/5/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563659408" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706123924" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759733470380/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759733470380/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563651984" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706126037" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563664016" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1755345874642" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/6/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563661712" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060434095" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/8/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/8/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/8/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/8/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563666064" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706072890" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563654288" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706126021" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563662992" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487058" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/5/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/5/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/5/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/5/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563651216" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706123809" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/5/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/5/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/5/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/5/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563660432" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451712" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1768060451656/connect" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1768060451656/connect" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1768060451656/connected" translationType="2" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1768060451656/connected" translationType="2" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563652496" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="1"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060451176" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759445473671/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563656080" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0.023622047244094487861"/>
-				<Value first="On" second="0.039370078740157479769"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487053" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/4/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/4/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/4/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/4/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563650960" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060486904" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
@@ -906,111 +1011,6 @@
 			<NamedValues>
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768146262519" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
-			<ShortcutPath name="OutputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
-			<RawInputMessage key="83287645563672464" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768141422488" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/3/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563654800" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487034" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/1/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/1/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/1/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/1/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563650192" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706126013" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/6/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/6/clips/1/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/6/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/6/clips/1/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563662480" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060450485" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759445476432/clear" translationType="2" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759445476432/clear" translationType="2" allowedTranslationTypes="11"/>
-			<RawInputMessage key="83287645563672976" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0"/>
-				<Value first="On" second="1"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1768060487039" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/selectedlayer/clips/2/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/clips/2/connect" translationType="8" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/selectedlayer/clips/2/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/selectedlayer/clips/2/connected" translationType="8" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563650448" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.039370078740157479769"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1759445475949" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/objects/1759445474291/select" translationType="2" allowedTranslationTypes="3"/>
-			<ShortcutPath name="OutputPath" path="/composition/objects/1759445474291/select" translationType="2" allowedTranslationTypes="3"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/objects/1759445474291/selected" translationType="2" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/objects/1759445474291/selected" translationType="2" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563655568" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Off" second="0.039370078740157479769"/>
-				<Value first="On" second="0.047244094488188975722"/>
-			</NamedValues>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1767988819563" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/7/video/opacity" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/7/video/opacity" translationType="1" allowedTranslationTypes="11"/>
-			<Subtarget type="5" optionIndex="-1"/>
-			<RawInputMessage key="155345239601590704" value="0" numSteps="128"/>
-		</Shortcut>
-		<Shortcut name="Shortcut" uniqueId="1765706072910" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
-			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="OutputPath" path="/composition/layers/2/clips/7/connect" translationType="1" allowedTranslationTypes="11"/>
-			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/clips/7/connected" translationType="1" allowedTranslationTypes="-1"/>
-			<RawInputMessage key="83287645563655824" value="0" numSteps="128"/>
-			<NamedValues>
-				<Value first="Connected" second="0.023622047244094487861"/>
-				<Value first="Connected &amp; previewing" second="0.031496062992125983815"/>
-				<Value first="Disconnected" second="0.0078740157480314959537"/>
-				<Value first="Empty" second="0"/>
-				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
 		</Shortcut>
 	</ShortcutManager>
