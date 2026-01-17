@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MidiShortcutPreset name="Disconnect" presetId="-939912575">
+<MidiShortcutPreset name="Disconnect" presetId="-939912550">
 	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
 	<ShortcutManager name="MIDIShortcutManagerShortcuts">
 		<Shortcut name="Shortcut" uniqueId="1768060434062" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
@@ -29,6 +29,12 @@
 				<Value first="Empty" second="0"/>
 				<Value first="Previewing" second="0.015748031496062991907"/>
 			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768588809396" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/master" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/master" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="155345239601590704" value="0" numSteps="128"/>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768586712414" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/groups/2/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="19"/>
@@ -848,7 +854,7 @@
 			<ShortcutPath name="InputPath" path="/composition/layers/7/video/opacity" translationType="1" allowedTranslationTypes="11"/>
 			<ShortcutPath name="OutputPath" path="/composition/layers/7/video/opacity" translationType="1" allowedTranslationTypes="11"/>
 			<Subtarget type="5" optionIndex="-1"/>
-			<RawInputMessage key="155345239601590704" value="0.700787401574803126" numSteps="128"/>
+			<RawInputMessage key="155345239601590704" value="0" numSteps="128"/>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768060451728" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
@@ -1067,7 +1073,7 @@
 			<ShortcutPath name="InputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
 			<ShortcutPath name="OutputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
 			<Subtarget type="5" optionIndex="-1"/>
-			<RawInputMessage key="155345239601592496" value="0.45669291338582679307" numSteps="128"/>
+			<RawInputMessage key="155345239601592496" value="0.35433070866141730404" numSteps="128"/>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768141424192" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
 			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/transform3/bypassed" translationType="1" allowedTranslationTypes="11"/>
@@ -1136,6 +1142,7 @@
 			<RawInputMessage key="83287645563667600" value="0" numSteps="128"/>
 			<NamedValues>
 				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
 			</NamedValues>
 		</Shortcut>
 		<Shortcut name="Shortcut" uniqueId="1768586712376" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
@@ -1165,6 +1172,18 @@
 				<Value first="Off" second="0"/>
 				<Value first="On" second="1"/>
 			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768588686812" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/master" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/master" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="155345239601590448" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1768587833909" paramNodeName="ParamRange" behaviour="8" inputDeviceName="APC MINI" outputDeviceName="APC MINI">
+			<ShortcutPath name="InputPath" path="/composition/selectedlayer/master" translationType="8" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectedlayer/master" translationType="8" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="155345239601590960" value="0.84251968503937002541" numSteps="128"/>
 		</Shortcut>
 	</ShortcutManager>
 </MidiShortcutPreset>
