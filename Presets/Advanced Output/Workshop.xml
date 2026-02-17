@@ -617,13 +617,175 @@
 				<layers>
 					<Slice uniqueId="1759442862446">
 						<Params name="Common">
-							<Param name="Name" T="STRING" default="Layer" value="Slice"/>
+							<Param name="Name" T="STRING" default="Layer" value="Compo"/>
 							<Param name="Enabled" T="BOOL" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
 							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
 							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" T="UINT8" default="0" value="0"/>
+							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" T="BOOL" default="0" value="0"/>
+							<Param name="Black BG" T="BOOL" default="0" value="0"/>
+							<ParamRange name="BRed" altName="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BGreen" altName="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BBlue" altName="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="1920" y="0"/>
+							<v x="1920" y="1080"/>
+							<v x="0" y="1080"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="1919.9998779296875" y="0"/>
+							<v x="1919.9998779296875" y="1080.0001220703125"/>
+							<v x="0" y="1080.0001220703125"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+								<Param name="Flip" T="UINT8" default="0" value="0"/>
+							</Params>
+							<BezierWarper controlWidth="4" controlHeight="4">
+								<vertices>
+									<v x="0" y="0"/>
+									<v x="640" y="0"/>
+									<v x="1279.9998779296875" y="0"/>
+									<v x="1919.9998779296875" y="0"/>
+									<v x="0" y="360.00006103515625"/>
+									<v x="640" y="360.00006103515625"/>
+									<v x="1280" y="360.00006103515625"/>
+									<v x="1919.9998779296875" y="360.00006103515625"/>
+									<v x="0" y="720.00006103515625"/>
+									<v x="640" y="720.0001220703125"/>
+									<v x="1280" y="720.0001220703125"/>
+									<v x="1919.9998779296875" y="720.00006103515625"/>
+									<v x="0" y="1080.0001220703125"/>
+									<v x="640" y="1080.0001220703125"/>
+									<v x="1279.9998779296875" y="1080.0001220703125"/>
+									<v x="1919.9998779296875" y="1080.0001220703125"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="0" y="0"/>
+									<v x="1919.9998779296875" y="0"/>
+									<v x="1919.9998779296875" y="1080.0001220703125"/>
+									<v x="0" y="1080.0001220703125"/>
+								</src>
+								<dst>
+									<v x="0" y="0"/>
+									<v x="1919.9998779296875" y="0"/>
+									<v x="1919.9998779296875" y="1080.0001220703125"/>
+									<v x="0" y="1080.0001220703125"/>
+								</dst>
+							</Homography>
+						</Warper>
+						<SliceMask>
+							<Params name="Input Mask">
+								<Param name="Name" T="STRING" default="mask" value="mask"/>
+								<Param name="Enabled" T="BOOL" default="1" value="1"/>
+								<Param name="Invert" T="BOOL" default="1" value="1"/>
+							</Params>
+							<ShapeObject>
+								<Params name="Shape">
+									<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_BEZIER" storeChoices="0"/>
+								</Params>
+								<Rect orientation="0">
+									<v x="420.00006103515625" y="0"/>
+									<v x="1500" y="0"/>
+									<v x="1500" y="1080"/>
+									<v x="420.00006103515625" y="1080"/>
+								</Rect>
+								<Shape>
+									<Contour closed="1">
+										<points>
+											<v x="960" y="0"/>
+											<v x="1258.2333984375" y="0"/>
+											<v x="1500" y="241.7666473388671875"/>
+											<v x="1500" y="540"/>
+											<v x="1500" y="838.2332763671875"/>
+											<v x="1258.2333984375" y="1080"/>
+											<v x="960" y="1080"/>
+											<v x="661.7666015625" y="1080"/>
+											<v x="420.00006103515625" y="838.2332763671875"/>
+											<v x="420.00006103515625" y="540"/>
+											<v x="420.00006103515625" y="241.7666473388671875"/>
+											<v x="661.7666015625" y="0"/>
+										</points>
+										<segments>CCCC</segments>
+									</Contour>
+								</Shape>
+							</ShapeObject>
+						</SliceMask>
+					</Slice>
+					<Slice uniqueId="1771065166197">
+						<Params name="Common">
+							<Param name="Name" T="STRING" default="Layer" value="All"/>
+							<Param name="Enabled" T="BOOL" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="1:4" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="0"/>
+							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="0"/>
 							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
 						</Params>
 						<Params name="Output">
@@ -739,228 +901,7 @@
 								</dst>
 							</Homography>
 						</Warper>
-						<SliceMask>
-							<Params name="Input Mask">
-								<Param name="Name" T="STRING" default="mask" value="mask"/>
-								<Param name="Enabled" T="BOOL" default="1" value="1"/>
-								<Param name="Invert" T="BOOL" default="1" value="1"/>
-							</Params>
-							<ShapeObject>
-								<Params name="Shape">
-									<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_BEZIER" storeChoices="0"/>
-								</Params>
-								<Rect orientation="0">
-									<v x="420.00006103515625" y="0"/>
-									<v x="1500" y="0"/>
-									<v x="1500" y="1080"/>
-									<v x="420.00006103515625" y="1080"/>
-								</Rect>
-								<Shape>
-									<Contour closed="1">
-										<points>
-											<v x="960" y="0"/>
-											<v x="1258.2333984375" y="0"/>
-											<v x="1500" y="241.7666473388671875"/>
-											<v x="1500" y="540"/>
-											<v x="1500" y="838.2332763671875"/>
-											<v x="1258.2333984375" y="1080"/>
-											<v x="960" y="1080"/>
-											<v x="661.7666015625" y="1080"/>
-											<v x="420.00006103515625" y="838.2332763671875"/>
-											<v x="420.00006103515625" y="540"/>
-											<v x="420.00006103515625" y="241.7666473388671875"/>
-											<v x="661.7666015625" y="0"/>
-										</points>
-										<segments>CCCC</segments>
-									</Contour>
-								</Shape>
-							</ShapeObject>
-						</SliceMask>
 					</Slice>
-					<Mask uniqueId="1759965388588">
-						<Params name="Common">
-							<Param name="Name" T="STRING" default="Layer" value="Eyecour 2"/>
-							<Param name="Enabled" T="BOOL" default="1" value="1"/>
-						</Params>
-						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
-							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
-							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
-						</Params>
-						<Params name="Output">
-							<Param name="Flip" T="UINT8" default="0" value="1"/>
-							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<Param name="Invert" T="BOOL" default="1" value="0"/>
-						</Params>
-						<InputRect orientation="0">
-							<v x="-0.5" y="-0.5"/>
-							<v x="0.5" y="-0.5"/>
-							<v x="0.5" y="0.5"/>
-							<v x="-0.5" y="0.5"/>
-						</InputRect>
-						<OutputRect orientation="0">
-							<v x="1258.75" y="0"/>
-							<v x="1558.75" y="0"/>
-							<v x="1558.75" y="300"/>
-							<v x="1258.75" y="300"/>
-						</OutputRect>
-						<ShapeObject>
-							<Params name="Shape">
-								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_BEZIER" storeChoices="0"/>
-							</Params>
-							<Rect orientation="0">
-								<v x="1258.75" y="0"/>
-								<v x="1558.75" y="0"/>
-								<v x="1558.75" y="300"/>
-								<v x="1258.75" y="300"/>
-							</Rect>
-							<Shape>
-								<Contour closed="1">
-									<points>
-										<v x="1389.7750244140625" y="0"/>
-										<v x="1296.4527587890625" y="0"/>
-										<v x="1257.455810546875" y="77.642181396484375"/>
-										<v x="1258.796875" y="81.968017578125"/>
-										<v x="1258.796875" y="174.464874267578125"/>
-										<v x="1375.12890625" y="299.958648681640625"/>
-										<v x="1468.451171875" y="299.958648681640625"/>
-										<v x="1472.815673828125" y="301.287872314453125"/>
-										<v x="1558.75" y="259.977447509765625"/>
-										<v x="1558.75" y="167.480621337890625"/>
-										<v x="1558.75" y="74.9837493896484375"/>
-										<v x="1483.09716796875" y="0"/>
-									</points>
-									<segments>CCCC</segments>
-								</Contour>
-							</Shape>
-						</ShapeObject>
-					</Mask>
-					<Mask uniqueId="1759965388573">
-						<Params name="Common">
-							<Param name="Name" T="STRING" default="Layer" value="Eyejar 2"/>
-							<Param name="Enabled" T="BOOL" default="1" value="1"/>
-						</Params>
-						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="0:1" storeChoices="0"/>
-							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
-							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
-						</Params>
-						<Params name="Output">
-							<Param name="Flip" T="UINT8" default="0" value="0"/>
-							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
-								<PhaseSourceStatic name="PhaseSourceStatic"/>
-								<BehaviourDouble name="BehaviourDouble"/>
-								<ValueRange name="defaultRange" min="-1" max="1"/>
-								<ValueRange name="minMax" min="-1" max="1"/>
-								<ValueRange name="startStop" min="-1" max="1"/>
-							</ParamRange>
-							<Param name="Invert" T="BOOL" default="1" value="0"/>
-						</Params>
-						<InputRect orientation="0">
-							<v x="-0.5" y="-0.5"/>
-							<v x="0.5" y="-0.5"/>
-							<v x="0.5" y="0.5"/>
-							<v x="-0.5" y="0.5"/>
-						</InputRect>
-						<OutputRect orientation="0">
-							<v x="361.25006103515625" y="0"/>
-							<v x="661.25" y="0"/>
-							<v x="661.25" y="300"/>
-							<v x="361.25006103515625" y="300"/>
-						</OutputRect>
-						<ShapeObject>
-							<Params name="Shape">
-								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_BEZIER" storeChoices="0"/>
-							</Params>
-							<Rect orientation="0">
-								<v x="361.25006103515625" y="0"/>
-								<v x="661.25" y="0"/>
-								<v x="661.25" y="300"/>
-								<v x="361.25006103515625" y="300"/>
-							</Rect>
-							<Shape>
-								<Contour closed="1">
-									<points>
-										<v x="530.22509765625" y="0"/>
-										<v x="623.54736328125" y="0"/>
-										<v x="662.544189453125" y="77.642181396484375"/>
-										<v x="661.203125" y="81.968017578125"/>
-										<v x="661.203125" y="174.464874267578125"/>
-										<v x="544.87109375" y="299.958648681640625"/>
-										<v x="451.548919677734375" y="299.958648681640625"/>
-										<v x="447.18450927734375" y="301.287872314453125"/>
-										<v x="361.25006103515625" y="259.977447509765625"/>
-										<v x="361.25006103515625" y="167.480621337890625"/>
-										<v x="361.25006103515625" y="74.9837493896484375"/>
-										<v x="436.9029541015625" y="0"/>
-									</points>
-									<segments>CCCC</segments>
-								</Contour>
-							</Shape>
-						</ShapeObject>
-					</Mask>
 				</layers>
 				<OutputDevice>
 					<OutputDeviceVirtual name="Cercle" deviceId="VirtualCercle" idHash="10178253962954244953" width="1920" height="1080">
@@ -1305,6 +1246,131 @@
 									<v x="0" y="0"/>
 									<v x="1200" y="0"/>
 									<v x="1200" y="1920"/>
+									<v x="0" y="1920"/>
+								</dst>
+							</Homography>
+						</Warper>
+					</Slice>
+					<Slice uniqueId="1771065166240">
+						<Params name="Common">
+							<Param name="Name" T="STRING" default="Layer" value="All"/>
+							<Param name="Enabled" T="BOOL" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="1:4" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="0"/>
+							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" T="UINT8" default="0" value="0"/>
+							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" T="BOOL" default="0" value="0"/>
+							<Param name="Black BG" T="BOOL" default="0" value="0"/>
+							<ParamRange name="BRed" altName="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BGreen" altName="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BBlue" altName="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="285" y="0"/>
+							<v x="960" y="0"/>
+							<v x="960" y="1080"/>
+							<v x="285" y="1080"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="1200.0001220703125" y="0"/>
+							<v x="1200.0001220703125" y="1920"/>
+							<v x="0" y="1920"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+								<Param name="Flip" T="UINT8" default="0" value="0"/>
+							</Params>
+							<BezierWarper controlWidth="4" controlHeight="4">
+								<vertices>
+									<v x="0" y="0"/>
+									<v x="400.00006103515625" y="0"/>
+									<v x="800.00006103515625" y="0"/>
+									<v x="1200.0001220703125" y="0"/>
+									<v x="0" y="640"/>
+									<v x="400.00006103515625" y="640"/>
+									<v x="800.0001220703125" y="640"/>
+									<v x="1200.0001220703125" y="640"/>
+									<v x="0" y="1280"/>
+									<v x="400.00006103515625" y="1280"/>
+									<v x="800.0001220703125" y="1280"/>
+									<v x="1200.0001220703125" y="1280"/>
+									<v x="0" y="1920"/>
+									<v x="400.00006103515625" y="1920"/>
+									<v x="800.00006103515625" y="1920"/>
+									<v x="1200.0001220703125" y="1920"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="0" y="0"/>
+									<v x="1200.0001220703125" y="0"/>
+									<v x="1200.0001220703125" y="1920"/>
+									<v x="0" y="1920"/>
+								</src>
+								<dst>
+									<v x="0" y="0"/>
+									<v x="1200.0001220703125" y="0"/>
+									<v x="1200.0001220703125" y="1920"/>
 									<v x="0" y="1920"/>
 								</dst>
 							</Homography>
@@ -1659,6 +1725,131 @@
 							</Homography>
 						</Warper>
 					</Slice>
+					<Slice uniqueId="1771065168183">
+						<Params name="Common">
+							<Param name="Name" T="STRING" default="Layer" value="All"/>
+							<Param name="Enabled" T="BOOL" default="1" value="1"/>
+						</Params>
+						<Params name="Input">
+							<ParamChoice name="Input Source" default="0:1" value="1:4" storeChoices="0"/>
+							<Param name="Input Opacity" T="BOOL" default="1" value="0"/>
+							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
+							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
+						</Params>
+						<Params name="Output">
+							<Param name="Flip" T="UINT8" default="0" value="0"/>
+							<ParamRange name="Brightness" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Contrast" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<ParamRange name="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="-1" max="1"/>
+								<ValueRange name="minMax" min="-1" max="1"/>
+								<ValueRange name="startStop" min="-1" max="1"/>
+							</ParamRange>
+							<Param name="Is Key" T="BOOL" default="0" value="0"/>
+							<Param name="Black BG" T="BOOL" default="0" value="0"/>
+							<ParamRange name="BRed" altName="Red" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BGreen" altName="Green" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+							<ParamRange name="BBlue" altName="Blue" T="DOUBLE" default="0" value="0">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+								<BehaviourDouble name="BehaviourDouble"/>
+								<ValueRange name="defaultRange" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="minMax" min="0" max="0.4000000000000000222"/>
+								<ValueRange name="startStop" min="0" max="0.4000000000000000222"/>
+							</ParamRange>
+						</Params>
+						<InputRect orientation="0">
+							<v x="960" y="0"/>
+							<v x="1635" y="0"/>
+							<v x="1635" y="1080"/>
+							<v x="960" y="1080"/>
+						</InputRect>
+						<OutputRect orientation="0">
+							<v x="0" y="0"/>
+							<v x="1200" y="0"/>
+							<v x="1200" y="1920"/>
+							<v x="0" y="1920"/>
+						</OutputRect>
+						<Warper>
+							<Params name="Warper">
+								<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_LINEAR" storeChoices="0"/>
+								<Param name="Flip" T="UINT8" default="0" value="0"/>
+							</Params>
+							<BezierWarper controlWidth="4" controlHeight="4">
+								<vertices>
+									<v x="0" y="0"/>
+									<v x="400" y="0"/>
+									<v x="800" y="0"/>
+									<v x="1200" y="0"/>
+									<v x="0" y="640"/>
+									<v x="400" y="640"/>
+									<v x="800" y="640"/>
+									<v x="1200" y="640"/>
+									<v x="0" y="1280"/>
+									<v x="400" y="1280"/>
+									<v x="800" y="1280"/>
+									<v x="1200" y="1280"/>
+									<v x="0" y="1920"/>
+									<v x="400" y="1920"/>
+									<v x="800" y="1920"/>
+									<v x="1200" y="1920"/>
+								</vertices>
+							</BezierWarper>
+							<Homography>
+								<src>
+									<v x="0" y="0"/>
+									<v x="1200" y="0"/>
+									<v x="1200" y="1920"/>
+									<v x="0" y="1920"/>
+								</src>
+								<dst>
+									<v x="0" y="0"/>
+									<v x="1200" y="0"/>
+									<v x="1200" y="1920"/>
+									<v x="0" y="1920"/>
+								</dst>
+							</Homography>
+						</Warper>
+					</Slice>
 				</layers>
 				<OutputDevice>
 					<OutputDeviceVirtual name="LatCour" deviceId="VirtualLatCour" idHash="13432735716169538281" width="1200" height="1920">
@@ -1764,7 +1955,7 @@
 							<Param name="Enabled" T="BOOL" default="1" value="1"/>
 						</Params>
 						<Params name="Input">
-							<ParamChoice name="Input Source" default="0:1" value="4:2" storeChoices="0"/>
+							<ParamChoice name="Input Source" default="0:1" value="4:1" storeChoices="0"/>
 							<Param name="Input Opacity" T="BOOL" default="1" value="1"/>
 							<Param name="Input Bypass/Solo" T="BOOL" default="1" value="1"/>
 							<Param name="SoftEdgeEnable" T="BOOL" default="0" value="0"/>
@@ -1882,6 +2073,43 @@
 								</dst>
 							</Homography>
 						</Warper>
+						<SliceMask>
+							<Params name="Input Mask">
+								<Param name="Name" T="STRING" default="mask" value="mask"/>
+								<Param name="Enabled" T="BOOL" default="1" value="1"/>
+								<Param name="Invert" T="BOOL" default="1" value="1"/>
+							</Params>
+							<ShapeObject>
+								<Params name="Shape">
+									<ParamChoice name="Point Mode" default="PM_LINEAR" value="PM_BEZIER" storeChoices="0"/>
+								</Params>
+								<Rect orientation="0">
+									<v x="420.299560546875" y="0"/>
+									<v x="1500.3251953125" y="0"/>
+									<v x="1500.3251953125" y="1080.0003662109375"/>
+									<v x="420.299560546875" y="1080.0003662109375"/>
+								</Rect>
+								<Shape>
+									<Contour closed="1">
+										<points>
+											<v x="960.3123779296875" y="2.8462003683671355247e-05"/>
+											<v x="1258.552978515625" y="2.8462003683671355247e-05"/>
+											<v x="1500.3255615234375" y="241.766815185546875"/>
+											<v x="1500.3255615234375" y="540.00030517578125"/>
+											<v x="1500.3255615234375" y="838.2337646484375"/>
+											<v x="1258.552978515625" y="1080.00048828125"/>
+											<v x="960.3123779296875" y="1080.00048828125"/>
+											<v x="662.0718994140625" y="1080.00048828125"/>
+											<v x="420.299560546875" y="838.2337646484375"/>
+											<v x="420.299560546875" y="540.00030517578125"/>
+											<v x="420.299560546875" y="241.766815185546875"/>
+											<v x="662.0718994140625" y="2.8462003683671355247e-05"/>
+										</points>
+										<segments>CCCC</segments>
+									</Contour>
+								</Shape>
+							</ShapeObject>
+						</SliceMask>
 					</Slice>
 					<Slice uniqueId="1759965389351">
 						<Params name="Common">
