@@ -8,7 +8,7 @@
 	<Params name="Params">
 		<Param name="Name" T="STRING" default="" value="Totem+Cerce"/>
 		<Param name="Description" T="STRING" default="" value="Show de base totem+cerce"/>
-		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999808952822">
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999798627748">
 			<PhaseSourceStatic name="PhaseSourceStatic"/>
 		</ParamRange>
 		<Param name="GlobalTransportTimelineControl" altName="Control Timelines" T="BOOL" default="1" value="0"/>
@@ -133,7 +133,7 @@
 	<Group name="Group" uniqueId="1755227870095">
 		<Params name="Params">
 			<Param name="Name" T="STRING" default="Group #" value="Main"/>
-			<ParamRange name="Speed" T="DOUBLE" default="1" value="1.7943093495390771697">
+			<ParamRange name="Speed" T="DOUBLE" default="1" value="1.7943093495388908742">
 				<PhaseSourceStatic name="PhaseSourceStatic"/>
 			</ParamRange>
 		</Params>
@@ -203,7 +203,7 @@
 			<ParamRange name="Master" T="DOUBLE" default="1" value="0">
 				<PhaseSourceStatic name="PhaseSourceStatic"/>
 			</ParamRange>
-			<ParamRange name="Speed" T="DOUBLE" default="1" value="1.2442632650497194025">
+			<ParamRange name="Speed" T="DOUBLE" default="1" value="1.2442632650495908386">
 				<PhaseSourceStatic name="PhaseSourceStatic"/>
 			</ParamRange>
 		</Params>
@@ -329,7 +329,6 @@
 				<FoldState component="/groupedcomponentlayer" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentbendoscope" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentbendoscopeviewgroupedcomponent" folded="0"/>
-				<FoldState component="/groupedcomponentrenderpasschaincomponentcolorize" folded="1"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentdisplace" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentdisplaceviewgroupedcomponent" folded="0"/>
 				<FoldState component="/groupedcomponentrenderpasschaincomponentflip" folded="0"/>
@@ -375,6 +374,9 @@
 					<View name="View" folded="1" bCanBeDisabled="0" bCanBeRemoved="0"/>
 				</RenderPass>
 				<RenderPass storage="0" name="Mirror" type="DryWetEffect" uniqueTypeId="A108" uniqueId="1759445475026" baseType="DryWetEffect">
+					<Params name="Params">
+						<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
+					</Params>
 					<View name="View" folded="1"/>
 					<RenderPass name="Mirror" type="Mirror" uniqueTypeId="A108" uniqueId="1759445475017" baseType="Effect" dwType="Effect">
 						<Params name="Params">
@@ -390,6 +392,19 @@
 					<ChoosableMixer name="Mixer">
 						<VideoMixerStateID uniqueId="1763316699489"/>
 						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1759445475033" baseType="Mixer"/>
+					</ChoosableMixer>
+				</RenderPass>
+				<RenderPass storage="0" name="Duplicate" type="DryWetEffect" uniqueTypeId="c_db1f2dd2-60c4-4ddd-a7c4-d18b589495e7" uniqueId="1771349710649" baseType="DryWetEffect">
+					<RenderPass name="Duplicate" type="WireEffect" uniqueTypeId="c_db1f2dd2-60c4-4ddd-a7c4-d18b589495e7" uniqueId="1771349710645" baseType="Effect" dwType="Effect">
+						<Params name="Params">
+							<ParamRange name="Float In" T="DOUBLE" default="1" value="0.35797119140625" key="51">
+								<PhaseSourceStatic name="PhaseSourceStatic"/>
+							</ParamRange>
+						</Params>
+					</RenderPass>
+					<ChoosableMixer name="Mixer">
+						<VideoMixerStateID uniqueId="1771349710653"/>
+						<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1771349710655" baseType="Mixer"/>
 					</ChoosableMixer>
 				</RenderPass>
 				<RenderPass storage="0" name="Colorize" type="DryWetEffect" uniqueTypeId="A103" uniqueId="1771029966676" baseType="DryWetEffect">
@@ -445,7 +460,7 @@
 				<VideoMixerStateID uniqueId="1763316697465"/>
 				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1771029944790" baseType="Mixer">
 					<Params name="Params">
-						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.92738455533981323242">
+						<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.033926665782928466797">
 							<PhaseSourceStatic name="PhaseSourceStatic"/>
 						</ParamRange>
 					</Params>
@@ -463,7 +478,7 @@
 		</LayerView>
 		<AudioTrack name="AudioTrack">
 			<Params name="Params">
-				<ParamRange name="Volume" T="DOUBLE" default="0" value="-0.62164023029294679379">
+				<ParamRange name="Volume" T="DOUBLE" default="0" value="-0.62160010835033507881">
 					<PhaseSourceStatic name="PhaseSourceStatic"/>
 				</ParamRange>
 			</Params>
@@ -531,7 +546,7 @@
 		</LayerView>
 		<AudioTrack name="AudioTrack">
 			<Params name="Params">
-				<ParamRange name="Volume" T="DOUBLE" default="0" value="-0.62150984361763261798">
+				<ParamRange name="Volume" T="DOUBLE" default="0" value="-0.62146973024187490697">
 					<PhaseSourceStatic name="PhaseSourceStatic"/>
 				</ParamRange>
 			</Params>
@@ -967,7 +982,6 @@
 	<Deck name="Deck" uniqueId="1755196199454" closed="0" numLayersWithContent="9" numColumnsWithContent="7" numLayers="9" numColumns="12" deckIndex="0">
 		<Params name="Params">
 			<Param name="Name" T="STRING" default="empty" value="Base media"/>
-			<Param name="ScrollX" T="INT32" default="0" value="162"/>
 		</Params>
 		<Column uniqueId="1755196199499" columnIndex="0"/>
 		<Column uniqueId="1755196199500" columnIndex="1"/>
@@ -1039,9 +1053,9 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="24.424399742049768491">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.0048848799484099538273" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -1160,9 +1174,9 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="289.92829965708580175">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.057985659931417160573" defaultBeatsDuration="8">
 							<Params name="Params">
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
@@ -1179,7 +1193,6 @@
 					<FoldState component="/groupedcomponentrenderpasschaincomponentduplicate" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentduplicatedelay" folded="1"/>
 					<FoldState component="/groupedcomponentrenderpasschaincomponentduplicateviewgroupedcomponent" folded="0"/>
-					<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="0"/>
 					<FoldState component="/groupedcomponenttextanimator" folded="1"/>
 					<FoldState component="/groupedcomponenttextanimatoroutlinecolorparamcolorcomponent" folded="0"/>
 				</FoldParams>
@@ -1258,7 +1271,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1576,7 +1589,7 @@
 						<DurationSource name="DurationSource" defaultDuration="5.0000000000000026645s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="5000.0000000000027285" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5.0000000000000026645" value="2">
@@ -1692,69 +1705,7 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1755196199483" layerIndex="6" columnIndex="0">
-			<PreloadData>
-				<VideoFile value="C:\Users\aurel\Documents\Resolume Arena\Media\media_scenofrog\CF-Logo-White-Trans.png"/>
-			</PreloadData>
-			<Params name="Params">
-				<Param name="Name" T="STRING" default="CF-Logo-White-Trans" value="CF-Logo-White-Trans"/>
-				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
-			</Params>
-			<Transport name="Transport">
-				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="1s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
-							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
-									<PhaseSourceStatic name="PhaseSourceStatic"/>
-								</ParamRange>
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
-									<PhaseSourceStatic name="PhaseSourceStatic"/>
-								</ParamRange>
-							</Params>
-							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1"/>
-						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="1000"/>
-					</ParamRange>
-				</Params>
-			</Transport>
-			<ClipView name="ClipView">
-				<FoldParams name="FoldParams">
-					<FoldState component="/groupedcomponentrenderpasschaincomponenttransform" folded="0"/>
-				</FoldParams>
-			</ClipView>
-			<VideoTrack name="VideoTrack">
-				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="1762" value="1762">
-						<PhaseSourceStatic name="PhaseSourceStatic"/>
-					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="1762" value="1762">
-						<PhaseSourceStatic name="PhaseSourceStatic"/>
-					</ParamRange>
-					<Param name="RScale" T="BOOL" default="1" value="1"/>
-					<Param name="GScale" T="BOOL" default="1" value="1"/>
-					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="1" value="1"/>
-				</Params>
-				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1770996685737" baseType="Effect">
-						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
-					</RenderPass>
-				</RenderPass>
-				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1770996685735"/>
-				</ChoosableMixer>
-				<PrimarySource>
-					<VideoSource name="VideoSource" width="1762" height="1762" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\aurel\Documents\Resolume Arena\Media\media_scenofrog\CF-Logo-White-Trans.png"/>
-					</VideoSource>
-				</PrimarySource>
-				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1770996685735"/>
-				</ChoosableMixer>
-			</VideoTrack>
-		</Clip>
+		<Clip name="Clip" uniqueId="1755196199483" layerIndex="6" columnIndex="0"/>
 		<Clip name="Clip" uniqueId="1771075536305" layerIndex="7" columnIndex="0">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="" value="feu"/>
@@ -1766,7 +1717,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999839939147">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2052,7 +2003,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2168,7 +2119,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123723746093">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.016504702123722018309">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.96244131455399062336">
@@ -2335,7 +2286,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999876076906">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2909,116 +2860,7 @@
 				</ChoosableMixer>
 			</VideoTrack>
 		</Clip>
-		<Clip name="Clip" uniqueId="1755227870699" layerIndex="6" columnIndex="1">
-			<PreloadData>
-				<VideoFile value="C:\Users\aurel\Documents\Resolume Arena\Media\media_scenofrog\psycofrog.jpeg"/>
-				<EmbeddedThumbnail encoding="LZF" width="320" height="240" bitdepth="32" data="AQAA4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A4P8A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AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOD/AOBGAAEAAA=="/>
-			</PreloadData>
-			<Params name="Params">
-				<Param name="Name" T="STRING" default="psycofrog" value="psycofrog"/>
-				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
-			</Params>
-			<Transport name="Transport">
-				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="0">
-						<DurationSource name="DurationSource" defaultDuration="1s"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
-							<Params name="Params">
-								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
-									<PhaseSourceStatic name="PhaseSourceStatic"/>
-								</ParamRange>
-							</Params>
-							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1"/>
-						</PhaseSourceTransportTimeline>
-						<ValueRange name="minMax" min="0" max="1000"/>
-					</ParamRange>
-				</Params>
-			</Transport>
-			<ClipView name="ClipView">
-				<FoldParams name="FoldParams">
-					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="1"/>
-					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="1"/>
-				</FoldParams>
-			</ClipView>
-			<VideoTrack name="VideoTrack">
-				<Params name="Params">
-					<ParamRange name="Width" T="DOUBLE" default="921" value="921">
-						<PhaseSourceStatic name="PhaseSourceStatic"/>
-					</ParamRange>
-					<ParamRange name="Height" T="DOUBLE" default="2048" value="2048">
-						<PhaseSourceStatic name="PhaseSourceStatic"/>
-					</ParamRange>
-					<Param name="RScale" T="BOOL" default="1" value="1"/>
-					<Param name="GScale" T="BOOL" default="1" value="1"/>
-					<Param name="BScale" T="BOOL" default="1" value="1"/>
-					<Param name="AScale" T="BOOL" default="0" value="0"/>
-				</Params>
-				<RenderPass name="RenderPassChain">
-					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1771075535496" baseType="Effect">
-						<View name="View" folded="1" bCanBeDisabled="0" bCanBeRemoved="0"/>
-					</RenderPass>
-					<RenderPass storage="0" name="AutoMask" type="DryWetEffect" uniqueTypeId="A120" uniqueId="1771075535569" baseType="DryWetEffect">
-						<View name="View" folded="1"/>
-						<RenderPass name="AutoMask" type="AutoMask" uniqueTypeId="A120" uniqueId="1771075535563" baseType="Effect" dwType="Effect">
-							<Params name="Params">
-								<ParamRange name="Contrast" T="DOUBLE" default="0.5" value="1">
-									<PhaseSourceStatic name="PhaseSourceStatic"/>
-								</ParamRange>
-							</Params>
-						</RenderPass>
-						<ChoosableMixer name="Mixer">
-							<VideoMixerStateID uniqueId="1771075535573"/>
-							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1771075535575" baseType="Mixer"/>
-						</ChoosableMixer>
-					</RenderPass>
-					<RenderPass storage="0" name="Transform" type="DryWetEffect" uniqueTypeId="17122039101699797593" uniqueId="1771077838019" baseType="DryWetEffect">
-						<Params name="Params">
-							<Param name="Bypassed" altName="Bypass" T="BOOL" default="0" value="1"/>
-						</Params>
-						<View name="View" folded="1"/>
-						<RenderPass name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1771077838001" baseType="Effect" dwType="Effect">
-							<Params name="Params">
-								<ParamRange name="Position Y" T="DOUBLE" default="0" value="-1080">
-									<DurationSource name="DurationSource" userDuration="0.625" scale="0.5"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
-										<Params name="Params">
-											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.625" value="0.625">
-												<PhaseSourceStatic name="PhaseSourceStatic"/>
-											</ParamRange>
-											<ParamChoice name="PlayDirection" T="INT32" default="2" value="0" storeChoices="0"/>
-											<ParamChoice name="PlayMode" T="INT32" default="0" value="1" storeChoices="0"/>
-											<Param name="DurationIsScalable" altName="Duration Changes With In &amp; Out Points" T="BOOL" default="1" value="0"/>
-										</Params>
-										<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="4" detectedTempo="-1"/>
-									</PhaseSourceTimeline>
-									<ValueRange name="defaultRange" min="-1080" max="1080"/>
-									<ValueRange name="minMax" min="-32768" max="32768"/>
-									<ValueRange name="startStop" min="-1080" max="0"/>
-								</ParamRange>
-							</Params>
-							<AnimationSettings name="AnimationSettings" uniqueId="1771077838002">
-								<Setting name="Position Y" flags="9223372036854775809"/>
-							</AnimationSettings>
-						</RenderPass>
-						<ChoosableMixer name="Mixer">
-							<VideoMixerStateID uniqueId="1771077838023"/>
-							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1771077838025" baseType="Mixer"/>
-						</ChoosableMixer>
-					</RenderPass>
-				</RenderPass>
-				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1771075535494"/>
-				</ChoosableMixer>
-				<PrimarySource>
-					<VideoSource name="VideoSource" width="921" height="2048" type="VideoFormatReaderSource">
-						<VideoFormatReaderSource fileName="C:\Users\aurel\Documents\Resolume Arena\Media\media_scenofrog\psycofrog.jpeg"/>
-					</VideoSource>
-				</PrimarySource>
-				<ChoosableMixer name="Blend">
-					<VideoMixerStateID uniqueId="1771075535494"/>
-				</ChoosableMixer>
-			</VideoTrack>
-		</Clip>
+		<Clip name="Clip" uniqueId="1755227870699" layerIndex="6" columnIndex="1"/>
 		<Clip name="Clip" uniqueId="1755196199498" layerIndex="7" columnIndex="1">
 			<Params name="Params">
 				<Param name="Name" T="STRING" default="" value="Sharpen"/>
@@ -3030,7 +2872,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3071,7 +2913,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -3267,7 +3109,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999927713379">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999917388305">
 												<DurationSource name="DurationSource"/>
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
@@ -3311,7 +3153,7 @@
 						<DurationSource name="DurationSource" defaultDuration="5.0000000000000026645s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="5000.0000000000027285" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999870914369">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5.0000000000000026645" value="2">
@@ -3617,7 +3459,7 @@
 									<DurationSource name="DurationSource" scale="0.46875"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999936300399">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999934757189">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2.34375" value="2">
@@ -3635,7 +3477,7 @@
 									<DurationSource name="DurationSource" scale="0.46296296296296296502"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999936300399">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999934757189">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2.3148148148148148806" value="2">
@@ -3653,7 +3495,7 @@
 									<DurationSource name="DurationSource" scale="0.050000000000000002776"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999936300399">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999934757189">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.25" value="0.25">
@@ -3958,7 +3800,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3999,7 +3841,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" scale="0.49922475888747575024"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="0">
@@ -4246,7 +4088,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999870914369">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4331,7 +4173,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999870914369">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -4462,7 +4304,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceFFT name="PhaseSourceFFT" phase="0" linkId="/audioengine/externalfft">
 										<Params name="Params">
-											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.17125329399412059228">
+											<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="0.17125329399337926861">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 												<ValueRange name="startStop" min="0.13776086448944496743" max="0.33333333333333331483"/>
 											</ParamRange>
@@ -4513,7 +4355,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999876076906">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4574,7 +4416,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="64" scale="0.15651041666666667962"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="64">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999876076906">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="64" value="4">
@@ -4658,7 +4500,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="64" scale="0.13888888888888889506"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="64">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999876076906">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="64" value="4">
@@ -4854,7 +4696,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4914,7 +4756,7 @@
 									<DurationSource name="DurationSource" scale="0.72558144266291180191"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="3.6279072133145588985" value="2">
@@ -4988,7 +4830,7 @@
 									<DurationSource name="DurationSource" scale="0.10317834188771803083"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999865751832">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.27058859432444853921">
@@ -5050,7 +4892,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999845101684">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5090,7 +4932,7 @@
 								<DurationSource name="DurationSource" defaultDuration="4b"/>
 								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 									<Params name="Params">
-										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
+										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999845101684">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -5158,7 +5000,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999845101684">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5201,7 +5043,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" scale="0.17674409141836239234"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999845101684">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -5233,7 +5075,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="16">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999855426758">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999845101684">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Multiplier" altName="Speed" T="DOUBLE" default="1" value="0.5">
@@ -5350,7 +5192,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="8">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999548205842">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999537880768">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8" value="2">
@@ -5378,7 +5220,7 @@
 											<DurationSource name="DurationSource" defaultDuration="4b"/>
 											<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 												<Params name="Params">
-													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999553368379">
+													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999543043305">
 														<PhaseSourceStatic name="PhaseSourceStatic"/>
 													</ParamRange>
 													<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="2">
@@ -5409,7 +5251,7 @@
 											<DurationSource name="DurationSource" defaultDuration="4b"/>
 											<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 												<Params name="Params">
-													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999553368379">
+													<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999543043305">
 														<PhaseSourceStatic name="PhaseSourceStatic"/>
 													</ParamRange>
 													<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="3">
@@ -5451,7 +5293,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999966437958">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5553,7 +5395,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5593,7 +5435,7 @@
 								<DurationSource name="DurationSource" defaultDuration="4b"/>
 								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 									<Params name="Params">
-										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -5661,7 +5503,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -5704,7 +5546,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" scale="0.17674409141836239234"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -5736,7 +5578,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="16">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Multiplier" altName="Speed" T="DOUBLE" default="1" value="0.5">
@@ -6135,7 +5977,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -6184,7 +6026,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -6198,7 +6040,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="3"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" defaultBeatsDuration="3">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="3" value="2">
@@ -6269,7 +6111,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -6521,7 +6363,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999860589295">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999850264221">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
