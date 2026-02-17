@@ -1,11 +1,12 @@
+# Ignore all files by default
 *
+
+# Except the .gitignore file and README.md
 !.gitignore
 !README.md
 
 # Allow parent folders
 !*/
-<<<<<<< Updated upstream
-=======
 
 # List specific files and folders to keep
 !Compositions/scenofrog1.avc
@@ -22,4 +23,3 @@
 !Presets/Advanced Output/Disconnect.xml
 !Shortcuts/MIDI/Disconnect.xml
 !Media/Disconnect/.gitkeep
->>>>>>> Stashed changes
