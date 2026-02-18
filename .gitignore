@@ -9,17 +9,14 @@
 !*/
 
 # List specific files and folders to keep
-!Compositions/scenofrog1.avc
-!Presets/Advanced Output/scenofrog1.xml
-!Shortcuts/MIDI/scenofrog1-apc_mini.xml
+# List of differents compositions, advanced outputs, MIDI controls and 
+# commons files like extra effects and medias
+
+# Commons ressources
 !Media/media_scenofrog/*
-!Compositions/Totem+Cerce.avc
-!Presets/Advanced Output/Totem+Cerce.xml
-!Shortcuts/MIDI/Totem+Cerce.xml
 !Extra Effects/*
 
-# Event Disconnect by TechnoCambrousse (16/01/2026) 
-!Compositions/Disconnect.avc
-!Presets/Advanced Output/Disconnect.xml
-!Shortcuts/MIDI/Disconnect.xml
-!Media/Disconnect/.gitkeep
+# Totem+Cerce output
+!Presets/Advanced Output/Totem+Cerce.xml
+!Compositions/Totem+Cerce.avc
+!Shortcuts/MIDI/Totem+Cerce.xml
