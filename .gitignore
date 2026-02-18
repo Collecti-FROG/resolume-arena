@@ -14,7 +14,9 @@
 
 # Commons ressources
 !Media/media_scenofrog/*
-!Media/media_tetesbrulees/*
+!Media/media_tetesbrulees/Affiches/*
+!Media/media_tetesbrulees/Logos Têtes Brulées/*
+!Media/media_tetesbrulees/Éléments affiche/*
 !Extra Effects/*
 
 # Totem+Cerce output
