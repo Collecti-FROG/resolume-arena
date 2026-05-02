@@ -25,3 +25,10 @@
 !Presets/Advanced Output/Totem.xml
 !Compositions/Totem.avc
 !Shortcuts/MIDI/Totem.xml
+
+# Totem
+!Presets/Advanced Output/TactileMidiMix.xml
+!Compositions/TactileMidiMix.avc
+!Shortcuts/MIDI/Tactile+MidiMix.xml
+!Presets/Interface/TactileScreen.xml
+
