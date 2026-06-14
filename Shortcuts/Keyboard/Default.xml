@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeyboardShortcutPreset name="Default" presetId="-936656819">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
+	<ShortcutManager name="KeyboardShortcutManagerShortcuts">
+		<Shortcut name="Shortcut" uniqueId="1781450794356" paramNodeName="RangedParam[bool]" behaviour="0">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/totalvisualannihilation/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="296352743424" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794442" paramNodeName="RangedParam[bool]" behaviour="1">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/blur/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="154618822656" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794362" paramNodeName="RangedParam[bool]" behaviour="1">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="154618822656" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450828526" paramNodeName="ParamChoice[Color]" behaviour="131074">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/colorize/effect/color/palette/colors" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="3" optionIndex="0" numChoices="9"/>
+			<RawInputMessage key="369367187456" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794390" paramNodeName="RangedParam[bool]" behaviour="0">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/edgedetection/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="377957122048" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450790924" paramNodeName="RangedParam[bool]" behaviour="3072">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="343597383680" value="1"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450828674" paramNodeName="RangedParam[bool]" behaviour="0">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/gridcloner/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="279172874240" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1775508854984" paramNodeName="ParamRange" behaviour="0">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/colorize/effect/color/hue" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="163208757248" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794356" paramNodeName="RangedParam[bool]" behaviour="1">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/totalvisualannihilation/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="154618822656" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450790926" paramNodeName="RangedParam[bool]" behaviour="3072">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe2/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="330712481792" value="1"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794442" paramNodeName="RangedParam[bool]" behaviour="0">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/blur/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="352187318272" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794358" paramNodeName="RangedParam[bool]" behaviour="2049">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/totalvisualannihilation2/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="154618822656" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794358" paramNodeName="RangedParam[bool]" behaviour="2048">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/totalvisualannihilation2/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="283467841536" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450828674" paramNodeName="RangedParam[bool]" behaviour="1">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/gridcloner/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="154618822656" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450828526" paramNodeName="ParamChoice[Color]" behaviour="262146">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/colorize/effect/color/palette/colors" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="3" optionIndex="0" numChoices="9"/>
+			<RawInputMessage key="287762808832" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794390" paramNodeName="RangedParam[bool]" behaviour="1">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/edgedetection/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="154618822656" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1781450794362" paramNodeName="RangedParam[bool]" behaviour="0">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="382252089344" value="0"/>
+		</Shortcut>
+	</ShortcutManager>
+</KeyboardShortcutPreset>
+
