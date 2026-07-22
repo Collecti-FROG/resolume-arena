@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Composition name="Composition" uniqueId="1776240643068" numDecks="3" currentDeckIndex="0" numLayers="2" numColumns="9" compositionIsRelative="0">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
+	<CompositionInfo name="TC2026" description="Stand avec Borne d'arcade / Roue cadeaux / kinect immersive" width="1920" height="1080">
+		<DeckInfo name="SpinWheel" id="1784322105052" closed="0"/>
+		<DeckInfo name="empty" id="1784322105058" closed="0"/>
+		<DeckInfo name="empty" id="1784322105064" closed="0"/>
+	</CompositionInfo>
+	<Params name="Params">
+		<Param name="Name" T="STRING" default="" value="TC2026"/>
+		<Param name="Description" T="STRING" default="" value="Stand avec Borne d'arcade / Roue cadeaux / kinect immersive"/>
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999961275421">
+			<PhaseSourceStatic name="PhaseSourceStatic"/>
+		</ParamRange>
+		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="TC2026"/>
+		<Param name="MidiShortcutPreset" T="STRING" default="" value="Default"/>
+		<Param name="OscShortcutPreset" T="STRING" default="" value="OutputAllMessages"/>
+		<Param name="DmxShortcutPreset" T="STRING" default="" value="Default"/>
+	</Params>
+	<CompositionView name="CompositionView">
+		<FoldParams name="FoldParams"/>
+	</CompositionView>
+	<AudioTrack name="AudioTrack">
+		<AudioEffectChain name="AudioEffectChain"/>
+	</AudioTrack>
+	<VideoTrack name="VideoTrack">
+		<Params name="Params">
+			<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+			<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+				<PhaseSourceStatic name="PhaseSourceStatic"/>
+			</ParamRange>
+		</Params>
+		<RenderPass name="RenderPassChain">
+			<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1784322105029" baseType="Effect">
+				<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+			</RenderPass>
+		</RenderPass>
+	</VideoTrack>
+	<Layer name="Layer" uniqueId="1784322105106" layerIndex="0">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="Layer #" value="Background"/>
+		</Params>
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams">
+				<FoldState component="/layerpropertiesdashboard" folded="0"/>
+			</FoldParams>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1784322105118" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1784322105107"/>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1784322105109" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1784322105112"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1784322105114" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<Layer name="Layer" uniqueId="1784710033783" layerIndex="1">
+		<ClipTransition name="ClipTransition"/>
+		<LayerView name="LayerView" foldedControl="0">
+			<FoldParams name="FoldParams"/>
+		</LayerView>
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Opacity" T="DOUBLE" default="0.5" value="1">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain">
+				<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1784710034065" baseType="Effect">
+					<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+				</RenderPass>
+			</RenderPass>
+			<ChoosableMixer name="Blend">
+				<VideoMixerStateID uniqueId="1784710034054"/>
+				<RenderPass name="Add" type="Add" uniqueTypeId="A005" uniqueId="1784710034056" baseType="Mixer"/>
+			</ChoosableMixer>
+			<ChoosableMixer name="Transition">
+				<VideoMixerStateID uniqueId="1784710034059"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1784710034061" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</Layer>
+	<CrossFader name="CrossFader">
+		<AudioTrack name="AudioTrack">
+			<AudioEffectChain name="AudioEffectChain"/>
+		</AudioTrack>
+		<VideoTrack name="VideoTrack">
+			<Params name="Params">
+				<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+				<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+					<PhaseSourceStatic name="PhaseSourceStatic"/>
+				</ParamRange>
+			</Params>
+			<RenderPass name="RenderPassChain"/>
+			<ChoosableMixer name="Blend mode">
+				<VideoMixerStateID uniqueId="1784322105047"/>
+				<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1784322105049" baseType="Mixer"/>
+			</ChoosableMixer>
+		</VideoTrack>
+	</CrossFader>
+	<TempoController name="TempoController"/>
+	<Deck name="Deck" uniqueId="1784322105052" closed="0" numLayersWithContent="2" numColumnsWithContent="3" numLayers="2" numColumns="9" deckIndex="0">
+		<Params name="Params">
+			<Param name="Name" T="STRING" default="empty" value="SpinWheel"/>
+		</Params>
+		<Column uniqueId="1784322105097" columnIndex="0"/>
+		<Column uniqueId="1784322105098" columnIndex="1"/>
+		<Column uniqueId="1784322105099" columnIndex="2"/>
+		<Column uniqueId="1784322105100" columnIndex="3"/>
+		<Column uniqueId="1784322105101" columnIndex="4"/>
+		<Column uniqueId="1784322105102" columnIndex="5"/>
+		<Column uniqueId="1784322105103" columnIndex="6"/>
+		<Column uniqueId="1784322105104" columnIndex="7"/>
+		<Column uniqueId="1784322105105" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1784322105073" layerIndex="0" columnIndex="0">
+			<PreloadData>
+				<VideoFile value="C:\Users\trist\Documents\Resolume Arena\Media\TC\Texture.jpg"/>
+			</PreloadData>
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="Texture" value="Texture"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="599.53719904202716862">
+						<DurationSource name="DurationSource" defaultDuration="1s"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.59953719904202718016" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="2" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="1000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentvideotrackinfocomponent" folded="0"/>
+					<FoldState component="/groupedcomponentvideotrackinfocomponenttracksettingscomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="7952" value="7952">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="5304" value="5304">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="0" value="0"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1784710033711" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1784710033709"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource name="VideoSource" width="7952" height="5304" type="VideoFormatReaderSource">
+						<VideoFormatReaderSource fileName="C:\Users\trist\Documents\Resolume Arena\Media\TC\Texture.jpg"/>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1784710033709"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1784322105072" layerIndex="1" columnIndex="0">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="" value="TouchDesigner"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+		</Clip>
+		<Clip name="Clip" uniqueId="1784710033814" layerIndex="0" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1784322105071" layerIndex="1" columnIndex="1">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="" value="BorneArcade"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams"/>
+			</ClipView>
+		</Clip>
+		<Clip name="Clip" uniqueId="1784710033844" layerIndex="0" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1784322105070" layerIndex="1" columnIndex="2">
+			<Params name="Params">
+				<Param name="Name" T="STRING" default="SpinWheel" value="SpinWheel"/>
+				<ParamChoice name="TransportType" default="0" value="0" storeChoices="0"/>
+			</Params>
+			<Transport name="Transport">
+				<Params name="Params">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="1224.6349995658349599">
+						<DurationSource name="DurationSource"/>
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.24492699991316699282" defaultBeatsDuration="8">
+							<Params name="Params">
+								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+							</Params>
+							<Beats_double name="Beats_double" numDetectedBeats="-1" numManualBeats="8" detectedTempo="-1"/>
+						</PhaseSourceTransportTimeline>
+						<ValueRange name="minMax" min="0" max="5000"/>
+					</ParamRange>
+				</Params>
+			</Transport>
+			<ClipView name="ClipView">
+				<FoldParams name="FoldParams">
+					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorize" folded="1"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizecolorparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizekeepgreys" folded="1"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentcolorizeviewgroupedcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentrenderpasschaincomponentmask" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelgeneral" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelgeneral12" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment0202hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment0404hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment0606hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment0808hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment0909hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment1010hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment1111hueparamcolorcomponent" folded="0"/>
+					<FoldState component="/groupedcomponentspinwheelsegment1212hueparamcolorcomponent" folded="0"/>
+				</FoldParams>
+			</ClipView>
+			<VideoTrack name="VideoTrack">
+				<Params name="Params">
+					<ParamRange name="Width" T="DOUBLE" default="1920" value="1920">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<ParamRange name="Height" T="DOUBLE" default="1080" value="1080">
+						<PhaseSourceStatic name="PhaseSourceStatic"/>
+					</ParamRange>
+					<Param name="RScale" T="BOOL" default="1" value="1"/>
+					<Param name="GScale" T="BOOL" default="1" value="1"/>
+					<Param name="BScale" T="BOOL" default="1" value="1"/>
+					<Param name="AScale" T="BOOL" default="1" value="1"/>
+				</Params>
+				<RenderPass name="RenderPassChain">
+					<RenderPass storage="0" name="Transform" type="TransformEffect" uniqueTypeId="17122039101699797593" uniqueId="1784322105451" baseType="Effect">
+						<View name="View" bCanBeDisabled="0" bCanBeRemoved="0"/>
+					</RenderPass>
+				</RenderPass>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1784322105449"/>
+				</ChoosableMixer>
+				<PrimarySource>
+					<VideoSource storage="0" name="VideoSource" width="1920" height="1080" type="GeneratorVideoSource">
+						<RenderPass name="SpinWheel" type="FFGLGenerator" uniqueTypeId="SPWH" uniqueId="1784322105434" baseType="Generator">
+							<Params name="Params">
+								<ParamChoice name="Font" T="FLOAT" default="0" value="4" storeChoices="0"/>
+								<ParamRange name="Gap Width" T="DOUBLE" default="0.125" value="0.07385229540918163138">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="Ring Width" T="DOUBLE" default="0.39999997615814208984" value="0">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamColor name="Ring Hue" T="COLOR" default="4281150949" value="4278190080" channelmode="2" paletteEnabled="1" color="4278190080" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4278190080" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<Param name="Zoom Gain" T="BOOL" default="0" value="1"/>
+								<ParamRange name="Zoom Anchor Y" T="DOUBLE" default="0.5" value="0.59081836327345305104">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamColor name="01 Hue" T="COLOR" default="4281150949" value="4278190080" channelmode="2" paletteEnabled="1" color="4278190080" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4278190080" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<Param name="01 Texte" T="STRING" default="" value="Test de texte dans la fenetre"/>
+								<ParamChoice name="01 Txt Orient" T="FLOAT" default="0" value="2" storeChoices="0"/>
+								<ParamRange name="01 Txt Scale" T="DOUBLE" default="0.46999999880790710449" value="0.04391217564870259632">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="01 Txt Pos X" T="DOUBLE" default="0.5" value="0.42884990253411303662">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamRange name="01 Txt Pos Y" T="DOUBLE" default="0.5" value="0.49512670565302141501">
+									<PhaseSourceStatic name="PhaseSourceStatic"/>
+								</ParamRange>
+								<ParamColor name="02 Hue" T="COLOR" default="4281174501" value="4294967295" channelmode="2" paletteEnabled="1" color="4294967295" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.53999996185302734375" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.18000000715255737305" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.083333328366279602051" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4294967295" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="03 Hue" T="COLOR" default="4281198053" value="4289346413" channelmode="2" paletteEnabled="1" color="4289346413" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.89999997615814208984" value="0.42745098471641540527">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.89999997615814208984" value="0.23137255012989044189">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.18000000715255737305" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.16666667163372039795" value="0.74174171686172485352">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0.65294122695922851562">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4289346413" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="04 Hue" T="COLOR" default="4281197961" value="4278190080" channelmode="2" paletteEnabled="1" color="4278190080" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.53999996185302734375" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.25" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4278190080" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="05 Hue" T="COLOR" default="4281197869" value="4294967295" channelmode="1" paletteEnabled="1" color="4294967295" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.18000000715255737305" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.18000000715255737305" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.3333333432674407959" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4294967295" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<Param name="05 Texte" T="STRING" default="" value="TEST"/>
+								<ParamChoice name="05 Txt Orient" T="FLOAT" default="0" value="2" storeChoices="0"/>
+								<ParamColor name="06 Hue" T="COLOR" default="4287227181" value="4289346413" channelmode="2" paletteEnabled="1" color="4289346413" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.18000000715255737305" value="0.42745098471641540527">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.89999997615814208984" value="0.23137255012989044189">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.53999996185302734375" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.4166666567325592041" value="0.74174171686172485352">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0.65294122695922851562">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4289346413" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="07 Hue" T="COLOR" default="4293256493" value="4278190080" channelmode="2" paletteEnabled="1" color="4278190080" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.5" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4278190080" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="08 Hue" T="COLOR" default="4293232941" value="4294967295" channelmode="2" paletteEnabled="1" color="4294967295" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.18000000715255737305" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.53999996185302734375" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.5833333134651184082" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4294967295" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="09 Hue" T="COLOR" default="4293209389" value="4289346413" channelmode="2" paletteEnabled="1" color="4289346413" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.18000000715255737305" value="0.42745098471641540527">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.18000000715255737305" value="0.23137255012989044189">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.89999997615814208984" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.6666666865348815918" value="0.74174171686172485352">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0.65294122695922851562">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4289346413" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="10 Hue" T="COLOR" default="4293209481" value="4278190080" channelmode="2" paletteEnabled="1" color="4278190080" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.53999996185302734375" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.18000000715255737305" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.75" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4278190080" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="11 Hue" T="COLOR" default="4293209573" value="4294967295" channelmode="2" paletteEnabled="1" color="4294967295" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.18000000715255737305" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.8333333134651184082" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="1">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4294967295" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+								<ParamColor name="12 Hue" T="COLOR" default="4287180261" value="4289346413" channelmode="2" paletteEnabled="1" color="4289346413" interpolated="0">
+									<Params name="Channels">
+										<ParamRange name="Red" T="DOUBLE" default="0.89999997615814208984" value="0.42745098471641540527">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Green" T="DOUBLE" default="0.18000000715255737305" value="0.23137255012989044189">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Blue" T="DOUBLE" default="0.53999996185302734375" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Hue" T="DOUBLE" default="0.9166666865348815918" value="0.74174171686172485352">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Saturation" T="DOUBLE" default="0.80000001192092895508" value="0.65294122695922851562">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+										<ParamRange name="Brightness" T="DOUBLE" default="0.89999997615814208984" value="0.6666666865348815918">
+											<PhaseSourceStatic name="PhaseSourceStatic"/>
+										</ParamRange>
+									</Params>
+									<ColorPalette name="ColorPalette">
+										<Params name="Params">
+											<ParamChoice name="Colors" T="COLOR" default="4278190335" value="4289346413" storeChoices="1">
+												<Choice name="Black" value="4278190080" enabled="1" active="1" shortName=""/>
+												<Choice name="White" value="4294967295" enabled="1" active="1" shortName=""/>
+												<Choice name="0x6d3baaff 2" value="4289346413" enabled="1" active="1" shortName=""/>
+											</ParamChoice>
+										</Params>
+									</ColorPalette>
+								</ParamColor>
+							</Params>
+							<AnimationSettings name="AnimationSettings" uniqueId="1784727359476">
+								<Setting name="Gain Base Hue" flags="9223372036854775809"/>
+							</AnimationSettings>
+							<FFGLPlugin name="FFGLPlugin" uniqueId="SPWH"/>
+						</RenderPass>
+					</VideoSource>
+				</PrimarySource>
+				<ChoosableMixer name="Blend">
+					<VideoMixerStateID uniqueId="1784322105449"/>
+				</ChoosableMixer>
+			</VideoTrack>
+		</Clip>
+		<Clip name="Clip" uniqueId="1784710033784" layerIndex="0" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1784710033874" layerIndex="1" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1784322105074" layerIndex="0" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1784710033904" layerIndex="1" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1784322105086" layerIndex="0" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1784710033934" layerIndex="1" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1784322105096" layerIndex="0" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1784710033964" layerIndex="1" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1784322105075" layerIndex="0" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1784710033994" layerIndex="1" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1784322105076" layerIndex="0" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1784710034024" layerIndex="1" columnIndex="8"/>
+	</Deck>
+	<Deck name="Deck" uniqueId="1784322105058" numLayersWithContent="0" numColumnsWithContent="0" numLayers="1" numColumns="9" closed="0" deckIndex="1">
+		<Column uniqueId="1784322105208" columnIndex="0"/>
+		<Column uniqueId="1784322105209" columnIndex="1"/>
+		<Column uniqueId="1784322105210" columnIndex="2"/>
+		<Column uniqueId="1784322105211" columnIndex="3"/>
+		<Column uniqueId="1784322105212" columnIndex="4"/>
+		<Column uniqueId="1784322105213" columnIndex="5"/>
+		<Column uniqueId="1784322105214" columnIndex="6"/>
+		<Column uniqueId="1784322105215" columnIndex="7"/>
+		<Column uniqueId="1784322105216" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1784322105199" layerIndex="0" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1784322105200" layerIndex="0" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1784322105201" layerIndex="0" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1784322105202" layerIndex="0" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1784322105203" layerIndex="0" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1784322105204" layerIndex="0" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1784322105205" layerIndex="0" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1784322105206" layerIndex="0" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1784322105207" layerIndex="0" columnIndex="8"/>
+	</Deck>
+	<Deck name="Deck" uniqueId="1784322105064" numLayersWithContent="0" numColumnsWithContent="0" numLayers="1" numColumns="9" closed="0" deckIndex="2">
+		<Column uniqueId="1784322105228" columnIndex="0"/>
+		<Column uniqueId="1784322105229" columnIndex="1"/>
+		<Column uniqueId="1784322105230" columnIndex="2"/>
+		<Column uniqueId="1784322105231" columnIndex="3"/>
+		<Column uniqueId="1784322105232" columnIndex="4"/>
+		<Column uniqueId="1784322105233" columnIndex="5"/>
+		<Column uniqueId="1784322105234" columnIndex="6"/>
+		<Column uniqueId="1784322105235" columnIndex="7"/>
+		<Column uniqueId="1784322105236" columnIndex="8"/>
+		<Clip name="Clip" uniqueId="1784322105219" layerIndex="0" columnIndex="0"/>
+		<Clip name="Clip" uniqueId="1784322105220" layerIndex="0" columnIndex="1"/>
+		<Clip name="Clip" uniqueId="1784322105221" layerIndex="0" columnIndex="2"/>
+		<Clip name="Clip" uniqueId="1784322105222" layerIndex="0" columnIndex="3"/>
+		<Clip name="Clip" uniqueId="1784322105223" layerIndex="0" columnIndex="4"/>
+		<Clip name="Clip" uniqueId="1784322105224" layerIndex="0" columnIndex="5"/>
+		<Clip name="Clip" uniqueId="1784322105225" layerIndex="0" columnIndex="6"/>
+		<Clip name="Clip" uniqueId="1784322105226" layerIndex="0" columnIndex="7"/>
+		<Clip name="Clip" uniqueId="1784322105227" layerIndex="0" columnIndex="8"/>
+	</Deck>
+	<Notes name="Notes">
+		<Note text_size_multiplier="2" text_color_index="3" text=""/>
+	</Notes>
+</Composition>
+

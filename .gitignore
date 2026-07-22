@@ -25,3 +25,11 @@
 !Presets/Advanced Output/Totem.xml
 !Compositions/Totem.avc
 !Shortcuts/MIDI/Totem.xml
+
+# TC2026 Stand
+!Compositions/TC2026.avc
+!Presets/Advanced Output/TC2026.xml
+!Shortcuts/Keyboard/TC2026.xml
+!Shortcuts/DMX/TC2026.xml
+!Presets/Color Palettes/TC2026.xml
+!Extra Effects/SpinWheel.dll
