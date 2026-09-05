@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MidiShortcutPreset name="Tactile+MidiMix" presetId="1905948753">
+	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
+	<ShortcutManager name="MIDIShortcutManagerShortcuts">
+		<Shortcut name="Shortcut" uniqueId="1776542837880" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/select" translationType="1" allowedTranslationTypes="3"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/select" translationType="1" allowedTranslationTypes="3"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/1/selected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/1/selected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="143160300915393424" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777646667288" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/effects/totalvisualannihilation/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/effects/totalvisualannihilation/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953325744" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837812" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="143160300915395728" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="1"/>
+				<Value first="On" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777655614843" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/blur/effect/blur" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/blur/effect/blur" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953328304" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837889" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/select" translationType="1" allowedTranslationTypes="3"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/select" translationType="1" allowedTranslationTypes="3"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/3/selected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/3/selected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="143160300915394960" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837816" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/colorize/effect/contrast" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/colorize/effect/contrast" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0.19780219780219779335" max="1"/>
+			<RawInputMessage key="215217894953328560" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777649162731" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe/effect/frequency" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/strobe/effect/frequency" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0.69543571115654201353" max="0.99190038758274923225"/>
+			<RawInputMessage key="215217894953336240" value="0.79527559055118113296" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777655572245" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/effects/blur/effect/blur" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/effects/blur/effect/blur" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953327792" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837853" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clear" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/clear" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="143160300915392912" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837739" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/effects/edgedetection/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/effects/edgedetection/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953324720" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837711" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/edgedetection/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/edgedetection/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953325232" value="0.88976377952755902889" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837857" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="143160300915393680" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542834499" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/selectnextdeck" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectnextdeck" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="143160300915399312" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777646667259" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/totalvisualannihilation/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/totalvisualannihilation/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953326000" value="0.39370078740157482544" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777649162802" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe2/effect/frequency" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/strobe2/effect/frequency" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0.69803607500973519073" max="0.99190038758274923225"/>
+			<RawInputMessage key="215217894953336240" value="0.79527559055118113296" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777646667262" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/totalvisualannihilation/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/totalvisualannihilation/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953326256" value="0.39370078740157482544" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837886" paramNodeName="ParamTrigger" behaviour="4" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/select" translationType="1" allowedTranslationTypes="3"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/select" translationType="1" allowedTranslationTypes="3"/>
+			<ShortcutPath name="InputSiblingPath" path="/composition/layers/2/selected" translationType="1" allowedTranslationTypes="-1"/>
+			<ShortcutPath name="OutputSiblingPath" path="/composition/layers/2/selected" translationType="1" allowedTranslationTypes="-1"/>
+			<RawInputMessage key="143160300915394192" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777649162728" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/strobe/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="143160300915398288" value="1" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777646667324" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/video/effects/totalvisualannihilation2/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/video/effects/totalvisualannihilation2/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953327280" value="0.47244094488188975722" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542834490" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/master" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/master" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953327536" value="0.047244094488188975722" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837852" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/colorize/effect/contrast" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/colorize/effect/contrast" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0.19597069597069596836" max="1"/>
+			<RawInputMessage key="215217894953333168" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542841448" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="143160300915397264" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="1"/>
+				<Value first="On" second="0"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777649162702" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/audiodevicemanager/params/fftinputgain" translationType="1" allowedTranslationTypes="1"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953336496" value="1" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542834486" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/master" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/1/master" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953325488" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777649162785" paramNodeName="RangedParam[bool]" behaviour="3076" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/video/effects/strobe2/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/video/effects/strobe2/bypassed" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="143160300915398800" value="1" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777646667352" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/totalvisualannihilation2/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/totalvisualannihilation2/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953327024" value="0.70866141732283460808" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837861" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/clear" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="143160300915394448" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542834497" paramNodeName="ParamEvent" behaviour="1028" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/selectprevdeck" translationType="1" allowedTranslationTypes="1"/>
+			<ShortcutPath name="OutputPath" path="/composition/selectprevdeck" translationType="1" allowedTranslationTypes="1"/>
+			<RawInputMessage key="143160300915399056" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="0"/>
+				<Value first="On" second="1"/>
+			</NamedValues>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542834488" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/master" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/master" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953326512" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542841446" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/3/video/effects/colorize/effect/contrast" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/3/video/effects/colorize/effect/contrast" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<ValueRange min="0.19780219780219779335" max="1"/>
+			<RawInputMessage key="215217894953334192" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837681" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/edgedetection/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/edgedetection/opacity" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953324976" value="0" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1777655582290" paramNodeName="ParamRange" behaviour="8" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/blur/effect/blur" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/blur/effect/blur" translationType="1" allowedTranslationTypes="11"/>
+			<Subtarget type="5" optionIndex="-1"/>
+			<RawInputMessage key="215217894953328048" value="0.39370078740157482544" numSteps="128"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1776542837840" paramNodeName="RangedParam[bool]" behaviour="4" inputDeviceName="MIDI Mix" outputDeviceName="MIDI Mix">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<ShortcutPath name="OutputPath" path="/composition/layers/2/video/effects/colorize/bypassed" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="143160300915396496" value="0" numSteps="128"/>
+			<NamedValues>
+				<Value first="Off" second="1"/>
+				<Value first="On" second="0"/>
+			</NamedValues>
+		</Shortcut>
+	</ShortcutManager>
+</MidiShortcutPreset>
+
