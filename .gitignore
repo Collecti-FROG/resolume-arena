@@ -1,27 +1,62 @@
-# Ignore all files by default
+# ---------------------------------------------------------------------------
+# Depot Resolume du Collecti'FROG
+#
+# ATTENTION : ce depot est PUBLIC.
+# Ce dossier est aussi ton dossier Resolume personnel : tout est ignore par
+# defaut, et on ne re-inclut que ce qui appartient au collectif.
+# ---------------------------------------------------------------------------
+
 *
-
-# Except the .gitignore file and README.md
-!.gitignore
-!README.md
-
-# Allow parent folders
 !*/
 
-# List specific files and folders to keep
-# List of differents compositions, advanced outputs, MIDI controls and 
-# commons files like extra effects and medias
+# Meta
+!.gitignore
+!.gitattributes
+!README.md
 
-# Commons ressources
-!Media/media_scenofrog/*
-!Extra Effects/*
+# ---------------------------------------------------------------------------
+# Fichiers du collectif : prefixe CF-
+#   master     -> templates prets a jouer
+#   show/Nom   -> branche courte, mergee dans master puis supprimee
+#   crea/Nom   -> creation artistique d'une presta, jamais mergee
+# ---------------------------------------------------------------------------
+!Compositions/CF-*.avc
+!Presets/Advanced Output/CF-*.xml
+!Presets/Interface/CF-*.xml
+!Presets/Color Palettes/CF-*.xml
+!Presets/Envelopes/CF-*.xml
+!Presets/Mixers/CF-*.xml
+!Presets/Sources/CF-*.xml
+!Presets/Video Effects/CF-*.xml
+!Presets/Audio Effects/CF-*.xml
+!Shortcuts/MIDI/CF-*.xml
+!Shortcuts/OSC/CF-*.xml
+!Shortcuts/Keyboard/CF-*.xml
+!Shortcuts/DMX/CF-*.xml
+!Fixture Library/CF-*.xml
 
-# Totem+Cerce output
-!Presets/Advanced Output/Totem+Cerce.xml
-!Compositions/Totem+Cerce.avc
-!Shortcuts/MIDI/Totem+Cerce.xml
+# Effets partages (outils, pas des shows : pas de prefixe)
+!Extra Effects/*.wired
+!Extra Effects/*.dll
 
-# Totem
-!Presets/Advanced Output/Totem.xml
-!Compositions/Totem.avc
-!Shortcuts/MIDI/Totem.xml
+# Medias : uniquement les assets legers du collectif lui-meme.
+# Tout le reste vit en local dans Media/assets/ et sur le Nextcloud.
+!Media/CF-Commun/*.png
+!Media/CF-Commun/*.svg
+!Media/CF-Commun/*.jpg
+!Media/CF-Commun/*.jpeg
+
+# ---------------------------------------------------------------------------
+# Ceinture et bretelles. Ces regles sont EN DERNIER, donc elles gagnent sur
+# toute exception ajoutee plus haut par erreur. Ne jamais deplacer ce bloc.
+# ---------------------------------------------------------------------------
+*.mov
+*.mp4
+*.mkv
+*.avi
+*.mxf
+*.webm
+Media/assets/
+Preferences/
+Recorded/
+Renders/

@@ -1,0 +1,13 @@
+# Resolume reecrit integralement ses fichiers a chaque sauvegarde (uniqueId,
+# ordre des noeuds). Un merge ligne-a-ligne produirait un fichier corrompu
+# qui ne s'ouvre plus. On force donc un conflit franc : on choisit une
+# version entiere, jamais un melange.
+#
+# Note : pas de motif avec un espace ici (ex. "Fixture Library/"), le format
+# .gitattributes ne le supporte pas. Tous les .xml du depot sont des fichiers
+# Resolume, une regle globale suffit.
+
+*.avc     merge=binary
+*.xml     merge=binary
+*.wired   merge=binary
+*.dll     binary
