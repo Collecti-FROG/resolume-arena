@@ -13,7 +13,7 @@
 	<Params name="Params">
 		<Param name="Name" T="STRING" default="" value="FdlM2026"/>
 		<Param name="Description" T="STRING" default="" value="Show 16:9 simple - 3 layers de clips - effet sur layers - Control by écran tactile + Akai MidiMix"/>
-		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999958688601">
+		<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999953526064">
 			<PhaseSourceStatic name="PhaseSourceStatic"/>
 		</ParamRange>
 		<Param name="KeyboardShortcutPreset" T="STRING" default="" value="FdlM2026"/>
@@ -211,7 +211,7 @@
 							<DurationSource name="DurationSource"/>
 							<PhaseSourceFFT name="PhaseSourceFFT" phase="0" linkId="/audioengine/externalfft">
 								<Params name="Params">
-									<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="3.8554235798362785955e-08">
+									<ParamRange name="FrequencyRange" T="DOUBLE" default="0.5" value="5.2561514366525362301e-09">
 										<PhaseSourceStatic name="PhaseSourceStatic"/>
 										<ValueRange name="startStop" min="0" max="0.36923076923076925127"/>
 									</ParamRange>
@@ -727,11 +727,11 @@
 			</Params>
 			<Transport name="Transport">
 				<Params name="Params">
-					<ParamRange name="Position" T="DOUBLE" default="0" value="433.46979986342540769">
+					<ParamRange name="Position" T="DOUBLE" default="0" value="4601.4184994274974088">
 						<DurationSource name="DurationSource"/>
-						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.086693959972685086246" defaultBeatsDuration="8">
+						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0.92028369988549951763" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999504318726">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999499156189">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -767,11 +767,11 @@
 				<RenderPass name="RenderPassChain">
 					<RenderPass storage="0" name="Bloom" type="DryWetEffect" uniqueTypeId="6980402605" uniqueId="1781556149258" baseType="DryWetEffect">
 						<Params name="Params">
-							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45937353632092037259">
+							<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.22108347816933626717">
 								<DurationSource name="DurationSource" defaultDuration="4b"/>
-								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.25966384923237989524">
+								<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.60419867371298863201">
 									<Params name="Params">
-										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999504318726">
+										<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999499156189">
 											<PhaseSourceStatic name="PhaseSourceStatic"/>
 										</ParamRange>
 										<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -821,7 +821,7 @@
 							<VideoMixerStateID uniqueId="1781556149262"/>
 							<RenderPass name="Alpha" type="Alpha" uniqueTypeId="A006" uniqueId="1781556149263" baseType="Mixer">
 								<Params name="Params">
-									<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.45937353632092037259">
+									<ParamRange name="Opacity" T="DOUBLE" default="1" value="0.22108347816933626717">
 										<PhaseSourceStatic name="PhaseSourceStatic"/>
 									</ParamRange>
 								</Params>
@@ -835,11 +835,11 @@
 						<View name="View" folded="1"/>
 						<RenderPass name="Sharpen" type="Sharpen" uniqueTypeId="89209435418021" uniqueId="1781556149269" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Strength" T="DOUBLE" default="0.5" value="0.42670180333946883255">
+								<ParamRange name="Strength" T="DOUBLE" default="0.5" value="0.10323922409175800841">
 									<DurationSource name="DurationSource"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.086693959974785961276" hardSynced="0">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.92028369989522162964" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999504318726">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999499156189">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -878,11 +878,11 @@
 					<RenderPass storage="0" name="DropShadow" type="DryWetEffect" uniqueTypeId="372541077550622327" uniqueId="1781556149274" baseType="DryWetEffect">
 						<RenderPass name="DropShadow" type="DropShadow" uniqueTypeId="372541077550622327" uniqueId="1781556149276" baseType="Effect" dwType="Effect">
 							<Params name="Params">
-								<ParamRange name="Distance" T="DOUBLE" default="10" value="78.405102451744198788">
+								<ParamRange name="Distance" T="DOUBLE" default="10" value="28.855531182757449216">
 									<DurationSource name="DurationSource" defaultDuration="4b" scale="0.17674409141836239234"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.25966384923237989524">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.60419867371298863201">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999504318726">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999499156189">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="4" value="4">
@@ -910,11 +910,11 @@
 									<ValueRange name="minMax" min="0" max="480"/>
 									<ValueRange name="startStop" min="0" max="84.837163880813946548"/>
 								</ParamRange>
-								<ParamRange name="Angle" T="DOUBLE" default="45" value="-135">
+								<ParamRange name="Angle" T="DOUBLE" default="45" value="72.120507394403972512">
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16"/>
-									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.125" defaultBeatsDuration="16">
+									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0.70033474276223328658" defaultBeatsDuration="16">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999504318726">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999499156189">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Multiplier" altName="Speed" T="DOUBLE" default="1" value="0.5">
@@ -971,7 +971,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999654054506">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999648891968">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1047,7 +1047,7 @@
 									<DurationSource name="DurationSource" scale="0.46875"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999881480361">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999880703205">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2.34375" value="2">
@@ -1065,7 +1065,7 @@
 									<DurationSource name="DurationSource" scale="0.46296296296296296502"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999881480361">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999880703205">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="2.3148148148148148806" value="2">
@@ -1083,7 +1083,7 @@
 									<DurationSource name="DurationSource" scale="0.050000000000000002776"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999881480361">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.14999999999880703205">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="0.25" value="0.25">
@@ -1306,7 +1306,7 @@
 						<DurationSource name="DurationSource" defaultDuration="15s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="15000" defaultBeatsDuration="32">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="15" value="2">
@@ -1403,7 +1403,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="8" scale="0.25738675958188156345"/>
 									<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="8" value="8">
@@ -1437,7 +1437,7 @@
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16" scale="0.5"/>
 									<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16" value="16">
@@ -1550,7 +1550,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999757327451">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999752164914">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1576,7 +1576,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.64666285008636392728">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.64666285008633039855">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1739,7 +1739,7 @@
 						<DurationSource name="DurationSource" defaultDuration="1s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="1000" defaultBeatsDuration="2">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999736666201">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999731503664">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="1">
@@ -1832,7 +1832,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999519806337">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999995146438">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -1892,7 +1892,7 @@
 									<DurationSource name="DurationSource" scale="0.72558144266291180191"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999519806337">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999995146438">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="3.6279072133145588985" value="2">
@@ -1963,7 +1963,7 @@
 									<DurationSource name="DurationSource" scale="0.10317834188771803083"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999519806337">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999995146438">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.27058859432444853921">
@@ -2025,7 +2025,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2071,7 +2071,7 @@
 									<DurationSource name="DurationSource" userDuration="1" scale="0.040000000517832208502"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="0.040000000517832208502">
@@ -2088,7 +2088,7 @@
 									<DurationSource name="DurationSource" userDuration="1" scale="0.050000000690442948648"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.23770386498980081158">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.23770386498978846035">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.1500000000000000222">
@@ -2108,7 +2108,7 @@
 									<DurationSource name="DurationSource" userDuration="1" scale="0.038099547511312219228"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999966437958">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999659217043">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="1" value="0.038099547511312219228">
@@ -2292,7 +2292,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0" hardSynced="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -2547,7 +2547,7 @@
 						<DurationSource name="DurationSource" defaultDuration="5.0000000000000026645s"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultMillisecondsDuration="5000.0000000000027285" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.999999999995146438">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999509481263">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5.0000000000000026645" value="2">
@@ -2608,7 +2608,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.20771038099930952403">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.20771038099929872711">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Interval" T="DOUBLE" default="0.5" value="0.1444318760360850662">
@@ -3278,7 +3278,7 @@
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3482,7 +3482,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999654054506">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999648891968">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3498,7 +3498,7 @@
 									<DurationSource name="DurationSource"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.25024534999912922961">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.25024534999911624">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3728,7 +3728,7 @@ NUIT "/>
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999679878293">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999674715756">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -3879,7 +3879,7 @@ NUIT "/>
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999690203367">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
@@ -4184,7 +4184,7 @@ NUIT "/>
 									<DurationSource name="DurationSource" userDuration="10"/>
 									<PhaseSourceTimeline name="PhaseSourceTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.52479966199834415796">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.52479966199831706852">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="10" value="2">
@@ -4668,7 +4668,7 @@ NUIT "/>
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16" scale="0.25738675958188156345"/>
 									<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999700528441">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999695365904">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16" value="16">
@@ -4706,7 +4706,7 @@ NUIT "/>
 									<DurationSource name="DurationSource" defaultDuration="4b" userDuration="16" scale="0.5"/>
 									<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0">
 										<Params name="Params">
-											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999700528441">
+											<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999695365904">
 												<PhaseSourceStatic name="PhaseSourceStatic"/>
 											</ParamRange>
 											<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="16" value="16">
@@ -4854,7 +4854,7 @@ NUIT "/>
 						<DurationSource name="DurationSource"/>
 						<PhaseSourceTransportTimeline name="PhaseSourceTransportTimeline" phase="0" defaultBeatsDuration="8">
 							<Params name="Params">
-								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.99999999999690203367">
+								<ParamRange name="Speed" T="DOUBLE" default="1" value="0.9999999999968504083">
 									<PhaseSourceStatic name="PhaseSourceStatic"/>
 								</ParamRange>
 								<ParamRange name="Max Distance" altName="Distance" T="DOUBLE" default="5" value="2">
