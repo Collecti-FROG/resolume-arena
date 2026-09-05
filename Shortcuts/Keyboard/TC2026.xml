@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<KeyboardShortcutPreset name="TC2026" presetId="-1975243661">
+<KeyboardShortcutPreset name="TC2026" presetId="1905292851">
 	<versionInfo name="Resolume Arena" majorVersion="7" minorVersion="22" microVersion="9" revision="47596"/>
-	<ShortcutManager name="KeyboardShortcutManagerShortcuts"/>
+	<ShortcutManager name="KeyboardShortcutManagerShortcuts">
+		<Shortcut name="Shortcut" uniqueId="1784983518350" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/layers/1/clips/2/connect" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="1000727379968" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1784911468383" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/5/connect" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="171798691840" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1784983518348" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clear" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="1000727379968" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1784900383051" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/selectedclip/video/source/spinwheel/start!" translationType="4" allowedTranslationTypes="7"/>
+			<RawInputMessage key="137438953472" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1784911468379" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/3/connect" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="146028888064" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1784911468381" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/4/connect" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="167503724544" value="0"/>
+		</Shortcut>
+		<Shortcut name="Shortcut" uniqueId="1784911468385" paramNodeName="ParamEvent" behaviour="1024">
+			<ShortcutPath name="InputPath" path="/composition/layers/2/clips/6/connect" translationType="1" allowedTranslationTypes="11"/>
+			<RawInputMessage key="193273528320" value="0"/>
+		</Shortcut>
+	</ShortcutManager>
 </KeyboardShortcutPreset>
 
